@@ -6,9 +6,11 @@ public class Aplicacion {
 		// comentario
 		
 		/**
-		 * Este es mi primer comentario en el programa 
+		 * Este es el programa para iniciar 
 		 */
 		System.out.println("Empezamos a programar en java ");
+		System.out.println("Ciclo desarrollo de aplicaciones web");
 	}
-
+	
+      
 }
