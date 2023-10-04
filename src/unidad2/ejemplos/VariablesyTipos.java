@@ -8,7 +8,6 @@ public class VariablesyTipos {
 		//DATOS DEL PROPIETARIO
 		String dni="98739453H"; //Almacena el numero+letra
 		System.out.println("Dni:"+dni);
-		System.out.println("Edad");
 		String nombrePropietario;
 		String direccion; 
 		String telefono; // +34 ..
