@@ -24,8 +24,8 @@ public class LectorEscritor {
 		int suma = dato+dato2;
 		
 		System.out.println("La suma es:"+suma);
-		System.out.println("La suma es:"+dato+dato2);//de esta forma lo que hace es concatenar y no sumar
-		System.out.println("La suma es:"+(dato+dato2));//Para hacer la suma en el print hay que ponerlo entre parentesis 
+		System.out.println("La suma es:"+dato+dato2);//de esta forma lo que hace es concatenar y no sumar.
+		System.out.println("La suma es:"+(dato+dato2));//Para hacer la suma en el print hay que ponerlo entre parentesis.
 
 		
 
