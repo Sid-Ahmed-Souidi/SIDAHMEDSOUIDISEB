@@ -1,7 +1,11 @@
 package unidad2.ejemplos;
 
-public class Ejercicio14 {
+import java.util.Scanner;
 
+public class Ejercicio14 {
+	
+	
+	
 	
 	public static void main(String[] args) {
 		        
@@ -18,6 +22,14 @@ public class Ejercicio14 {
 		//System.out.println(resultado);
 
 	}
+	
+	Scanner sc = new Scanner(System.in);
+	System.out.println("Que numero quieres factorizar ");
+	int factorialNumero = sc.nextInt() ;
+	for( int i = 1 ; i >= numero ; i++) {
+		System.out.println(factorialNumero *  i);
+	}
+	
 
 		//System.out.println("El factorial de " + numero + " es: " + resultado);
 		    }
