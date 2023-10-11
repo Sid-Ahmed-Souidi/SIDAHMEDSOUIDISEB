@@ -11,7 +11,7 @@ public class Ejercicio16 {
 		
 		
 	double euro ;
-	double libras ; 
+	double libra ; 
 	double pasarEaL ;
 	double pasarLaE;
 	double sacarPordeLibra; 
@@ -19,12 +19,18 @@ public class Ejercicio16 {
 	Scanner entrada = new Scanner(System.in);
 
 	System.out.println("Introduce el euro que deseas convertir a libra ");
+	libra = entrada.nextInt();
+	System.out.println("Introduce la libra que deseas convertir a euro ");
 	euro = entrada.nextInt();
 	
 	pasarEaL = (euro * 86) / 100;
+		
+	pasarLaE = libra + (libra * 14) / 100;
+	
+	System.out.println("Este es el resultado de pasar Euro a libra"+pasarEaL);
+	System.out.println("Este es el resultado de pasar libra a Euro"+pasarLaE);
 	
 	
-	pasarEaL = (libra * 14) / 100;
 	
 	
 		
