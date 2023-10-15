@@ -3,19 +3,16 @@ package unidad2.ejemplos;
 public class Ejercicio11 {
 
 	public static void main(String[] args) {
-		int N = 9;
-		double A = 11.3;
-		int caracter = 'e';
-		char  C = 'A';
-		double suma ;
-		double diferencia ;
+		int nota1 = 8;
+		int nota2 = 5;
+		int nota3 = 6;
+		int resultado ; 
 		
-		suma = N + A ;
-		System.out.println("La suma entre N y A es;"+suma);
-		diferencia = A - N ;
-		System.out.println("La diferencia de A y N es;"+diferencia);
+		int suma = nota1 + nota2 + nota3 ;
 		
-		System.out.println("El valor numerico de 'e' es;"+caracter);
+		resultado = suma / 3 ;
+		
+		System.out.println("El resultado de la media es; "+resultado);
 		
 		
 		

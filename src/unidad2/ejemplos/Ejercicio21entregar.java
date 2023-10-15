@@ -94,42 +94,6 @@ public class Ejercicio21entregar {
 		entrada.close();
 		
 		
-/**		System.out.println("El costo por litro de gasolina ");
-		costoGasolinaxL = entrada.nextDouble();
-		
-		System.out.println("El promedio de kilometros por litro");
-
-
-		System.out.println("El gasto  gasolina por kilometro recorrido ");
-		gastoConsumo = entrada.nextDouble();
-		gastoConsumoV = entrada.nextDouble();
-		
-		gastoConsumoTotal = (Litros consumidos x 100) /km recorridos
-
-
-		System.out.println("El costo total estacionamiento ida y vuelta ");
-		estacionamiento = entrada.nextDouble();
-		estacionamientoV = entrada.nextDouble();
-
-
-		System.out.println("El costo total peaje ida y vuelta ");
-		peaje = entrada.nextDouble();
-		peajeV = entrada.nextDouble();
-
-		
-		 sumaIda = kilometroTotal + costoGasolina + gastoConsumo +estacionamiento +peaje;
-			System.out.println("El costo total ida" + sumaIda);
-
-		 sumaVuelta = kilometroTotalV + costoGasolinaV + gastoConsumoV +estacionamientoV +peajeV;
-			System.out.println("El costo total peaje vuelta "+sumaIda);
-
-
-		resultado = (sumaIda ) + (sumaVuelta) ;
-		
-		System.out.println("El resultado de la media es; "+resultado);
-		
-		*/
-
 		
 
 		
