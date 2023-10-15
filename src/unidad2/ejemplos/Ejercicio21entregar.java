@@ -2,7 +2,7 @@ package unidad2.ejemplos;
 
 import java.util.Scanner;
 
-public class Ejercicio21 {
+public class Ejercicio21entregar {
 
 	public static void main(String[] args) {
 		/**Calculadora de ahorro en viajes compartidos.
