@@ -17,7 +17,7 @@ public class Ejercicio20 {
 		
 		Scanner entrada = new Scanner(System.in); 
 		
-		double PI 
+		double PI = 3.14 ;
 		int numeroRadio ; 
 		double diametro;
 		double circunferencia ;
@@ -27,18 +27,24 @@ public class Ejercicio20 {
 		
 		numeroRadio = entrada.nextInt();
 		
-		diametro = 2 * numeroRadio;
+	/**	diametro = 2 * numeroRadio;
 		System.out.println("El calculo diametro"+numeroRadio);
-		circunferencia = 2 * numeroRadio;
-		System.out.println("El calculo diametro"+numeroRadio);
+		area =  PI * Math.pow(numeroRadio,2);
+		System.out.println("El calculo diametro"+numeroRadio);*/
+		
+		/**
+		 System.out.printf("Suma: %d + %d = %d%n", num1, num2, (num1 + num2));
+	        System.out.printf("Resta: %d - %d = %d%n", num1, num2, (num1 - num2));
+	        System.out.printf("Multiplicación: %d * %d = %d%n", num1, num2, (num1 * num2));
+	        System.out.printf("División: %d / %d = %.2f%n", num1, num2, ((double) num1 / num2));*/
 		
 		
+        System.out.printf("Diametro: %d * %d = %d%n", 2, numeroRadio, (2 * numeroRadio));
 
-		
-		
+        System.out.printf("El area del círculo con radio %.2f es %.2f%n", numeroRadio, PI * Math.pow(numeroRadio, 2));
 
-		
-		
+        System.out.printf("Circunferencia: %d * %d * %d = %d%n", 2, PI, numeroRadio, (2 * PI * numeroRadio));
+
 		
 		
 	}

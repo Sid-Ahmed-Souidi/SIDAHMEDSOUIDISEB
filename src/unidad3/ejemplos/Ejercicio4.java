@@ -16,14 +16,14 @@ public class Ejercicio4 {
 		numero2 = entrada.nextInt();
 		
 		if(numero1>numero2) {
+			System.out.println("El primer numero es mayor que el segundo");
 			System.out.println(+numero1);
 		}
 		else if(numero2>numero1) {
+			System.out.println("El segundo numero es mayor que el primero");
 			System.out.println(+numero2);
-			
 		}
 		else if(numero2==numero1) {
-			
 			System.out.println("Los numeros son iguales ");
 		}
 	}
