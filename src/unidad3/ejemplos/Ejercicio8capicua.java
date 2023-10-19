@@ -47,7 +47,7 @@ public class Ejercicio8capicua {
 			penultimoDigito = (numero / 10) % 10  ; //saco el ultimo digito ej (1234 a 123)y hago el modulo con 123 (que obtendria el el ultimo de 123 que es 3)
 			antepenultimo = (numero / 100) % 10 ; // dividiendo entre 100 obtengo de (1234 a 12 ) y luego hago modelo de ese numero(12) que es 2 el antepenultimo
 			primerDigito = numero / 1000;
-			System.out.println("f"+ultimoDigito+"ddfa"+penultimoDigito+"asdf"+antepenultimo+"gfd"+primerDigito);
+			System.out.println("f"+ultimoDigito+"---"+penultimoDigito+"---"+antepenultimo+"----"+primerDigito);
 			if(primerDigito==ultimoDigito && penultimoDigito==antepenultimo) {
 				System.out.println("El numero es capicúa");
 			}else {
@@ -63,7 +63,6 @@ public class Ejercicio8capicua {
 			primerDigito = (numero / 1000) / 10; // divido ej(12345) entre 1000 obtengo 12 y divido otra vez por 10 para quedarme con el primero que es 1 
 			segundoDigito = (numero / 1000) % 10; // dividimos ej(12345) entre 1000 y nos quedamos con 12 y con 12 realizamos modulo y me quedo con el segundoDigito 
 			
-			System.out.println("f"+ultimoDigito+"ddfa"+penultimoDigito+"asdf"+antepenultimo+"gfd"+segundoDigito+"asdf"+primerDigito);
 			if(primerDigito==ultimoDigito && segundoDigito==penultimoDigito) {
 				System.out.println("El numero es capicúa");
 			}else {
