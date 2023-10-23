@@ -5,20 +5,7 @@ import java.util.Scanner;
 public class Ejercicio13 {
 
 	public static void main(String[] args) {
-		Scanner entrada = new Scanner(System.in);
-		int dia ;
-		int mes ;
-		int anyo;
-		int meses31 ;
-		int meses30 ; 
-				
-		System.out.println("Introduzca el dia");
-		dia = entrada.nextInt();
-		System.out.println("Introduzca el mes");
-		mes = entrada.nextInt();
-		System.out.println("Introduzca el año");
-		anyo = entrada.nextInt();
-	/**	13. Crea un programa llamado ComprobarFecha, que pida una fecha formada
+		/**	13. Crea un programa llamado ComprobarFecha, que pida una fecha formada
 		por tres valores numéricos (día, mes y año),
 		y determine si la fecha corresponde a un valor válido.
 		Pista: se debe tener presente el valor de los días en función
@@ -28,19 +15,47 @@ public class Ejercicio13 {
 		El mes 2 tiene 28 días, excepto cuando el año es divisible por 4,
 		 que tiene 29 días.*/
 		
-		if(((mes==1&&mes==3&&mes==5&&mes==7&&mes==8&&mes==10&&mes==12) && (dia > 0 && mes <=31)) && ((mes==4&&mes==6&&mes==9&&mes==11) && (dia > 0 && mes <=30))) {
-				System.out.println("La fecha es correcta");
-			}else {
-				System.out.println("La fecha es incorrecta");
+		int anyo;
+		int mes;
+		int dia;
+		
+		Scanner entrada = new Scanner(System.in);
+		System.out.println("Introduzca un dia");
+		dia = entrada.nextInt();
+		System.out.println("Introduzca un mes");
+		mes = entrada.nextInt();
+		System.out.println("Introduzca un año");
+		anyo = entrada.nextInt();
+		
+		switch(dia) {
+		case 1 :
+		case 3 :
+		case 5 :
+		case 7 :
+		case 8 :
+		case 10 :
+		case 12 : 
+			if(dia>0 && dia <=31) {
+			System.out.println("La fecha"+dia+"/"+mes+"/"+anyo+" es valida");	
 			}
-			
-
-			
-		}
+			break;
+		case 2 :
+			if(dia> 0 && dia <= 28) {
+				System.out.println("La fecha"+dia+"/"+mes+"/"+anyo+" ES valida");
+				}
+		case 4 :
+		case 6 :
+		case 9 :
+		case 11:
+			if(dia>0 && dia <=30)
+				System.out.println("La fecha"+dia+"/"+mes+"/"+anyo+" es valida");
+			break;
+		default:
+			System.out.println("La fecha"+dia+"/"+mes+"/"+anyo+"  NO es valida");
 		
-		
-	
 		
 	}
+
+ }
 
 }
