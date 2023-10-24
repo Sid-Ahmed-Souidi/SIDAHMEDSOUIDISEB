@@ -28,19 +28,19 @@ public class Ejercicio18 {
 		
 		System.out.println("Elija una opcion(S/R/M/D) y enter : ");
 		seleccion= entrada.next().charAt(0);
-		if(seleccion=='S') {// HAY QUE PONER TAMBIEN PARA MINusculas este y el otro ejecicio 
+		if(seleccion=='S'|| seleccion=='s') {// HAY QUE PONER TAMBIEN PARA MINusculas este y el otro ejecicio 
 			System.out.println("La opereracion seleccionada es la suma "+S);
 			
-		}else if(seleccion=='R') {
+		}else if(seleccion=='R'|| seleccion=='r') {
 			System.out.println("La opereracion seleccionada es la resta "+R);
 			
-		}else if(seleccion=='M') {
+		}else if(seleccion=='M'|| seleccion=='m') {
 			System.out.println("La opereracion seleccionada es la multiplicacion "+M);
-		}else if(seleccion=='D') {
+		}else if(seleccion=='D'|| seleccion=='d') {
 			System.out.println("La opereracion seleccionada es la division "+D);
 		
-		}else if(seleccion=='X'){
-			System.out.println("gracias ,hasta la proxima");
+		}else if(seleccion=='X'|| seleccion=='x'){
+			System.out.println("Gracias ,hasta la proxima");
 			
 		}
 		
