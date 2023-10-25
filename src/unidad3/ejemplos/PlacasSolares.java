@@ -14,7 +14,9 @@ public class PlacasSolares {
 	double calcularDia ; 
 	int dias ; 
 	
-	
+	//mirar lo de si esta activo o inactivo ya que me sale solo si esta falso o verdadero.
+	// poner los kw horas en la parte del calculo de energia por dia 
+	// crear una opcion donde diga que no esta permitida alguna  opcion que no sea del 1 al 5 
 	do {
 		System.out.println("1.Registrar un panel solar ");
 		System.out.println("2.Consultar informacion del panel solar");

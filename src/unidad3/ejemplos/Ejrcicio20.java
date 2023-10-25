@@ -82,7 +82,7 @@ public class Ejrcicio20 {
 			
 			
 			}else if(seleccion== 6) {
-					System.out.println("HASTA LUEGO .");
+					System.out.println("Hasta la proxima.");
 					
 			}
 			
