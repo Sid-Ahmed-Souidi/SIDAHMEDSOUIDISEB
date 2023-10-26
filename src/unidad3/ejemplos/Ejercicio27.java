@@ -29,7 +29,7 @@ public class Ejercicio27 {
 		//se usa if y no else if por que no quiero seleccionar una cantidad sola y en el if se comprueba todas 
 		if(cantidad>=500){
 			numBilletes500 = cantidad/500;
-			cantidad = cantidad%500; // se obtiene el resto de la cantidad
+			cantidad = cantidad%500; // se obtiene el resto de la cantidad es decir 1000%500 son 0 
 			System.out.println("Numero de billetes 500  :"+numBilletes500);
 		}
 		if(cantidad>=200){

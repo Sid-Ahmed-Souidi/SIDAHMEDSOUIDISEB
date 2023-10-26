@@ -26,20 +26,20 @@ public class EJercicio14 {
 		if(tipo == 1) {
 			System.out.println("Es cliente afiliado Si/No");
 			tipoCliente = entrada.next();
-			if(tipoCliente=="S" || tipoCliente=="s") {
+			if(tipoCliente.equals("Si") || tipoCliente.equals("si")) {
 				System.out.println("El precio de afiliado es de 23.00$");
 				
-			}else if(tipoCliente=="N" || tipoCliente=="n") {
+			}else if(tipoCliente.equals("No") || tipoCliente.equals("no")) {
 				System.out.println("El precio de no afiliado es de 25.00$");
-
+				break;
 			}		
 		}else if(tipo ==2) {
 			System.out.println("Es cliente afiliado Si/No");
 			tipoCliente = entrada.next();
-				if(tipoCliente=="S" || tipoCliente=="s") {
+				if(tipoCliente.equals("Si") || tipoCliente.equals("si")) {
 					System.out.println("El precio de afiliado es de 33,12$");
 					
-				}else if(tipoCliente=="N" || tipoCliente=="n") {
+				}else if(tipoCliente.equals("No") || tipoCliente.equals("no")) {
 					System.out.println("El precio de no afiliado es de 36.00$");
 
 				}	
@@ -48,10 +48,10 @@ public class EJercicio14 {
 			System.out.println("El precio del analisis = 50.00$");
 			System.out.println("Es cliente afiliado Si/No");
 			tipoCliente = entrada.next();
-				if(tipoCliente=="S" || tipoCliente=="s") {
+				if(tipoCliente.equals("Si") || tipoCliente.equals("si")) {
 					System.out.println("El precio de afiliado es de 46.00$");
 					
-				}else if(tipoCliente=="N" || tipoCliente=="n") {
+				}else if(tipoCliente.equals("No") || tipoCliente.equals("no")) {
 					System.out.println("El precio de no afiliado es de 50.00");
 
 				}	
