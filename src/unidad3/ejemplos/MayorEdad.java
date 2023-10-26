@@ -20,7 +20,7 @@ public class MayorEdad {
 				
 			}
 		}else if(edad==17){
-			System.out.println("Estas apunto de cumplir los 18");+
+			System.out.println("Estas apunto de cumplir los 18");
 			
 			
 			

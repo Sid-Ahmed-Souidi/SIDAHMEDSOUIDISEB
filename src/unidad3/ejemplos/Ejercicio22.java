@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class Ejercicio22 {
 
 	public static void main(String[] args) {
+		//realizar constantes "final double VALOR_HORA_A para como las 12.5 / "
 		int horas ;
 		double horasExtras;
 		double cobroDoble;
