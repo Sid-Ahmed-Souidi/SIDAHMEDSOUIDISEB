@@ -18,7 +18,7 @@ public class Ejercicio26 {
 		tipoBrocha = entrada.nextLine();
 		System.out.println("Introduzca la cantidad de brochas que deseas comprar");
 		cantidadBrochas= entrada.nextInt();
-		
+		//corregirlo ya que se debe pedir todas las brochas.
 		if(tipoBrocha.equals("cerda")) {
 			
 			precioDescuento =  20 - ((20 * 20) / 100);
@@ -49,7 +49,8 @@ public class Ejercicio26 {
 			}else if(formaPago == 2) {
 				System.out.println("Su forma de pago va a ser a credito por lo tanto no tiene descuento del 7%  :"+precioBrocha);
 				
-				
+	
+				 
 			}
 			
 		}else if(tipoBrocha.equals("sellador")) {
