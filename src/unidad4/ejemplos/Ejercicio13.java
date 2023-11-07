@@ -29,7 +29,7 @@ public class Ejercicio13 {
 		 int contador = 1;
 		System.out.println("Años             Valores Futuros");
 		while( anyo > 0) {
-		ValorFuturo1 = monto *(Math.pow(1 + interes ,contador));
+		ValorFuturo1 = monto *((Math.pow(1 + interes ,contador)));
 		 DecimalFormat df = new DecimalFormat("#.00");
 		System.out.println(contador+"             "+df.format(ValorFuturo1));
 		contador++;
