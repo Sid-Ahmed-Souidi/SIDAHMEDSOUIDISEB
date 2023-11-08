@@ -30,7 +30,9 @@ public class Ejercicio20 {
 			System.out.println("-----MENU-------");
 			System.out.println("1.Circunferencia");
 			System.out.println("2.Área");
-			System.out.println("3.Salir ");
+			System.out.println("3.Volumen");
+			System.out.println("4.Todas");
+			System.out.println("5.Salir ");
 			opcion = entrada.nextInt();	
 			
 			if(opcion==1) {
@@ -44,8 +46,21 @@ public class Ejercicio20 {
 				
 				
 			}else if(opcion==3) {
+				pedirRadio();
+				System.out.println("Calculo del volumen es :"+volumen(radio));
+			
+			}else if(opcion==4) {
+				pedirRadio();
+				System.out.println("Ha seleccionado todas las operaciones");
+				System.out.println("Calculo de la  circunferencia  es :"+circunferencia(radio));
+				System.out.println("Calculo del area es :"+area(radio)); 
+				System.out.println("Calculo del volumen es :"+volumen(radio));
+
+			}else if(opcion==5) {
 				System.out.println("Ha seleccionado salir.");
+			
 			}
+			
 
 		}while(opcion!=3);
 		
@@ -60,6 +75,12 @@ public class Ejercicio20 {
 	public static double area(double radio) {
 		double area = PI * Math.pow(radio, 2);  
 		return area ;
+		
+	}
+	// funcion volumen 
+	public static double volumen(double radio) {
+		double volumen = (4.0 / 3.0) * PI * Math.pow(radio, 3) ;
+		return volumen;
 		
 	}
 	
