@@ -20,8 +20,8 @@ public class Ejercicio7 {
 	public static int [] revertirMatriz(int [] matriz) {
 		 int contador = 0;
 		 int contador2 = 0;
-		 nuevaMatriz = new int[matriz.length];
-	while(contador < matriz.length) {	 
+		 nuevaMatriz = new int[matriz.length];// le damos el numero de las posiciones de la arrat original
+	while(contador < matriz.length) { //aqui mientras el contador sea menor que el numero de las posiciones del la matriz original	 
 		
 		for(int i = 0 ; i < matriz.length; i++) {
 			if(matriz[i]==  matriz.length- contador)
