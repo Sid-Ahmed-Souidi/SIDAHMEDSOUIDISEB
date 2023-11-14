@@ -7,11 +7,8 @@ public class CalularFactorial {
 		int resultado = calcularFactorial(numero);
 		System.out.println("El factorial de "+numero+"es: "+resultado);
 				
-		
 	}
 
-	
-	
 	
 	private static int calcularFactorial(int numero) {
 		int resultado;
