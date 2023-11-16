@@ -9,6 +9,7 @@ public class NuevoEnteros {
 	static Scanner entrada = new Scanner(System.in);
 	
 	public static void main(String[] args) {
+		//EJERCICIO10
  //Escriba una aplicación que almacene nueve enteros en un array. Muestre el primer y último entero 
  //y luego visualice los enteros del último al primero. Guarde el archivo como NuevoEnteros.java
 		
