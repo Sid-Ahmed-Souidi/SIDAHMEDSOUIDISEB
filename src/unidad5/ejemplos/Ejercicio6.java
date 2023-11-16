@@ -10,26 +10,26 @@ public class Ejercicio6 {
 		System.out.println("Valor minimo de la matriz");
 		System.out.println(valorMinimoMatriz(matriz));
 	}
-	
+
 	public static int valorMaximoMatriz(int [] matriz) {
 		int mayor = 0 ;
-		for(int i = 0 ; i< matriz.length ; i++) { // creamos un bucle for para iterar todos los elementos de la matriz
-			if(matriz[i]> mayor) { // aqui comparamos cada elemento  con la variable mayor que empieza con cero  
-				mayor = matriz[i]; // y aqui si pasa la condicion pues la variable mayor que su valor por defecto es cero pasa a  valer el valor del elemento 
+		for (int element : matriz) { // creamos un bucle for para iterar todos los elementos de la matriz
+			if(element> mayor) { // aqui comparamos cada elemento  con la variable mayor que empieza con cero
+				mayor = element; // y aqui si pasa la condicion pues la variable mayor que su valor por defecto es cero pasa a  valer el valor del elemento
 			}
-			
+
 		}return mayor ;
-		
+
 	}
 	public static int valorMinimoMatriz(int [] matriz) {
 		int minimo = 1000;
-		for(int i = 0 ; i< matriz.length ; i++) { // creamos un bucle for para iterar todos los elementos de la matriz
-			if(matriz[i] < minimo) { // aqui comparamos cada elemento  con la variable mayor que empieza con cero  
-				minimo = matriz[i]; // y aqui si pasa la condicion pues la variable mayor que su valor por defecto es cero pasa a  valer el valor del elemento 
+		for (int element : matriz) { // creamos un bucle for para iterar todos los elementos de la matriz
+			if(element < minimo) { // aqui comparamos cada elemento  con la variable mayor que empieza con cero
+				minimo = element; // y aqui si pasa la condicion pues la variable mayor que su valor por defecto es cero pasa a  valer el valor del elemento
 			}
-			
+
 		}return minimo ;
-		
-		
+
+
 	}
 }

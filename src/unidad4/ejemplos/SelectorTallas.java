@@ -3,7 +3,7 @@ package unidad4.ejemplos;
 import java.util.Scanner;
 
 public class SelectorTallas {
-	
+
 	public static void main(String[] args) {
 
 		int numeroTalla = 0;

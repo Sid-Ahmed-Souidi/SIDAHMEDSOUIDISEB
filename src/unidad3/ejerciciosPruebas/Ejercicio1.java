@@ -19,13 +19,13 @@ public class Ejercicio1 {
 			System.out.println("Introduzca el numero");
 			numeroPositivo = entrada.nextInt();
 			//contador += numeroPositivo;
-			
-			
-			
+
+
+
 		}
 		System.out.println("Total de la suma de los numeros positivos"+contador);
-		
-		
+
+
 	}
 
 }

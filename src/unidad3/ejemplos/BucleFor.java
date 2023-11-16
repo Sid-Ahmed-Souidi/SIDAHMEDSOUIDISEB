@@ -8,12 +8,12 @@ public class BucleFor {
 			System.out.println("Valor I:"+i+"Buenos dias !!");
 			for(int j = 2 ; j < 6;j++) {
 					System.out.println("Valor J:"+i+"Estamos en  programacion !!");
-				
-				
-				
+
+
+
 			}
-			
-		} 
+
+		}
 	}
 
 }

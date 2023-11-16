@@ -15,16 +15,16 @@ public class Ejercicio12 {
 		return area;
 	}
 	public static void main(String[] args) {
-		Scanner entrada = new Scanner(System.in); 
+		Scanner entrada = new Scanner(System.in);
 		System.out.println("Introduce el area del lado 1");
 		double lado1 = entrada.nextDouble();
 		System.out.println("Introduce el area del lado 2");
 		double lado2 = entrada.nextDouble();
 		System.out.println("Introduce el area del lado 3");
 		double lado3 = entrada.nextDouble();
-		
+
 		System.out.println("El area del triangulo es "+areaTriangulo(lado1,lado2,lado3));
-		
+
 	}
 
 }

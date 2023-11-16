@@ -9,20 +9,20 @@ public class Ejercicio14 {
 		char  C = 'A';
 		double suma ;
 		double diferencia ;
-		
+
 		suma = N + A ;
 		System.out.println("La suma entre N y A es;"+suma);
 		diferencia = A - N ;
 		System.out.println("La diferencia de A y N es;"+diferencia);
-		
+
 		System.out.println("El valor numerico de 'e' es;"+caracter);
-		
-		
-		
-		
-		
-		
-		
+
+
+
+
+
+
+
 	}
 
 }

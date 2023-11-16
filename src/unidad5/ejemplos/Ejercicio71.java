@@ -13,18 +13,18 @@ public class Ejercicio71 {
 
        //System.out.println(Arrays.toString(revertirMatriz(matriz)));
 		//revertirMatriz(matriz);
-		
+
 	}
-	
+
 	public static int [] revertirMatriz(int [] matriz) {
 	    int[] nuevaMatriz = new int[matriz.length];
 
-		for(int i = matriz.length -1, j = 0 ; i >= 0 ; i -- , j++) { // El menos uno (matriz.length -1) es para sacar el ultimo elemento de la array   
+		for(int i = matriz.length -1, j = 0 ; i >= 0 ; i -- , j++) { // El menos uno (matriz.length -1) es para sacar el ultimo elemento de la array
 			nuevaMatriz[j] = matriz[i];
 		}
-		
+
 		return nuevaMatriz;
-		
+
 	}
 
 }

@@ -6,11 +6,11 @@ public class Ejercicio12 {
 
 	public static void main(String[] args) {
 		Scanner entrada = new Scanner(System.in);
-		
+
 		double tornillo ;
 		System.out.println("Introduzca el tamaño del tornillo");
 		tornillo = entrada.nextDouble();
-		
+
 		if(tornillo>= 1 && tornillo < 3) {
 			System.out.println("PEQUEÑO");
 		}else if(tornillo>= 3 && tornillo < 5) {
@@ -20,9 +20,9 @@ public class Ejercicio12 {
 		}else if(tornillo>= 6.5 && tornillo < 8.5) {
 			System.out.println("MUY GRANDE");
 		}
-		
-		
-		
+
+
+
 	}
 
 }

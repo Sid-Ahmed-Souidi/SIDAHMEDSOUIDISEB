@@ -10,15 +10,15 @@ public class Ejercicio13 {
 		y determine si la fecha corresponde a un valor válido.
 		Pista: se debe tener presente el valor de los días en función
 		de los meses y de los años. Es decir:
-		Los meses 1, 3, 5, 7, 8, 10 y 12 tienen 31 días. 	
-		Los meses 4, 6, 9 y 11 tienen 30 días. 	
+		Los meses 1, 3, 5, 7, 8, 10 y 12 tienen 31 días.
+		Los meses 4, 6, 9 y 11 tienen 30 días.
 		El mes 2 tiene 28 días, excepto cuando el año es divisible por 4,
 		 que tiene 29 días.*/
-		
+
 		int anyo;
 		int mes;
 		int dia;
-		
+
 		Scanner entrada = new Scanner(System.in);
 		System.out.println("Introduzca un dia");
 		dia = entrada.nextInt();
@@ -26,7 +26,7 @@ public class Ejercicio13 {
 		mes = entrada.nextInt();
 		System.out.println("Introduzca un año");
 		anyo = entrada.nextInt();
-		
+
 		switch(dia) {
 		case 1 :
 		case 3 :
@@ -34,9 +34,9 @@ public class Ejercicio13 {
 		case 7 :
 		case 8 :
 		case 10 :
-		case 12 : 
+		case 12 :
 			if(dia>0 && dia <=31) {
-			System.out.println("La fecha"+dia+"/"+mes+"/"+anyo+" es valida");	
+			System.out.println("La fecha"+dia+"/"+mes+"/"+anyo+" es valida");
 			}
 			break;
 		case 2 :
@@ -52,8 +52,8 @@ public class Ejercicio13 {
 			break;
 		default:
 			System.out.println("La fecha"+dia+"/"+mes+"/"+anyo+"  NO es valida");
-		
-		
+
+
 	}
 
  }

@@ -3,7 +3,7 @@ package unidad2.ejemplos;
 public class Ejercicio16 {
 
 	public static void main(String[] args) {
-	
+
 	int A = 1;
 	int B = 2;
 	int C = 3;
@@ -30,7 +30,7 @@ public class Ejercicio16 {
 	System.out.println("D="+D);
 
 
-	
+
 	}
 
 }

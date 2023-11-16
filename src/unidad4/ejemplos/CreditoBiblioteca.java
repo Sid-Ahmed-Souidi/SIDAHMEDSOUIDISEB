@@ -10,15 +10,15 @@ public class CreditoBiblioteca {
 		String alumno = entrada.next();
 		System.out.println("Introduzca la nota media de sus calificaciones");
 		double  nota = entrada.nextDouble();
-		
+
 		calcularCredito(alumno,nota);
-			
+
 	}
-	
+
 public static void calcularCredito(String alumno , double nota) {
-	double credito = nota * 10 ; 
+	double credito = nota * 10 ;
 	System.out.println("EL alumno "+alumno+" con una calificación de "+nota+" recibe un credito de "+credito+"euros");
-	
+
 }
 
 }

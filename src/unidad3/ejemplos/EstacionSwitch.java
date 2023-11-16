@@ -7,13 +7,13 @@ public class EstacionSwitch {
 	public static void main(String[] args) {
 
 		int mes;
-		Scanner entrada = new Scanner(System.in); 
+		Scanner entrada = new Scanner(System.in);
 		System.out.println("Introduzca un mes");
 		mes = entrada.nextInt();
-		
+
 		switch(mes) {
 		case 1 :
-		case 2 :	
+		case 2 :
 		case 12 :
 			System.out.println("Es invierno");
 			break;
@@ -34,12 +34,12 @@ public class EstacionSwitch {
 			break;
 		default:
 			System.out.println("El numero no es valido");
-		
-		
-		
-		
+
+
+
+
 	}
 
 	}
-	
+
 }

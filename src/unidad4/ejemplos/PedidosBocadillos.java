@@ -26,10 +26,10 @@ public class PedidosBocadillos {
 			contadorC++;
 		}else if(seleccion=='d') {
 			contadorD++;
-		}	
+		}
 
-		
-	} 
+
+	}
 	//MOSTRAR TOTALES
 
 	public static double precioTotal(char  seleccion) {
@@ -40,12 +40,12 @@ public class PedidosBocadillos {
 		 double PrecioT = precioJamon+precioQueso+precioMixto+precioVegetal;
 		 return PrecioT;
 
-	}	
+	}
 
 	public static void main(String[] args) {
 		Scanner entrada = new Scanner(System.in);
 		char seleccion ;
-		
+
 		do{
 			System.out.println("----Menu-Bocadillos-----");
 			System.out.println("a.Bocadillo de Jamón");
@@ -54,24 +54,24 @@ public class PedidosBocadillos {
 			System.out.println("d.Bocadillo de vegetal");
 			System.out.println("e.Salir");
 			seleccion = entrada.next().charAt(0);
-			
+
 			if(seleccion=='a') {
 				contadorBocadillo(seleccion);
-				
-				
+
+
 			}
 			else if(seleccion=='b') {
 				contadorBocadillo(seleccion);
-				
-				
+
+
 			}else if(seleccion=='c') {
 				contadorBocadillo(seleccion);
-				
-				
+
+
 			}else if (seleccion=='e') {
 				System.out.println("Cerramos");
 			}
-				
+
 
 		}while(seleccion!='e');{
 			System.out.println("Numero Bocadillos de Jamon es de:"+contadorA);
@@ -79,15 +79,15 @@ public class PedidosBocadillos {
 			System.out.println("Numero Bocadillos de Mixto es de:"+contadorC);
 			System.out.println("Numero Bocadillos de Vegetal es de:"+contadorD);
 			System.out.println("Precio Total es :"+precioTotal(seleccion));
-	
+
 		}
-		
-		
-	
-		
-	
-		
-		
+
+
+
+
+
+
+
 	}
 
 }

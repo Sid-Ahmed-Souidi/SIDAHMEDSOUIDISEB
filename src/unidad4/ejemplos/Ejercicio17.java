@@ -4,24 +4,24 @@ import java.util.Scanner;
 
 
 public class Ejercicio17 {
-	
+
 		final static int numerosDNI = 23;
-		
+
 
 		public static void main(String[] args) {
-		
-		Scanner entrada = new Scanner(System.in); 
+
+		Scanner entrada = new Scanner(System.in);
 		System.out.println("Introduce el DNI");
 		 int DNI = entrada.nextInt();
-		 
+
 		 letraDNI(DNI,numerosDNI);
-		
-		
+
+
 	}
-		
+
 		public static void  letraDNI(int DNI ,   int numerosDNI) {
 		int	resto = DNI % numerosDNI;
-		
+
 		if(resto==0) {
 			System.out.println("T");
 		}else if(resto==1) {
@@ -70,15 +70,15 @@ public class Ejercicio17 {
 			System.out.println("E");
 		}else {
 			System.out.println("Introduce el DNI Correcto ");
-			
+
 		}
-			
-			
-			
+
+
+
 		}
-		
-		
-			
+
+
+
 		}
 
 

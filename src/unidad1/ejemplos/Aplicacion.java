@@ -4,9 +4,9 @@ public class Aplicacion {
 
 	public static void main(String[] args) {
 		// comentario
-		
+
 		/**
-		 * Este es el programa para iniciar 
+		 * Este es el programa para iniciar
 		 */
 		System.out.println("Empezamos a programar en java ");
 		System.out.println("Ciclo: desarrollo de aplicaciones web");
@@ -14,6 +14,6 @@ public class Aplicacion {
 		System.out.println("Modulo de programacion");
 
 	}
-	
-      
+
+
 }

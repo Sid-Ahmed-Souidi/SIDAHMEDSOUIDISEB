@@ -8,18 +8,18 @@ public class Ejercicio13 {
 	public static void main(String[] args) {
 		Scanner entrada = new Scanner(System.in);
 		double monto ;
-		double interes ; 
-		int anyo ; 
-		
+		double interes ;
+		int anyo ;
+
 		System.out.println("Ingresar el monto de la inversión :");
 		monto = entrada.nextDouble();
 		System.out.println("Ingresar la tasa de interes :");
 		interes = entrada.nextDouble();
 		System.out.println("Ingresar el monto de la inversión :");
 		anyo = entrada.nextInt();
-		
+
 		inversionFutura(monto,interes,anyo);
-		
+
 
 	}
 	//Calcular el valor de la inversion futura.
@@ -35,8 +35,8 @@ public class Ejercicio13 {
 		contador++;
 		anyo--;
 		}
-	
 
-    } 
-	
+
+    }
+
 }

@@ -5,12 +5,12 @@ import java.util.Scanner;
 public class DiaSemanaSwitch {
 
 	public static void main(String[] args) {
-		
+
 		int dia;
-		Scanner entrada = new Scanner(System.in); 
+		Scanner entrada = new Scanner(System.in);
 		System.out.println("Introduzca el dia de la semana");
 		dia = entrada.nextInt();
-		
+
 		switch(dia) {
 		case 1 :
 			System.out.println("Es lunes");
@@ -35,17 +35,17 @@ public class DiaSemanaSwitch {
 			break;
 		default:
 			System.out.println("El numero no es valido");
-		
-		
-		
-		
+
+
+
+
 		}
-		
-		
+
+
 	}
 
-	
-	
-	
-	
+
+
+
+
 }

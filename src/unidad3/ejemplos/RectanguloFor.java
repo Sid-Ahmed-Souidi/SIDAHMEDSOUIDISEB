@@ -12,7 +12,7 @@ public class RectanguloFor {
 			}
 			System.out.println(1);
 		}
-		
+
 	}
-	
+
 }

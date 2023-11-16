@@ -12,7 +12,7 @@ public class Recursividad {
 		saludar(numVeces);
 		System.out.println("Saludo con recursividad");
 		saludarRecursivamente(numVeces);
-		
+
 	}
 	private static void saludar(int veces) {
 		for(int i=0;i<veces;i++) {
@@ -20,17 +20,17 @@ public class Recursividad {
 		}
 	}
 
-	
+
 	private static void saludarRecursivamente(int veces) {
-		
+
 		if(veces>0) {
 			System.out.println("Hola");
 			saludarRecursivamente(veces-1);
 		}
-		
+
 	}
-	
-	
-	
-	
+
+
+
+
 }

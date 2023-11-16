@@ -20,10 +20,10 @@ public class Ejercicio15 {
 		System.out.println(precioConIVA(precio));
 		System.out.println("Calculo de IVA del quinto precio");
 		pedirNumero();
-		System.out.println(precioConIVA(precio));	
+		System.out.println(precioConIVA(precio));
 	}
-	
-	//FUNCIONES 
+
+	//FUNCIONES
 	// funcion para pedir numero :
 	public static double pedirNumero() {
 		Scanner entrada = new Scanner(System.in);
@@ -34,12 +34,12 @@ public class Ejercicio15 {
 	//funcion para calcular el IVA :
 	public static double precioConIVA( double precio) {
 	double IVA ;
-	double precioConIVA ;	
+	double precioConIVA ;
 		IVA = (precio * 21) / 100 ;
 		precioConIVA = precio + IVA ;
 		return precioConIVA ;
 	}
-	
-	
+
+
 
 }

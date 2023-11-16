@@ -8,21 +8,21 @@ public class Ejercicio4 {
 	//	b) tu nota final en esta clase.
 	//	   notaFinal
     //	c) la población de la tierra.
-	//	   poblacionTotal 
+	//	   poblacionTotal
 	//	d) la población de una provincia de España.
-	//	  PoblacionProvincia 
+	//	  PoblacionProvincia
 	//	e) la cantidad de pasajeros en un autobús.
-	//	   cantidadPasajeros 
+	//	   cantidadPasajeros
 	//	f)  la puntuación de un jugador en un juego de Baloncesto.
-	//	   totalPuntos 
+	//	   totalPuntos
 	//	g) El precio de un artículo de un supermercado.
-	//	    precioArticulo 
+	//	    precioArticulo
 	//	h) El año en que ocurrió un evento histórico.
-	//	    fechaEvento 
+	//	    fechaEvento
 	//	i)  La cantidad de patas en un animal.
-	//	    patasAnimal 
+	//	    patasAnimal
 	//	j)  El precio de un automóvil.
-	//	     precioCoche  
+	//	     precioCoche
 	}
 
 }

@@ -4,15 +4,15 @@ public class VariablesyTipos {
 
 	public static void main(String[] args) {
 		//nombre de variables y tipos de datos
-		
+
 		//DATOS DEL PROPIETARIO
 		String dni="98739453H"; //Almacena el numero+letra
 		System.out.println("Dni:"+dni);
 		String nombrePropietario;
-		String direccion; 
+		String direccion;
 		String telefono; // +34 ..
 		String cp;
-		//DATOS DEL ANIMAL 
+		//DATOS DEL ANIMAL
 		long id;
 		String nombreAnimal;
 		char sexo;
@@ -24,17 +24,17 @@ public class VariablesyTipos {
 		boolean estaVacunado;
 		float peso;
 		boolean estaCastrado;
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+
+
+
+
+
+
+
+
+
+
+
 	}
 
 }
