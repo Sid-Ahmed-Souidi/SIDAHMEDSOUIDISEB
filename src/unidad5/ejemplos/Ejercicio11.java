@@ -7,15 +7,14 @@ public class Ejercicio11 {
 	
 	 static int N = 0;
 	 static String M ;
-	 static String [] matriz;
+	 static String [] matriz = {};
 	static Scanner entrada = new Scanner(System.in);
 	
 	public static void main(String[] args) {
-		
 		pedirN();
-		pedirM();		
-	     System.out.println(Arrays.toString(tamañoN(matriz , N)));
-	     System.out.println(Arrays.toString(escribirM(matriz , M)));
+		pedirM();
+		tamañoN();
+        escribirM();
 		
 	}
 	
@@ -28,22 +27,22 @@ public class Ejercicio11 {
 	
 	}
 	public static String pedirM() {
-		System.out.println("Introduzca el que escriba en la array");
-		M = entrada.nextLine();
+		System.out.println("Introduzca el caracter que se escriba en la array");
+		M = entrada.next();
+		
 		return M;
 	}
-	public static String [] tamañoN(String[] matriz , int N) {
-		
+	public static void tamañoN() {
 		matriz = new String[N];
-		return matriz;
+		
 	}
 	
-	public static String [] escribirM(String[] matriz , String M) {
-		
+	public static void escribirM() {
 		for(int i = 0 ; i < matriz.length ; i++) {
-			matriz[i] = matriz[i]+M;
+			matriz[i] = M;
+			System.out.println(matriz[i]);
 			
-		}return matriz;
+		}
 		
 	}
 	
