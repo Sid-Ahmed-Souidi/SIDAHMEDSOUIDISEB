@@ -3,7 +3,7 @@ package unidad4.ejemplos;
 import java.util.Scanner;
 
 public class Ejercicio24 {
-
+  // esto estoy escribiendolo para modificar el git hub
 	static int  numPisos ;
 	static int habitaciones;
 	static int ocupadas ;
