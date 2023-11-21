@@ -44,7 +44,7 @@ public class Ejercicio24 {
 	}
 	public static int habitacionesVacantes() {
 		int vacantes = habitaciones - ocupadas ;
-		System.out.println("El numero de habitaciones vacantes es :"+vacantes);
+		System.out.println("El numero de habitaciones vacantes del piso es :"+vacantes);
 		habitacionesVacantesT += vacantes;
 		return vacantes;
 
