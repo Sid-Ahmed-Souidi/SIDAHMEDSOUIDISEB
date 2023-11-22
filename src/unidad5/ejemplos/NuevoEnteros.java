@@ -48,6 +48,8 @@ public class NuevoEnteros {
 			System.out.println("El primer numero de la array es :" +array[i]);
 			break;
 		}
+		
+
 	}
 
 	public static void visualizarUltimoNumero(int []  array) {
