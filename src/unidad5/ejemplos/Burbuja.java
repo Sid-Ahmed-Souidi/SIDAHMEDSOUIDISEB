@@ -7,7 +7,7 @@ public class Burbuja {
 		System.out.println("Array sin ordenar");
 
 		mostrarArreglo(arreglo);
-		System.out.println("Array ordenado");
+		System.out.println("\n Array ordenado");
 		ordenarBurbuja(arreglo);
 		
 	}
@@ -25,7 +25,9 @@ public class Burbuja {
 			}
 			
 		}
-		
+			for(int elemento:arreglo) {
+				System.out.print(elemento+" ");
+			}
 	}
 
 	private static void mostrarArreglo(int [] arreglo) {
