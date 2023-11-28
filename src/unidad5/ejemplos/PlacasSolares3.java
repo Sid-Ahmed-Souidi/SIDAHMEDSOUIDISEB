@@ -8,7 +8,7 @@ public class PlacasSolares3 {
 	
 	static Scanner entrada = new Scanner(System.in);
 
-	static int NUMFILAS ;
+	static int  NUMFILAS ;
 	static int NUMCOLUMNAS = 6 ;
 	static String identificador;
 	static String coordenadaX;
