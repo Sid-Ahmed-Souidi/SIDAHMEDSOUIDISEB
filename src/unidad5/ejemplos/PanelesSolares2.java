@@ -7,7 +7,7 @@ public class PanelesSolares2 {
 	static Scanner entrada = new Scanner(System.in);
 
 	
-	static int NUMFILAS = 0;
+	static int NUMFILAS ;
 	static int NUMCOLUMNAS = 6 ;
 	static String identificador;
 	static String coordenadaX;
@@ -98,7 +98,7 @@ public class PanelesSolares2 {
 	
 	private static void añadirDatos() {
 		for(int i = 0 ; i < placas.length ; i++ ) {
-			for(int j = 0 ; j < placas[0].length; j++) {
+			for(int j = 0 ; j < placas[i].length; j++) {
 				System.out.println("----- Nueva placa ------");
 				System.out.println("Identificación:");
 				identificador = entrada.next();
