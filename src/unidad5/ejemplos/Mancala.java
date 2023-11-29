@@ -2,6 +2,8 @@ package unidad5.ejemplos;
 
 import java.util.Scanner;
 
+import javax.annotation.processing.SupportedSourceVersion;
+
 public class Mancala {
 
 	
@@ -25,6 +27,7 @@ public class Mancala {
 			if(jugadorSiguiente==usuario1) {
 				pedirJugada(usuario1);
 				jugadorSiguiente=usuario2;
+				imprimirTablero();
 				}else {
 					pedirJugada(usuario2);
 					jugadorSiguiente=usuario1;
@@ -41,11 +44,84 @@ public class Mancala {
 		
 	}
 
-	private static void pedirJugada(String usuario) {
+	
+	
+	
+	
+	
+	private static void pedirJugada(String jugador) {
+		System.out.println(jugador+"- Deme una casilla: ");
+		boolean coordenadaCorrecta = false;
+		int fila = 0;
+		
+		fila = pediCoordenada(jugador, fila, fila);
+		System.out.println("Fila(1-2):");
+
+		do {
+			fila = entrada.nextInt();
+			if(fila < 1 || fila >2) {
+				System.out.println("Error en la fila .Deme otra coordenada");
+			}else {
+				coordenadaCorrecta=true;
+			}
+			
+			
+		}while(!coordenadaCorrecta);
+		
+		coordenadaCorrecta = true;
+		
+		int columna = 0;
+		System.out.println("Columna(1-8):");
+		do {
+			columna = entrada.nextInt();
+			if(columna < 1 || columna >8) {
+				System.out.println("Error en la fila .Deme otra coordenada(1-8) : ");
+			}else {
+				coordenadaCorrecta=true;
+			}
+			
+			
+		}while(!coordenadaCorrecta);
+	
+		obtenerContenidoCasilla(fila,columna);
+		
 		
 		
 		
 	}
+
+	private static int pediCoordenada(String nombre , int limiteInferior , int limiteSuperior) {
+		
+		int coordenada= 0;
+		System.out.println(nombre+"("+limiteInferior+"-"+limiteSuperior+")");
+		do{
+			
+			coordenada = entrada.nextInt();
+			if(coordenada < limiteInferior || coordenada>limiteSuperior) {
+				System.out.println("Error en la "+nombre+".Deme otra coordenada("+limiteInferior+limiteSuperior);
+				
+			}
+			
+			
+		}
+		
+		
+	}
+
+
+
+
+
+
+	private static void obtenerContenidoCasilla(int fila, int columna) {
+		
+		
+	}
+
+
+
+
+
 
 	private static void imprimirTablero() {
 		for(int i = 0 ; i < NUM_FILAS ; i++) {
