@@ -87,9 +87,6 @@ do{
 						System.out.println("Su plaza de tipo "+tipo +"es selecionada por usted");
 						parking[i][j] = 'O';
 						noEncontrado = false;
-					}else {
-						System.out.println("Ha selecionado una plaza que esta ocupada o esta poniendo mal las posiciones");
-						noEncontrado = false;
 					}
 			
 		
