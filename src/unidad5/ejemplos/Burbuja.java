@@ -66,9 +66,9 @@ public class Burbuja {
 		for(int i=0;i<tam-1;i++) {
 			for(int j=0;j<tam-i-1;j++) {
 				if(arreglo[j]>arreglo[j+1]) {
-					tmp = arreglo[j];
-					arreglo[j]=arreglo[j+1];
-					arreglo[j+1]=tmp;
+					tmp = arreglo[j]; // creamos una variable temporal donde almacenamos el valor mayor 
+					arreglo[j]=arreglo[j+1]; // la variable mayor la cambiamos a la variable menor 
+					arreglo[j+1]=tmp; //y la variable menor pasa le pasamos la variable temporal que tiene dentro suya la variable mayor
 					
 				}
 			}

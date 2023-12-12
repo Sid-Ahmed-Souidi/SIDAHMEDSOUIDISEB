@@ -17,7 +17,6 @@ public class Parking {
 	
 		
 		iniciarParking();
-		System.out.println("Tipos de Parking");
 		iniciarTipoParking();
 
 		
@@ -25,6 +24,12 @@ do{
 			System.out.println("1.Mostrar Parking");
 			System.out.println("2.Ocupar Parking");
 			System.out.println("3.Liberar Parking");
+			System.out.println("----------------");
+			System.out.println("Tipos de Parking");
+			System.out.println("D = discapacitados");
+			System.out.println("F = familiares");
+			System.out.println("E = electricos");
+			System.out.println(" ");
 		 	opcion = entrada.nextInt();
 
 			
@@ -32,11 +37,21 @@ do{
 		
 			case 1:
 				mostrarParking();
+				System.out.println(" ");
+				System.out.println("Tipos de Parking");
+				System.out.println("D = discapacitados");
+				System.out.println("F = familiares");
+				System.out.println("E = electricos");
+				System.out.println(" ");
+
 				mostrarTipoParking();
 
 				break;
 			case 2 :
-				ocuparPlaza();
+				tipoPlaza();
+				//ocuparPlaza();
+				
+
 				
 				break;
 			case 3 :	
@@ -50,6 +65,36 @@ do{
 			
 			
 		}while(opcion!=4);
+	}
+	private static void tipoPlaza() {
+			System.out.println("Parking");
+			mostrarParking();
+			System.out.println("Tipos de Parking");
+			mostrarTipoParking();
+			System.out.println("Indica el tipo de plaza");
+			System.out.println("D = discapacitados");
+			System.out.println("F = familiares");
+			System.out.println("E = electricos");
+			char tipo = entrada.next().charAt(0);
+			System.out.println("Indica la fila");
+			int fila = entrada.nextInt();
+			System.out.println("Indica la columna");
+			int columna = entrada.nextInt();
+			boolean noEncontrado = true;
+			for(int i = 0 ; i < FILAS && noEncontrado ; i++) {
+				for(int j = 0 ; j < COLUMNAS && noEncontrado ; j++) {
+					if(tipoParking[i][j] == tipo && parking[i][j] == 'L' && i == (fila - 1) && j == (columna - 1)) {
+						System.out.println("Su plaza de tipo "+tipo +"es selecionada por usted");
+						parking[i][j] = 'O';
+						noEncontrado = false;
+					}else {
+						System.out.println("Ha selecionado una plaza que esta ocupada o esta poniendo mal las posiciones");
+						noEncontrado = false;
+					}
+			
+		
+				}
+			}
 	}
 	private static void iniciarTipoParking() {
 		for(int i = 0 ; i < FILAS ; i++) {
