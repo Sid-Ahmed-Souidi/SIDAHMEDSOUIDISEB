@@ -11,7 +11,7 @@ public class BusquedaLineal {
 		if(posicion==-1) {
 			System.out.println("Elemento no encontrado en el array");
 		}else {
-			System.out.println("El elemento se encuentra en"+"posición :"+posicion+1);
+			System.out.println("El elemento se encuentra en"+"posición :"+(posicion+1));
 		}
 	}
 

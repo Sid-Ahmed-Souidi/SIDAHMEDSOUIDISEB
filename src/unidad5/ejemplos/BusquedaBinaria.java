@@ -5,9 +5,11 @@ public class BusquedaBinaria {
 	public static void main(String[] args) {
 		int arr [] = {2,11,22,34,49,51,64,78,86,90};
 		int resultado = -1;
-		int elementoBuscado = Integer.parseInt(args [0]);
+		int elementoBuscado = 90;
 		
 		System.out.println("Array");
+		imprimirArray(arr);
+		System.out.println(" ");
 		resultado = buscarBinario(arr,elementoBuscado);
 		
 		if(resultado==-1) {
