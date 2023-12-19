@@ -8,9 +8,71 @@ public class Bicicleta {
 	private String color= "Sin color";
 	private int id = 0;
 	private int tipo = 0;
+	private int peso = 0;
+	private int talla = 0;
 	
 	
 	
+	public String getModelo() {
+		return modelo;
+	}
+
+
+	public void setModelo(String modelo) {
+		this.modelo = modelo;
+	}
+
+
+	public String getColor() {
+		return color;
+	}
+
+
+	public void setColor(String color) {
+		this.color = color;
+	}
+
+
+	public int getId() {
+		return id;
+	}
+
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+
+	public int getTipo() {
+		return tipo;
+	}
+
+
+	public void setTipo(int tipo) {
+		this.tipo = tipo;
+	}
+
+
+	public int getPeso() {
+		return peso;
+	}
+
+
+	public void setPeso(int peso) {
+		this.peso = peso;
+	}
+
+
+	public int getTalla() {
+		return talla;
+	}
+
+
+	public void setTalla(int talla) {
+		this.talla = talla;
+	}
+
+
 	public Bicicleta(int id , int tipo, String marca , String modelo, String color) {
 		this.id = id;
 		this.tipo = tipo;
