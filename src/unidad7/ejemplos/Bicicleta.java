@@ -3,6 +3,8 @@ package unidad7.ejemplos;
 
 public class Bicicleta {
 	
+	
+	// atributos de la clase 
 	private String marca="Sin marca";
 	private String modelo="Sin modelo";
 	private String color= "Sin color";
@@ -72,7 +74,7 @@ public class Bicicleta {
 		this.talla = talla;
 	}
 
-
+	//Constructor 
 	public Bicicleta(int id , int tipo, String marca , String modelo, String color) {
 		this.id = id;
 		this.tipo = tipo;

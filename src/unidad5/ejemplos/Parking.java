@@ -13,8 +13,6 @@ public class Parking {
 	static char [][] tipoParking = new char[FILAS][COLUMNAS];
 	static int opcion;
 	public static void main(String[] args) {
-
-	
 		
 		iniciarParking();
 		iniciarTipoParking();
@@ -50,9 +48,7 @@ do{
 			case 2 :
 				tipoPlaza();
 				//ocuparPlaza();
-				
-
-				
+			
 				break;
 			case 3 :	
 				liberarPlaza();
