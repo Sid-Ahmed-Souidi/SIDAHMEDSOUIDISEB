@@ -7,6 +7,21 @@ public class TarjetaBancaria {
 		public static Scanner entrada = new Scanner(System.in);
 		public static Random random = new Random();
 
+		
+		  private static final String[] entidades = {
+			        "Banco Santander", "BBVA ", "Banco Sabadell", "Bankia", "ING Direct", "Unicaja"
+			    };
+		  
+		  private static final String[] marcas = {
+			        "Visa", "MasterCard", "American Express", "Discover", "Diners Club", "JCB", "UnionPay", "Salama", "Vargas"
+			    };
+		  private static final String[] nombres = {
+			        "Juan", "Paco", "Pedro", "Mohamed", "Luis", "Sergio", "Carlos", "Samuel", "Miguel", "Elena"
+			    };
+
+		  private static final String[] apellidos = {
+			        "Garcia", "Lopez", "Rodriguez", "De Paz", "Martinez", "Flores", "Angustias", "Salama", "Vargas", "De la llave"
+			    };
 		// atributos , propiedades y miembros
 		private long numero;
 		private int cvv;
@@ -103,8 +118,7 @@ public class TarjetaBancaria {
 		
 
 		// funciones o metodos
-		
-		
+	
 		private static long numeroAleatorio() {
 			
 	        long numeroAleatorio = Math.abs(random.nextLong() % 10000000000000000L);
@@ -118,14 +132,7 @@ public class TarjetaBancaria {
 			return numeroAleatorio ; 
 			
 		}
-
-		  private static final String[] nombres = {
-			        "Juan", "Paco", "Pedro", "Mohamed", "Luis", "Sergio", "Carlos", "Samuel", "Miguel", "Elena"
-			    };
-
-		  private static final String[] apellidos = {
-			        "Garcia", "Lopez", "Rodriguez", "De Paz", "Martinez", "Flores", "Angustias", "Salama", "Vargas", "De la llave"
-			    };
+		
 		  public static String generarNombreAleatorio() {
 		        String nombreAleatorio = nombres[random.nextInt(nombres.length)];
 		        String apellidoAleatorio = apellidos[random.nextInt(apellidos.length)];
@@ -146,20 +153,12 @@ public class TarjetaBancaria {
 				 return valorEntero;
 		  
 		  }
-		  private static final String[] marcas = {
-			        "Visa", "MasterCard", "American Express", "Discover", "Diners Club", "JCB", "UnionPay", "Salama", "Vargas"
-			    };
-		  
 		  public static String generadorMarcas() {
 			  
 		      String marcaAleatoria = marcas[random.nextInt(marcas.length)];
 		      return marcaAleatoria;
 			  
 		  }
-		  private static final String[] entidades = {
-			        "Banco Santander", "BBVA ", "Banco Sabadell", "Bankia", "ING Direct", "Unicaja"
-			    };
-		  
 		  public static String generadorEntidades() {
 			  
 		      String entidadAleatoria = entidades[random.nextInt(entidades.length)];
@@ -167,14 +166,7 @@ public class TarjetaBancaria {
 			  
 		  }
 		  
-		//	private long numero;
-		//	private int cvv;
-		//	private String titular;
-		//	private int mes;
-			//private int anio;
-			//private String marca;
-			//private String entidad;
-		  
+		  // imprimir datos 
 		  public void imprimirDatos() {
 			  System.out.println("GENERADOR DE TARJERTAS DE CREDITO");
 			  System.out.println("                                 ");
