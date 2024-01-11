@@ -15,6 +15,8 @@ public class GeneradorAleatoriosMath {
 		//Se genera aleatorio entre 1 y 100
 		double numero3 = (int) (Math.random()*100+1);
 		System.out.println(numero3);		
+		
+
 	
 	}
 
