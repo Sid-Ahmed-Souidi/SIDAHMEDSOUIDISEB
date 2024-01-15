@@ -5,73 +5,74 @@ import java.time.LocalDate;
 public class TestCovid {
 	
 	// Atributos
-	private static String nombrePaciente ;
-	private static String resultado;
-	private static String fechaRealizacion;
-	private static String tipoDePrueba;
-	private static int numeroIde ;
-	private static String infoLaboratorio ;
-	private static String sintomas ;
-	private static String fechaEntrega;
-	private static String nombreMedico;
+	private  String nombrePaciente ;
+	private  String resultado;
+	private  LocalDate fechaRealizacion;
+	private  String tipoDePrueba;
+	private  int numeroIde ;
+	private  String infoLaboratorio ;
+	private  String sintomas ;
+	private  LocalDate fechaEntrega;
+	private  String nombreMedico;
 	
 	
 	
+	// preguntar la cual es mejor manera con instacias o estaticas 
+	// si usar el this a nivel de una variable particular o a estaticas a nivel de clase 
 	
-	
-	public static String getNombrePaciente() {
+	public  String getNombrePaciente() {
 		return nombrePaciente;
 	}
-	public static void setNombrePaciente(String nombrePaciente) {
-		TestCovid.nombrePaciente = nombrePaciente;
+	public  void setNombrePaciente(String nombrePaciente) {
+		this.nombrePaciente = nombrePaciente;
 	}
-	public static String getResultado() {
+	public  String getResultado() {
 		return resultado;
 	}
-	public static void setResultado(String resultado) {
-		TestCovid.resultado = resultado;
+	public  void setResultado(String resultado) {
+		this.resultado = resultado;
 	}
-	public static String getFechaRealizacion() {
+	public  LocalDate getFechaRealizacion() {
 		return fechaRealizacion;
 	}
-	public static void setFechaRealizacion(String fechaRealizacion) {
-		TestCovid.fechaRealizacion = fechaRealizacion;
+	public  void setFechaRealizacion(LocalDate fechaRealizacion) {
+		this.fechaRealizacion = fechaRealizacion;
 	}
-	public static String getTipoDePrueba() {
+	public  String getTipoDePrueba() {
 		return tipoDePrueba;
 	}
-	public static void setTipoDePrueba(String tipoDePrueba) {
-		TestCovid.tipoDePrueba = tipoDePrueba;
+	public  void setTipoDePrueba(String tipoDePrueba) {
+		this.tipoDePrueba = tipoDePrueba;
 	}
-	public static int getNumeroIde() {
+	public  int getNumeroIde() {
 		return numeroIde;
 	}
-	public static void setNumeroIde(int numeroIde) {
-		TestCovid.numeroIde = numeroIde;
+	public  void setNumeroIde(int numeroIde) {
+		this.numeroIde = numeroIde;
 	}
-	public static String getInfoLaboratorio() {
+	public  String getInfoLaboratorio() {
 		return infoLaboratorio;
 	}
-	public static void setInfoLaboratorio(String infoLaboratorio) {
-		TestCovid.infoLaboratorio = infoLaboratorio;
+	public  void setInfoLaboratorio(String infoLaboratorio) {
+		this.infoLaboratorio = infoLaboratorio;
 	}
-	public static String getSintomas() {
+	public  String getSintomas() {
 		return sintomas;
 	}
-	public static void setSintomas(String sintomas) {
-		TestCovid.sintomas = sintomas;
+	public  void setSintomas(String sintomas) {
+		this.sintomas = sintomas;
 	}
-	public static String getFechaEntrega() {
+	public  LocalDate getFechaEntrega() {
 		return fechaEntrega;
 	}
-	public static void setFechaEntrega(String fechaEntrega) {
-		TestCovid.fechaEntrega = fechaEntrega;
+	public  void setFechaEntrega(LocalDate fechaEntrega) {
+		this.fechaEntrega = fechaEntrega;
 	}
-	public static String getNombreMedico() {
+	public  String getNombreMedico() {
 		return nombreMedico;
 	}
-	public static void setNombreMedico(String nombreMedico) {
-		TestCovid.nombreMedico = nombreMedico;
+	public  void setNombreMedico(String nombreMedico) {
+		this.nombreMedico = nombreMedico;
 	}
 	
 	
