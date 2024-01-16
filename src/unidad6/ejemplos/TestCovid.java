@@ -4,6 +4,7 @@ import java.time.LocalDate;
 
 public class TestCovid {
 	
+	
 	// Atributos
 	private  String nombrePaciente ;
 	private  String resultado;
@@ -14,7 +15,6 @@ public class TestCovid {
 	private  String sintomas ;
 	private  LocalDate fechaEntrega;
 	private  String nombreMedico;
-	
 	
 	
 	// preguntar la cual es mejor manera con instacias o estaticas 
@@ -98,10 +98,6 @@ public class TestCovid {
 		System.out.println("Nombre del medico que inspeccionó el test :"+nombreMedico);
 
 
-		
-		
-		
-		
 	}
 	
 	
