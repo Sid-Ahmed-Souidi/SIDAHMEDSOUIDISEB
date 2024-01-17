@@ -6,6 +6,8 @@ public class BodegaVino {
 	private String tipoUva ;
 	private double arrobas;
 	private int litros;
+	private int media ;
+	private String mostrarDatos;
 	
 
 }
