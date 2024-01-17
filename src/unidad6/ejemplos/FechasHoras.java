@@ -69,6 +69,8 @@ public class FechasHoras {
 		 
 		 String fechaHoraCadena = fechaHoraRecreo.format(formatoFechaHora);
 		 
+		 
+		 	System.out.println("---------------------------------");
 		 System.out.println("Fecha y hora Recreo "+fechaHoraCadena);
 		 
 		 
