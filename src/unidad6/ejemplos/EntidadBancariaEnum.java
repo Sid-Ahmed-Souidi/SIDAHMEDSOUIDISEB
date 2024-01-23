@@ -3,7 +3,7 @@ package unidad6.ejemplos;
 public enum EntidadBancariaEnum {
 	
 	
-	DNI("76085597G") , FECHA("06/03/2001") , CLAVE(686123);
+	DNI("76085597G") , FECHA("06/03/2001") , CLAVE(686123) , PASAPORTE("");
 
 	private final String codigoDni;
 	private final String codigoFecha;
