@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class EntidadBancaria {
 
-	
+	public static int[] ocultar1 = new int[5];
 	public static int[] matriz = {1,2,3,4,5};
 	public static final String dni = "12345678V";
 	public static final String tarjetaBancaria = "1111222233334444";
@@ -17,13 +17,26 @@ public class EntidadBancaria {
 	public static Scanner entrada = new Scanner(System.in);
 	public static void main(String[] args) {
 		
+		
 		int numero1 = random.nextInt(9) +0;
-		System.out.println(numero1);
+		System.out.println("N1  ="+numero1);
 		int numero2 = random.nextInt(9) +0;
-		System.out.println(numero2);
-		do {
-		numero2 = random.nextInt(9) +0;
-		}while(numero1 != numero2);
+		System.out.println("n2 ="+numero2);
+		if(numero1 != numero2) {
+			
+			
+		}
+		if(numero1 == numero2) {
+			numero2 = random.nextInt(9) +0;
+			System.out.println(" n2if ="+numero2);
+		}
+		
+		 int numero3 = random.nextInt(9) +0;
+		 System.out.println("n3 ="+numero3);
+		 if(numero2 == numero3 || numero1 == numero3) {
+			 numero3 = random.nextInt(9) +0;
+			 System.out.println("n3if ="+numero3);
+		 }
 		inicioSesion();
 		
 	}
