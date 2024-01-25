@@ -6,41 +6,55 @@ import java.util.Scanner;
 
 public class EntidadBancaria {
 
-	public static String[] ocultar1 ;
+	
 	public static int[] matriz = {1,2,3,4,5};
 	public static final String dni = "12345678V";
 	public static final String tarjetaBancaria = "1111222233334444";
 	public static final String pasaporte = "A012345678900";
 	public static final String fechaNacimiento = "06/05/2001";
+	public static int numero1;
+	public static int numero2;
+	public static int numero3;
 	
 	public static Random random = new Random();
 
 	public static Scanner entrada = new Scanner(System.in);
 	public static void main(String[] args) {
 		
-		
-		int numero1 = random.nextInt(9) +0;
-		int numero2 = random.nextInt(9) +0;
-		
-		//  el bucle while seguira generando mientras el numero 1 y numero 2 sean iguales
-			while(numero1 == numero2) {
-			numero2 = random.nextInt(9) +0;
 			
-		}
-			int numero3 = random.nextInt(9) +0;
-			
-		// el bucle while seguira generando mientras el numero3 sea igual a numero1 o numero3 sea igual a numero2 
-			while(numero3== numero1 || numero3 ==numero2) {
-				numero3 = random.nextInt(9) +0;
+	
+		
+		claveSeguridad();
+		ocultarClave();
+		introducirClave();
+		inicioSesion();
+		
+	}
+	private static void introducirClave() {
+		
+		for(int i = 0; i < matriz.length ; i++) {
+			if(i == numero1 || i == numero2 || i ==numero3) {
+				System.out.print("*");
+			}else {
+				System.out.print(matriz[i]);
 			}
 			
-		System.out.println(numero1);
-		System.out.println(numero2);
-		System.out.println(numero3);
+		}
 		
-
-		claveSeguridad();
-		inicioSesion();
+		
+	}
+	private static void ocultarClave() {
+		
+		for(int i = 0; i < matriz.length ; i++) {
+			if(i == numero1 || i == numero2 || i ==numero3) {
+				System.out.print("*");
+			}else {
+				System.out.print(matriz[i]);
+			}
+			
+		}
+		
+		
 		
 	}
 	private static void inicioSesion() {
@@ -76,30 +90,18 @@ public class EntidadBancaria {
 			}else {
 				System.out.println("Seleccion incorrecta");
 			}
-		
 	}
 	private static void claveSeguridad() {
-		int numero1 = random.nextInt(4) +0;
-		int numero2 = random.nextInt(9) +0;
+		 numero1 = random.nextInt(4) +0;
+		 numero2 = random.nextInt(4) +0;
 		//  el bucle while seguira generando mientras el numero 1 y numero 2 sean iguales
 			while(numero1 == numero2) {
-			numero2 = random.nextInt(9) +0;
+			numero2 = random.nextInt(4) +0;
 		}
-			int numero3 = random.nextInt(9) +0;
+			 numero3 = random.nextInt(4) +0;
 		// el bucle while seguira generando mientras el numero3 sea igual a numero1 o numero3 sea igual a numero2 
 			while(numero3== numero1 || numero3 ==numero2) {
-				numero3 = random.nextInt(9) +0;
-			}
-			
-			for(int i = 0 ; i < matriz.length ; i ++) {
-				 if(matriz[i] == numero1) {
-					 System.out.print("X1");
-				 }else {
-					 System.out.print(matriz[i]);
-					 
-				 }
-				 System.out.print(" | ");
-				
+				numero3 = random.nextInt(4) +0;
 			}
 	
 	}
