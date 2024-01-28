@@ -20,8 +20,6 @@ public class ControlMaceracion {
 			imprimirMenu();
 			seleccion = entrada.nextInt();
 			
-			
-			
 			switch(seleccion) {
 			
 			case 1:
@@ -179,9 +177,6 @@ public class ControlMaceracion {
 	
 	
 	}
-
-
-	
 
 	private static void imprimirMenu() {
 		System.out.println("-----------Menu----------");

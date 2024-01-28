@@ -4,9 +4,10 @@ import java.lang.reflect.Array;
 import java.util.Random;
 import java.util.Scanner;
 
-public class EntidadBancaria {
+import javax.swing.plaf.synth.SynthOptionPaneUI;
 
-	
+public class TareaValidacionBancaria {
+
 	public static int[] matriz = {1,2,3,4,5};
 	public static final String dni = "12345678V";
 	public static final String tarjetaBancaria = "1111222233334444";
@@ -23,36 +24,42 @@ public class EntidadBancaria {
 		
 			
 	
-		
-		claveSeguridad();
-		ocultarClave();
-		introducirClave();
 		inicioSesion();
 		
 	}
+	
 	private static void introducirClave() {
-		
-		for(int i = 0; i < matriz.length ; i++) {
-			if(i == numero1 || i == numero2 || i ==numero3) {
-				System.out.print("*");
-			}else {
-				System.out.print(matriz[i]);
+		System.out.println("Introduzca el valor del primer asterisco");
+		int asterisco1 = entrada.nextInt();
+		System.out.println("Introduzca el valor del segundo asterisco");
+		int asterisco2 = entrada.nextInt();
+		System.out.println("Introduzca el valor del tercer asterisco");
+		int asterisco3 = entrada.nextInt();
+				if(asterisco1 == matriz[numero1] && asterisco2 == matriz[numero2] && asterisco3 == matriz[numero3]) {
+					System.out.println("Has iniciado sesion en tu cuenta bancaria");
+					
+				}
+				else {
+					System.out.print("Clave errónea");
+				}
+	
 			}
-			
-		}
-		
-		
-	}
 	private static void ocultarClave() {
 		
 		for(int i = 0; i < matriz.length ; i++) {
-			if(i == numero1 || i == numero2 || i ==numero3) {
-				System.out.print("*");
-			}else {
-				System.out.print(matriz[i]);
+			if(i == numero1) {
+				System.out.print(" *1 ");
+				
+			}else if(i == numero2) {
+				System.out.print(" *2 ");
+				
+			}else if(i == numero3) {
+				System.out.print(" *3 ");
 			}
-			
-		}
+			else {
+				System.out.print(" - ");
+			}
+		}System.out.println( );
 		
 		
 		
@@ -71,6 +78,8 @@ public class EntidadBancaria {
 				
 				if((dniOtarjeta.equals(dni) || dniOtarjeta.equals(tarjetaBancaria)) && fecha.equals(fechaNacimiento)) {
 					claveSeguridad();
+					ocultarClave();
+					introducirClave();
 				}else {
 					System.out.println("Sus datos no son correctos");
 				}
@@ -80,9 +89,11 @@ public class EntidadBancaria {
 				String pasaporte1 = entrada.next();
 				System.out.println("Introduzca  fecha de nacimiento");
 				String fecha = entrada.next();
-
+				
 				if(pasaporte1.equals(pasaporte) && fecha.equals(fechaNacimiento)) {
 					claveSeguridad();
+					ocultarClave();
+					introducirClave();
 				}else {
 					System.out.println("Sus datos no son correctos");
 				}
@@ -103,7 +114,7 @@ public class EntidadBancaria {
 			while(numero3== numero1 || numero3 ==numero2) {
 				numero3 = random.nextInt(4) +0;
 			}
-	
+
 	}
 
 }
