@@ -4,11 +4,16 @@ public class BodegaVino {
 	
 	// atributos 
 	private String tipoUva ;
-	private double arrobas;
 	private int litros;
-	private int media ;
 	
 	
+	// constructros
+	public BodegaVino(String tipoUva, int litros) {
+		
+		this.tipoUva = tipoUva;
+		this.litros = litros;
+		
+	}
 	//Seters y getters 
 	
 	public String getTipoUva() {
@@ -17,32 +22,42 @@ public class BodegaVino {
 	public void setTipoUva(String tipoUva) {
 		this.tipoUva = tipoUva;
 	}
-	public double getArrobas() {
-		return arrobas;
-	}
-	public void setArrobas(double arrobas) {
-		this.arrobas = arrobas;
-	}
+	
 	public int getLitros() {
 		return litros;
 	}
 	public void setLitros(int litros) {
 		this.litros = litros;
 	}
-	public int getMedia() {
-		return media;
-	}
-	public void setMedia(int media) {
-		this.media = media;
-	}
-	
-	
 	
 	
 	// metodos 
 	
+	public double arrobas() {
+		
+		double arrobas = litros / 16.33;
+		return arrobas;
+		
+		
+		
+		
+		
+	}
 	
+	public String imprimirDatos() {
+		String informacion ;
+		
+		informacion = "El tipo de Uva"+tipoUva+"\n";
+		informacion += "El numero de litros del deposito "+litros+"\n";
+		informacion += "El numero de arrobas que tiene el vino"+arrobas()+"\n";
+		
+		return informacion;
+		
+		
+		
+	}
 	
+
 	
 	
 	
