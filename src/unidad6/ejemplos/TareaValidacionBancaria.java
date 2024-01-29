@@ -7,12 +7,14 @@ import java.util.Scanner;
 import javax.swing.plaf.synth.SynthOptionPaneUI;
 
 public class TareaValidacionBancaria {
-
+	//Esta matriz es la clave de seguridad.
 	public static int[] matriz = {1,2,3,4,5};
+	// Son los datos que deben coincidir en la iniciacion de sesion bancaria.
 	public static final String dni = "12345678V";
 	public static final String tarjetaBancaria = "1111222233334444";
 	public static final String pasaporte = "A012345678900";
 	public static final String fechaNacimiento = "06/05/2001";
+	// Estos tres numeros son los numeros aletorios que van a ser generados 
 	public static int numero1;
 	public static int numero2;
 	public static int numero3;
@@ -28,6 +30,8 @@ public class TareaValidacionBancaria {
 		
 	}
 	
+	//En esta funcion introducimos los supuestos numeros que hay en los asteriscos y si son correctos pues 
+	// mostrara un mensaje de que ha iniciado sesion en la cuenta de lo contrario clave erronea.
 	private static void introducirClave() {
 		System.out.println("Introduzca el valor del primer asterisco");
 		int asterisco1 = entrada.nextInt();
@@ -44,6 +48,9 @@ public class TareaValidacionBancaria {
 				}
 	
 			}
+	
+	
+	// aqui realizamos el print de la clave tapando con los astericos elegidos aleatoriamente en la anterior funcion
 	private static void ocultarClave() {
 		
 		for(int i = 0; i < matriz.length ; i++) {
@@ -64,6 +71,9 @@ public class TareaValidacionBancaria {
 		
 		
 	}
+	// en esta funcion aplicamos la primera parte del programa que es el inicio de sesion
+	//con el pasaporte o con el (dni o numero de tarjeta Bancaria).
+	// y con ella accedemos a las otras funciones como claveSefuridad , ocultarClave y introducir clave.
 	private static void inicioSesion() {
 		System.out.println("Elige tu documento");
 		System.out.println("1 .DNI o tarjeta Bancaria");
@@ -102,6 +112,9 @@ public class TareaValidacionBancaria {
 				System.out.println("Seleccion incorrecta");
 			}
 	}
+	
+	// en esta funcion generamos tres numeros aleatorios que van a ser las posiciones que va a tener que adivinar el usuario
+	// a la hora de iniciar sesion
 	private static void claveSeguridad() {
 		 numero1 = random.nextInt(4) +0;
 		 numero2 = random.nextInt(4) +0;
