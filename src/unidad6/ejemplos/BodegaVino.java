@@ -1,5 +1,7 @@
 package unidad6.ejemplos;
 
+import java.text.DecimalFormat;
+
 public class BodegaVino {
 	
 	// atributos 
@@ -45,11 +47,14 @@ public class BodegaVino {
 	}
 	
 	public String imprimirDatos() {
+		
+	     DecimalFormat formato = new DecimalFormat("0.00");
+
 		String informacion ;
 		
 		informacion = "El tipo de Uva"+tipoUva+"\n";
 		informacion += "El numero de litros del deposito "+litros+"\n";
-		informacion += "El numero de arrobas que tiene el vino"+arrobas()+"\n";
+		informacion += "El numero de arrobas que tiene el vino"+formato.format(arrobas())+"\n";
 		
 		return informacion;
 		
