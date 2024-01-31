@@ -9,6 +9,7 @@ public class Almazara {
 		private String localidad;
 		private ProcesoAlmazara[] procesos = new ProcesoAlmazara[NUM_PROCESOS_MAX];
 		
+		
 		public Almazara(int id , String localidad) {
 			this.id = id;
 			this.localidad = localidad;
@@ -44,7 +45,6 @@ public class Almazara {
 	}
 
 		public void addProceso(ProcesoAlmazara proceso) {
-			
 			boolean anadido=false;
 			int i= 0 ;
 			while(!anadido && i <NUM_PROCESOS_MAX) {

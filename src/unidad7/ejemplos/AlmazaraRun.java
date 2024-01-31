@@ -13,16 +13,18 @@ public class AlmazaraRun {
 		
 		p1.setCliente(c1);
 		
-		
 		a1.mostrarDatos();
 		System.out.println("-------");
 		a2.mostrarDatos();
 		
-		
-		
 		System.out.println("Proceso añadido");
 		a1.addProceso(p1);
 		a1.mostrarDatos();
+		
+		System.out.println("Mostrar P1");
+		p1.mostrarDatos();
+		
+		
 	}
 
 }
