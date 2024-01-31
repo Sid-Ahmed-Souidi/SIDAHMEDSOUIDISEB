@@ -23,8 +23,6 @@ public class Ejercicio10 {
 		System.out.println(probabilidadFrio(presion , humedad));
 		
 	}
-	
-	
 	// funciones 
 	
 	
@@ -47,7 +45,6 @@ public class Ejercicio10 {
 			return "baja";
 		}
 	}
-	
 	
 	public static String probabilidadSol(String presion , String humedad) {
 		

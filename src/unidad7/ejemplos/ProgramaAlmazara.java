@@ -2,10 +2,12 @@ package unidad7.ejemplos;
 
 public class ProgramaAlmazara {
 
+	public static final int NUM_PROCESOS = 10;
+	
 	public static void main(String[] args) throws InterruptedException {
 		
 		// creamos una array vacia donde almacenaremos los objetos que creamos en el siguiente bucle for
-		ProcesoAlmazara[] procesosAlmazara = new ProcesoAlmazara[10];
+		ProcesoAlmazara[] procesosAlmazara = new ProcesoAlmazara[NUM_PROCESOS];
 		
 		for(int i=0;i<10;i++) {
 			// vamos recorriendo la array y almacenando los objetos 

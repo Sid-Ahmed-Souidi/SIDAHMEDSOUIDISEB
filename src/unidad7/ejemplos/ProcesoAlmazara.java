@@ -5,13 +5,12 @@ import java.util.Random;
 
 public class ProcesoAlmazara {
 	
-	
-	
 	private double pesoAceitunas;
 	private double pesoLimpio;
 	private double pesoMolturado;
 	private double aceiteExtraido;
 	private double aceiteFiltrado;
+	private Cliente cliente;
 	
 	
 	// constructor
@@ -60,9 +59,17 @@ public class ProcesoAlmazara {
 	        System.out.println("Aceite después de la filtración: " + formato.format(aceiteFiltrado) + " litros");
 	}
 	
+	
+	
+	
+	public Cliente getCliente() {
+		return cliente;
+	}
 
-	
-	
+	public void setCliente(Cliente cliente) {
+		this.cliente = cliente;
+	}
+
 	public double getPesoAceitunas() {
 		return pesoAceitunas;
 	}
