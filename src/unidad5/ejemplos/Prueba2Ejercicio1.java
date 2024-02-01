@@ -20,15 +20,13 @@ public class Prueba2Ejercicio1 {
 	}
 
 	private static void corredoresMorrosos() {
-		System.out.println("Introduzca el jugador dopado");
+		System.out.println("Introduzca el jugador moroso");
 		int moroso = entrada.nextInt();
 		boolean corredorEncontrado = false;
 		for(int i = 0 ; i < NUM_CORREDORES && !corredorEncontrado; i++) {
 			if(carreras[i] == moroso) {
-				int vmp = carreras[0];
-				carreras[0] = carreras[i];
-				
-				System.out.println("Corredor eliminado");
+			
+				System.out.println("Corredor trasladado a la ultima posicion");
 				corredorEncontrado = true;
 			}
 		}for(int dorsales : carreras) {
