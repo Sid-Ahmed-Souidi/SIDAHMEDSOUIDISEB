@@ -70,12 +70,16 @@ public class Camisetas {
 	}
 	
 	
+	// funciones 
+
+	
+	
 	// mostrarDatos 
 	public void mostrarDatos() {
-		String Informacion ;
-		
-		
-		
+		String Informacion = "Identificador de la camiseta "+ide+" /n" ;
+		Informacion += "Descripción "+descripcion+" /n" ;
+		Informacion += "material "+descripcion+" /n" ;
+		Informacion += "Descripción "+descripcion+" /n" ;
 	}
 
 	
