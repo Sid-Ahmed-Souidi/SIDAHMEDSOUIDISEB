@@ -25,8 +25,12 @@ public class Prueba2Ejercicio1 {
 		boolean corredorEncontrado = false;
 		for(int i = 0 ; i < NUM_CORREDORES && !corredorEncontrado; i++) {
 			if(carreras[i] == moroso) {
-				int vmp = carreras[0];
-				carreras[0] = carreras[i];
+			for(int j = 0 ; j< NUM_CORREDORES ; j++) {
+				
+				
+				
+			}
+				
 				
 				System.out.println("Corredor eliminado");
 				corredorEncontrado = true;
