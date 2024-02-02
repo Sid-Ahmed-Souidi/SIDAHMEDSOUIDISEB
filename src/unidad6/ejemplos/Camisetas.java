@@ -7,29 +7,28 @@ public class Camisetas {
 	material, color, precio y cantidad en stock. Defina una clase que permita modelar dicha información. 
 	Además, esta clase tendrá un método que permita mostrar por pantalla los datos de la camiseta. 
 	Crear una clase ProgramaCamiseta con un método main que utilice la clase creada.*/
-	private int ide ;
+	private  int ide ;
 	private String descripcion;
-	private String material;
+	private static String material;
 	private String color;
 	private double precio;
 	private int cantidad;
 	
 	// constructor 
 	
-	public Camisetas(int ide , String descripcion, String material, String color , double precio, int cantidad) {
+	public Camisetas() {
+		material = CamisetasFunciones.material();
+		ide = CamisetasFunciones.generarIde();
+		precio= CamisetasFunciones.precioCamisetas();
+		descripcion= CamisetasFunciones.descripcion();
 		
-		this.ide = ide ;
-		this.descripcion = descripcion;
-		this.material = material ;
-		this.color = color;
-		this.precio = precio;
-		this.cantidad = cantidad;
+
+		
 		
 	}
-	
-	
-	
-	
+	//public void subirPrecio(double incremento) {
+	//	this.precio += incremento;
+	//}
 	// mostrarDatos 
 
 	public int getIde() {
@@ -70,17 +69,18 @@ public class Camisetas {
 	}
 	
 	
-	// funciones 
-
+	// funciones
 	
 	
 	// mostrarDatos 
-	public void mostrarDatos() {
-		String Informacion = "Identificador de la camiseta "+ide+" /n" ;
-		Informacion += "Descripción "+descripcion+" /n" ;
-		Informacion += "material "+descripcion+" /n" ;
-		Informacion += "Descripción "+descripcion+" /n" ;
+	public  String mostrarDatos() {
+		 	String informacion = "Identificador de la camiseta "+ide+" \n" ;
+		 	informacion += "Precio de la camiseta"+precio+" \n" ;
+		 	informacion += "Tipo de material de la camiseta es "+material +"\n";
+		 	informacion += "Descripcion"+descripcion;
+		return informacion;
+		
+	
 	}
-
 	
 }
