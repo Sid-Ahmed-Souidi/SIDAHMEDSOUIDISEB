@@ -1,4 +1,4 @@
-package unidad6.ejemplos;
+package unidad6.ejemplos.camisetas;
 
 import java.util.Random;
 import java.util.Scanner;
@@ -7,6 +7,7 @@ public class CamisetasFunciones {
 	
 	public static int seleccion;
 	public static double precio;
+	public static String descripcion;
 	
 
 	public static Scanner entrada = new Scanner(System.in);
@@ -43,30 +44,36 @@ public class CamisetasFunciones {
 	public static double precioCamisetas() {
 		
 		if(seleccion==1) {
-			System.out.println("La camiseta de algodón cuesta");
-			return  precio = 12.99;
+			precio = 12.99;
+		System.out.println("La camiseta de algodón cuesta "+precio);
+		
 	}else if(seleccion==2) {
-			System.out.println("La camiseta de seda cuesta");
-			return  precio =99.99;
+		precio = 99.99;
+			System.out.println("La camiseta de seda cuesta "+precio);
 	}else if(seleccion==3) {
-			System.out.println("La camiseta de lana cuesta");
-			return  precio =22.99; 
-	}else
+			precio = 22.99;
+			System.out.println("La camiseta de lana cuesta "+precio);
+	}else  {
 			System.out.println("No ha seleccionado el material para la camiseta");
-				return  precio = 00.00;	
-	}
+		}
+	
+				return precio;
+	
+		}
+	
 	
 	public static String descripcion() {
 		
-		if(seleccion ==1) {
-			return "El material seleccionado es l algodon con un precio de 12.99";
+		if(seleccion ==1) {	
+			descripcion = "Descripción : camiseta de algodón .Marca Tommy hilfiger .Fabricada en Vietnam.";
 		}else if(seleccion ==2) {
-			return "El material seleccionado es la seda con un precio de 99.99";
+			descripcion ="Descripción : camiseta de seda .Marca BOSS .Fabricada en china" ;
 		}else if(seleccion ==3) {
-			return "El material seleccionado es la lana con un precio de 22.99";
+			descripcion ="Descripción : camiseta de lana .Marca Silk .Fabricada en EEUU.";
 		}else {
-			return "no has seleccionado los pasos anteriores";
+		System.out.println(" ");
 		}
+		return descripcion;
 	} 
 }
 	

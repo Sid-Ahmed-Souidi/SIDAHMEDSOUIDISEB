@@ -1,4 +1,4 @@
-package unidad6.ejemplos;
+package unidad6.ejemplos.camisetas;
 
 
 public class Camisetas {
@@ -11,7 +11,7 @@ public class Camisetas {
 	private String descripcion;
 	private static String material;
 	private String color;
-	private double precio;
+	private double precio ;
 	private int cantidad;
 	
 	// constructor 
@@ -20,8 +20,8 @@ public class Camisetas {
 		material = CamisetasFunciones.material();
 		ide = CamisetasFunciones.generarIde();
 		precio= CamisetasFunciones.precioCamisetas();
-		descripcion= CamisetasFunciones.descripcion();
-		
+		descripcion= CamisetasFunciones.descripcion();  
+		System.out.println(descripcion);
 
 		
 		
