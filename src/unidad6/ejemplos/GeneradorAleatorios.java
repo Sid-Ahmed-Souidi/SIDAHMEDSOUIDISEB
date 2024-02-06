@@ -12,6 +12,7 @@ public class GeneradorAleatorios {
 		int numAleatorio = random.nextInt();
 		System.out.println(numAleatorio);
 		//Generar numero entre 0  y el 99
+		System.out.println("tabonj");
 		int numAleatorio2 = random.nextInt(12+1);
 		System.out.println(numAleatorio2);
 		
