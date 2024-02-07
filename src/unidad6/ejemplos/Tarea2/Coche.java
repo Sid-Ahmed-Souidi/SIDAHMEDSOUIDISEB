@@ -18,11 +18,6 @@ public class Coche {
 		this.marca = marca ;
 
 	}
-
-	
-	
-	
-	
 	
 	public Motor getTipoMotor() {
 		return tipoMotor;
@@ -38,6 +33,18 @@ public class Coche {
 
 	public double getPrecio() {
 		return precio;
+	}
+	
+	//metodo acumular precio averias
+	
+	public  void acumulaAveria( double averia){
+		
+		this.precio += averia;
+		
+		
+		
+		
+		
 	}
 	
 	

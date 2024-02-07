@@ -5,14 +5,12 @@ public class Motor {
 	private int litrosAceite;
 	private int cv;
 	
-	
 	// constructor 
 	public Motor(int litrosAceite) {
 		
 		this.litrosAceite = litrosAceite;
 		
 	}
-
 	// getters y setters
 
 	public int getLitrosAceite() {
