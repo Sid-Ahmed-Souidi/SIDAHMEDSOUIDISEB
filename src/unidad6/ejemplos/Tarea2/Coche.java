@@ -13,10 +13,9 @@ public class Coche {
 	private String modelo;
 	private double precio;
 	
-	public Coche(String marca , String modelo) {	 
+	public Coche(String marca , String modelo) { 	 
 		this.marca = marca;
 		this.marca = marca ;
-
 	}
 	
 	public Motor getTipoMotor() {

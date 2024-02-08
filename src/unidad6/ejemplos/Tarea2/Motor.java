@@ -17,7 +17,6 @@ public class Motor {
 		return litrosAceite;
 	}
 
-
 	public void setLitrosAceite(int litrosAceite) {
 		this.litrosAceite = litrosAceite;
 	}

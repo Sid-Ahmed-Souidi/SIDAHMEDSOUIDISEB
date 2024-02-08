@@ -13,27 +13,32 @@ public class Actividad2 {
 		Coche coche2 = new Coche("bmw","M4");
 		
 
-		int i =0;
-		while(i < 2) {
 			System.out.println("Que tipo de averia es");
 			String averia = entrada.nextLine();
 			Garaje.aceptarCoche(coche1 ,averia);
-			double precioAveria =  (Math.random()*20000+1000);
+			double precioAveria =  (Math.random()*8+0);
+			coche1.acumulaAveria(precioAveria);
 			if(averia.equals("aceite")) {
 				coche1.getTipoMotor().setLitrosAceite(10);
 				
+			}
+			System.out.println("Que tipo de averia es");
+			averia = entrada.nextLine();
+			Garaje.aceptarCoche(coche1 ,averia);
+			 precioAveria =  (Math.random()*8+0);
+			coche1.acumulaAveria(precioAveria);
+			if(averia.equals("aceite")) {
+				coche1.getTipoMotor().setLitrosAceite(10);
 				
-			}i++;
+			}
+
+
+				
+			System.out.println("Tipo del motor del coche"+coche1.getTipoMotor());
+	
 			
-		}
-		
-		
-		
-		
-		
+			
 
-		
-		
 	}
-
+	
 }
