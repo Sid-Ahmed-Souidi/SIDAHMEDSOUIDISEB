@@ -15,16 +15,16 @@ public class Actividad2 {
 
 			System.out.println("Que tipo de averia es");
 			String averia = entrada.nextLine();
-			Garaje.aceptarCoche(coche1 ,averia);
+			garaje1.aceptarCoche(coche1, averia);
 			double precioAveria =  (Math.random()*8+0);
 			coche1.acumulaAveria(precioAveria);
 			if(averia.equals("aceite")) {
-				coche1.getTipoMotor().setLitrosAceite(10);
+				coche1.getTipoMotor().setLitrosAceite(coche1.getTipoMotor().getLitrosAceite()+10) ;
 				
 			}
 			System.out.println("Que tipo de averia es");
 			averia = entrada.nextLine();
-			Garaje.aceptarCoche(coche1 ,averia);
+			garaje1.aceptarCoche(coche1, averia);
 			 precioAveria =  (Math.random()*8+0);
 			coche1.acumulaAveria(precioAveria);
 			if(averia.equals("aceite")) {

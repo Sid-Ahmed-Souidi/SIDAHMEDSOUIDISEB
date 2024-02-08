@@ -14,21 +14,26 @@ public class Garaje {
 //Tenga un método devolverCoche que dejara al garaje en estado de aceptar un nuevo coche.
 
 	 
-	private Coche coche;
+	private Coche coche; //representa el coche que está dentro del taller.
 	private String averia;
 	private int contadorCoche;
 	
 	
-	public static boolean aceptarCoche(Coche coche ,String averia){
-		 boolean garajeLleno = true; 
-		 if(coche != null) {
-			 System.out.println("Garaje ocupado");
-		 }else {
-			 
-			 garajeLleno = false;
+	public  boolean aceptarCoche(Coche coche ,String averia) {
+		 double importeAveria = 0.0; 
+		 boolean aceptado = false; 
+		
+		 if(this.coche== null) {
+			
+			 this.coche = coche;
+			 aceptado=true;
+			 System.out.println("Coche aceptado");
+			 coche.acumulaAveria(importeAveria);
+			 contadorCoche++;
 			 
 		 }
-		 return garajeLleno;
+		 
+		 return aceptado;
 		
 		
 	}

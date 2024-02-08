@@ -36,7 +36,7 @@ public class Coche {
 	
 	//metodo acumular precio averias
 	
-	public  void acumulaAveria( double averia){
+	public void acumulaAveria( double averia){
 		
 		this.precio += averia;
 		
