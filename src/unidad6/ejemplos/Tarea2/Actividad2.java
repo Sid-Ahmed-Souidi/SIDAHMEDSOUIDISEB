@@ -9,7 +9,7 @@ public class Actividad2 {
 
 		Garaje garaje1 = new Garaje();
 		
-		Coche coche1 = new Coche("Seat","León");
+		Coche coche1 = new Coche("Seat","León" );
 		Coche coche2 = new Coche("bmw","M4");
 		
 
