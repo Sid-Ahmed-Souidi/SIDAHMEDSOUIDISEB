@@ -6,10 +6,10 @@ public class Motor {
 	private int cv;
 	
 	// constructor 
-	public Motor(int litrosAceite) {
+	public Motor(  int cv) {
 		
-		this.litrosAceite = litrosAceite;
-		
+		this.litrosAceite = 0;
+		this.cv = cv;
 	}
 	// getters y setters
 
