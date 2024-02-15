@@ -12,11 +12,8 @@ public class Coche extends Vehiculo {
 	public Coche(String matricula, String bastidor, String marca, String modelo, Motor motor) {
 		super(matricula, bastidor, marca, modelo, motor);
 		// TODO Auto-generated constructor stub
-		
-		
-		
-		
 	}
+	
 	
 	public Coche(String matricula, String bastidor, String marca, String modelo, Motor motor,
 			int numPuertas,
@@ -43,6 +40,7 @@ public class Coche extends Vehiculo {
 			
 		}
 	
+		
 	//getters and setters
 	
 	public int getNumPuertas() {
