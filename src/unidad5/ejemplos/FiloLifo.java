@@ -140,7 +140,7 @@ public class FiloLifo {
 			
 		}else {
 			for(int i = matriz.length -1 ; i > 0  ; i-- ) {// todos los elementos se desplazan a la derecha en el bucle 7 no se incluye la posicion 0
-				matriz[i] = matriz[i-1]; 
+				matriz[i] = matriz[i-1];
 		}
 			matriz[0] = elemento;// y en la posicion cero se añade el nuevo elemento
 			contador++;
