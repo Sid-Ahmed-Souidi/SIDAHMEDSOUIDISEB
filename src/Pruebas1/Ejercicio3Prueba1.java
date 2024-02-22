@@ -4,9 +4,6 @@ import java.util.Scanner;
 
 public class Ejercicio3Prueba1 {
 	
-	
-	
-	
 	public static final int enero = 31,febrero = 28,marzo= 31, abril=30 , mayo=31, junio=30, julio=31, agosto=31,
 			septiembre= 30, octubre =31, noviembre=30,diciembre=31;
 	
@@ -43,9 +40,7 @@ public class Ejercicio3Prueba1 {
 	
 	}
 	
-	
-	
-	
+
 	private static void mediaAnual() {
 		int totalPre = 0;
 		for(int i = 0 ; i < meses ; i++) {
@@ -56,9 +51,6 @@ public class Ejercicio3Prueba1 {
 	 System.out.println("Media de anual por el total de meses del año");
 	 int mediaAnualMeses = totalPre / meses; 
 	 
-		
-		
-		
 		
 	}
 	private static void mediaMes() {
