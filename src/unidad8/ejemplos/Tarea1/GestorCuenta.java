@@ -4,7 +4,8 @@ public class GestorCuenta {
 
 	public static void main(String[] args) {
 		
-		Cuenta PrimeraCuenta = new CuentaAhorro("Sid Ahmed",10.00);
+		Cuenta PrimeraCuenta = new CuentaAhorro("Sid",10.00);
+		Cuenta SegundaCuenta = new CuentaCorriente("Ahmed" ,15.00, 3);
 		
 		System.out.println("Nombre cuenta: "+PrimeraCuenta.getNombre());
 		System.out.println("Cantidad: "+PrimeraCuenta.getCantidad());

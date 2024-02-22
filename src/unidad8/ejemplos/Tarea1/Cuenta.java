@@ -7,8 +7,8 @@ public abstract class Cuenta {
 	
 	
 
-	 private String nombre;
-	 protected static  double cantidad;
+	 protected String nombre;
+	 protected double cantidad;
 	
 	
 	
@@ -57,19 +57,16 @@ public abstract class Cuenta {
 		this.cantidad = cantidad;
 	}
 	
-	public void Ingresar() {
+	public void ingresar() {
 		Scanner entrada = new Scanner(System.in);
 		System.out.println("Ingresa la cantidad que deseas");
 		double ingreso = entrada.nextDouble();
 		cantidad += ingreso;
 		
 	}
-	public void Retirar() {
-		Scanner entrada = new Scanner(System.in);
-		System.out.println("Introduzca la cantidad que deseas retirar");
-		double retiro = entrada.nextDouble();
+	public void retirar(double retiro) {
 		
-		
+
 		if(cantidad >= retiro) {
 			cantidad = cantidad -retiro;
 			System.out.println("Ha realizado el retiro "+cantidad);			
@@ -79,20 +76,16 @@ public abstract class Cuenta {
 			
 		}
 		
-		
-		
-		
 	
-		public String toString() {
-		String informacion = "numero de titulares en la cuenta corriente"+getNumTitulares()+"\n";
-			
-			
-		}
-		
-
-		
 		
 	}
+
+
+		@Override
+		public String toString() {
+			return "###### INFORMACIÓN CUENTA #######";
+		}
+
 
 	
 	
