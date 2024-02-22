@@ -17,15 +17,17 @@ public class GestorCuenta {
 		PrimeraCuenta.setNombre();
 		System.out.println("Nombre cuenta: "+PrimeraCuenta.getNombre());
 		
-		PrimeraCuenta.Ingresar();
+		PrimeraCuenta.ingresar();
 		
 	    System.out.println("Esta es la cantidad despues del ingreso"+PrimeraCuenta.getCantidad());    
 
-		PrimeraCuenta.Retirar();
+		PrimeraCuenta.retirar(4);
 	    System.out.println("Esta es la cantidad despues del retiro"+PrimeraCuenta.getCantidad());    
 
-		
-		
+	    System.out.println("------------");
+	    System.out.println(PrimeraCuenta);
+	    System.out.println("------------"); 
+	    System.out.println(SegundaCuenta);
 
 			
 	}

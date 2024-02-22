@@ -8,7 +8,7 @@ public  class CuentaCorriente extends Cuenta {
 
 	
 	private int numTitulares;
-	public static double almacenarSaldo;
+
 	public CuentaCorriente(String nombre, double cantidad, int numTitulares) {
 		super(nombre, cantidad);
 		this.numTitulares = numTitulares;

@@ -3,9 +3,6 @@ package unidad8.ejemplos.Tarea1;
 import java.util.Scanner;
 
 public abstract class Cuenta {
-	
-	
-	
 
 	 protected String nombre;
 	 protected double cantidad;
@@ -41,10 +38,7 @@ public abstract class Cuenta {
 				System.out.println("Introduzca otra vez el nombre");
 				
 			}
-			
-			
 		}
-		
 	}
 
 
@@ -76,10 +70,7 @@ public abstract class Cuenta {
 			
 		}
 		
-	
-		
 	}
-
 
 		@Override
 		public String toString() {
