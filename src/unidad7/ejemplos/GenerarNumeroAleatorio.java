@@ -8,7 +8,7 @@ public class GenerarNumeroAleatorio {
 		
 		Random random = new Random();
 		
-		double numero = Math.floor(Math.random()*10 + 1);
+		double numero = Math.floor(Math.random()*400 + 1);
 		
 		System.out.println(numero);
 		
