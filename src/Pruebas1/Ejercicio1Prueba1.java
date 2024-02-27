@@ -191,8 +191,9 @@ public class Ejercicio1Prueba1 {
 		}
 		else {
 		for(int i = pila.length -1  ; i > 0; i--) {	
+				
 				pila[i] = pila[i-1];// todos los elementos se desplazan a la derecha
-				//System.out.println(i+"-"+(i-1) );
+				System.out.println(i+"-"+(i-1) );
 			}
 			pila[0] = numero;
 			contadorPila++;
