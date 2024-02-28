@@ -19,20 +19,11 @@ public class Ejercicio1 {
 		
 	}
 	private static void mostrarArray() {
-		
 		for(int i = 0 ; i < matriz.length ; i++) {
 			for(int j =0 ; j <matriz2.length ; j++ ) {
-				if(matriz[i]<matriz[j]) {
-					
-				}
 				
-			}
-			
+			}			
 		}
-		
-		
-		
-		
 	}
 	private static void numeros2tabla() {
 		System.out.println("Introducir numero en la segunda tabla");
