@@ -68,5 +68,4 @@ public class Ajedrez {
 			System.out.println();
 		}
 	}
-
 }

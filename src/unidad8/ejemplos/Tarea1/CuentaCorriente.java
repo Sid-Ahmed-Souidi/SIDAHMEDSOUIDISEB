@@ -15,18 +15,13 @@ public  class CuentaCorriente extends Cuenta {
 		
 	}
 
-	
 	public int getNumTitulares() {
 		return numTitulares;
 	}
 	
-
 	public void setNumTitulares(int numTitulares) {
 		this.numTitulares = numTitulares;
 	}
-
-
-	
 	
 	@Override
 	public void retirar(double retiro) {
