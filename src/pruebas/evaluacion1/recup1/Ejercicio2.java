@@ -65,12 +65,12 @@ public class Ejercicio2 {
 
 
 	private static void mostrarDatos(int[][] array) {
-		for(int i = 0 ; i < filas ; i++) {
-			for(int j = 0 ; j < columnas ; j++ ) {
-				System.out.print(array[i][j]+" ");
+			for(int i = 0 ; i < filas ; i++) {
+				for(int j = 0 ; j < columnas ; j++ ) {
+					System.out.print(array[i][j]+" ");
+				}
+				System.out.println();
 			}
-			System.out.println();
-		}
 	}
 
 
