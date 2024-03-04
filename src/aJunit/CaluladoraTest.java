@@ -1,6 +1,7 @@
 package aJunit;
 
 import static org.junit.Assert.*;
+import org.junit.Test; 
 
 public class CaluladoraTest {
 	
@@ -29,11 +30,11 @@ public class CaluladoraTest {
 	        assertEquals(27.0, calc.potencia(3.0, 3), 0.0001);
 	        assertEquals(1.0, calc.potencia(10.0, 0), 0.0001);
 	    }
-	}
 	
 	
 	
-
 	
-
 }
+	
+
+

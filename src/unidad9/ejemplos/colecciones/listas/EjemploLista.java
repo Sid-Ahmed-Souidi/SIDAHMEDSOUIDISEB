@@ -63,9 +63,12 @@ public class EjemploLista {
 		System.out.println("List Empleados remove posicion 3");
 		System.out.println(Empleados);
 		
-	}
-	
 		Usuario usuario8 = new Usuario(8, "Serapio");
 		Empleados.set(3, usuario8);
+	
+	
+	}
+	
+	
 		
 }
