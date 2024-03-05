@@ -10,16 +10,26 @@ public class GestorCuentas {
 		
 		
 		CuentaAhorros PrimeraCuenta = new CuentaAhorros("Sid",10.00);
-		//Cuenta SegundaCuenta = new CuentaCorriente("Ahmed" ,15.00, 3);
+		CuentaCorrientes SegundaCuenta = new CuentaCorrientes("Ahmed" ,15.00);
 		
 		
+		System.out.println("-----CUENTA AHORRO---------");
 		System.out.println("Nombre cuenta: "+PrimeraCuenta.getNombre());
 		System.out.println("Cantidad: "+PrimeraCuenta.getCantidad());		
-		
-		
-		
+
 		System.out.println(PrimeraCuenta.esValidoDeposito());
-		
+		System.out.println("Cantidad: "+PrimeraCuenta.getCantidad());		
+		System.out.println(PrimeraCuenta.esValidoRetirar());
+		System.out.println("Cantidad: "+PrimeraCuenta.getCantidad());		
+
+		System.out.println("-----CUENTA CORRIENTE---------");
+		System.out.println("Nombre cuenta: "+SegundaCuenta.getNombre());
+		System.out.println("Cantidad: "+SegundaCuenta.getCantidad());		
+
+		System.out.println(SegundaCuenta.esValidoDeposito());
+		System.out.println("Cantidad: "+SegundaCuenta.getCantidad());		
+		System.out.println(SegundaCuenta.esValidoRetirar());
+		System.out.println("Cantidad: "+SegundaCuenta.getCantidad());	
 		
 		
 	}

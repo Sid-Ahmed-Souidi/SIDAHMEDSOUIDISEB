@@ -20,8 +20,9 @@ public class AñadirCompañero {
 		ListaCompañeros.add(compañero2);
 		ListaCompañeros.add(compañero3);	
 		ListaCompañeros.add(compañero4);
-		ListaCompañeros.add(compañero5);
-	
+		// Ejercicio 2 
+		ListaCompañeros.add(4,compañero5);
+
 		System.out.println("Lista de Compañeros");
 		System.out.println(ListaCompañeros);
 	

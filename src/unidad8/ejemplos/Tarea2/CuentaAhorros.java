@@ -41,17 +41,18 @@ public class CuentaAhorros implements Responsable{
 		double deposito = entrada.nextDouble();
 		if(deposito  > 0) {
 			depositar(deposito);
-			
+			return true;
 			
 		}else {
 			System.out.println("No se puede realizar el deposito");
+			return false;
 		}
 
 	}
 
 	@Override
 	public void depositar(double deposito) {
-		cantidad = cantidad + deposito;
+		cantidad += deposito;
 	}
 
 	@Override
@@ -61,13 +62,14 @@ public class CuentaAhorros implements Responsable{
 		double retiro = entrada.nextDouble();
 		if(retiro  <=  getCantidad()) {
 			retirar(retiro);
+			return true;
 			
 			
 		}else {
 			System.out.println("No se puede retirar el dinero");
+			return false;
 		}
 		
-		return false;
 	}
 
 	@Override

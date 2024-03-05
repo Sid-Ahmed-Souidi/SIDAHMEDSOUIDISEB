@@ -2,17 +2,14 @@ package unidad8.ejemplos.Tarea2;
 
 import java.util.Scanner;
 
-public class CuentaCorriente implements Responsable {
+public class CuentaCorrientes implements Responsable {
 
 	private String nombre ;
 	private double cantidad;	
-	public static final double saldoMinimo = 100; 
+	public static final double miBalance = 100; 
 	
 	
-	
-	
-	
-	public CuentaCorriente(String nombre, double cantidad) {
+	public CuentaCorrientes(String nombre, double cantidad) {
 		super();
 		this.nombre = nombre;
 		this.cantidad = cantidad;
@@ -40,20 +37,20 @@ public class CuentaCorriente implements Responsable {
 		Scanner entrada = new Scanner(System.in);
 		System.out.println("Introduzca la cantidad que desea depositar");
 		double deposito = entrada.nextDouble();
-		if(deposito  < 0) {
+		if(deposito  > 0) {
 			depositar(deposito);
-			
+			return true;
 			
 		}else {
-			System.out.println("No hay dinero en la cuenta");
+			System.out.println("Deposito no realizado");
+			return false;
 		}
 
-		return false;
 	}
 
 	@Override
 	public void depositar(double deposito) {
-		cantidad = cantidad + deposito;
+		cantidad  += deposito;
 	}
 
 	@Override
@@ -61,13 +58,17 @@ public class CuentaCorriente implements Responsable {
 		Scanner entrada = new Scanner(System.in);
 		System.out.println("Introduzca la cantidad que desea retirar");
 		double retiro = entrada.nextDouble();
-		if((getCantidad() - retiro) <= saldoMinimo) {
+		if((getCantidad() - retiro) >= miBalance) {
 			retirar(retiro);
+			return true;
 			
+		}else {
+			System.out.println("El saldo minimo no puede ser inferior a "+miBalance);
+			return false;
 		}
 		
 		
-		return false;
+		
 	}
 
 	@Override
