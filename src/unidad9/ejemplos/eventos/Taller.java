@@ -10,6 +10,6 @@ public class Taller extends Evento {
 	public Taller(String nombre, LocalDate fecha, int duracionEnHoras , String instructor) {
 		super(nombre, fecha, duracionEnHoras);
 		this.instructor = instructor;
-	}
+	}  
 
 }
