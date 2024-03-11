@@ -7,14 +7,6 @@ public class Empleado implements Comparable<Empleado> {
 	private double salario;
 	
 	
-	
-	
-	
-	
-	
-	
-	
-	
 	public Empleado(String nombre, double salario) {
 		super();
 		this.nombre = nombre;
@@ -23,24 +15,9 @@ public class Empleado implements Comparable<Empleado> {
 
 
 
-
-
-
-
-
-
-
 	public String getNombre() {
 		return nombre;
 	}
-
-
-
-
-
-
-
-
 
 
 	public void setNombre(String nombre) {
@@ -48,26 +25,9 @@ public class Empleado implements Comparable<Empleado> {
 	}
 
 
-
-
-
-
-
-
-
-
 	public double getSalario() {
 		return salario;
 	}
-
-
-
-
-
-
-
-
-
 
 	public void setSalario(double salario) {
 		this.salario = salario;

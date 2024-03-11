@@ -128,13 +128,19 @@ public class Evento implements Asistible {
 			" fecha :"+this.fecha+"\n"+
 		   " duracion en horas : "+this.duracionEnHoras+"\n"+
 			"Asistentes :";
-			for(String asistente : asistentes) {
-				informacion += asistente+ " , ";
-			}
-		       
-		   		return informacion;
-	}
+	
+				int size = asistentes.size();
+				    for (int i = 0; i < size; i++) {
+				        informacion += asistentes.get(i);
+				        if (i < size - 1) {
+				            informacion += ", ";
+				        }
+				    }
 
 
-
+			return informacion;
+}
+	
+	
+	
 }

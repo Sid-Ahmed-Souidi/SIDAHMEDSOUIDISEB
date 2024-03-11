@@ -19,7 +19,6 @@ public class CuentaAhorro extends Cuenta{
 	}*/
 	
 	
-	
 	@Override
 	public String toString() {
 		super.toString();

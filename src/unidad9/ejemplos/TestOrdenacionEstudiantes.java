@@ -21,15 +21,14 @@ public class TestOrdenacionEstudiantes {
 		
 		mostraListaEstudiantes(listaEstudiantes);
 		
+		System.out.println("--lista ordenada--");
 		Collections.sort(listaEstudiantes);
 
 			mostraListaEstudiantes(listaEstudiantes);
 
 	}
 	
-	
 	private static void mostraListaEstudiantes(List<Estudiante> estudiantes) {
-		
 		
 		for(Estudiante estudiante : estudiantes) {
 			System.out.println(estudiante);

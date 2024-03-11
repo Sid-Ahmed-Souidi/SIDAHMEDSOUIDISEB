@@ -49,7 +49,7 @@ public class Estudiante implements Comparable<Estudiante> {
 		if(matricula>otro.matricula) {
 			comparation = 1;
 		}
-		if(matricula>otro.matricula) {
+		if(matricula<otro.matricula) {
 			comparation = -1;
 		}
 		

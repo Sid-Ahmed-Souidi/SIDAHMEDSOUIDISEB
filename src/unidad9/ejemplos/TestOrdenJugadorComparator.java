@@ -25,7 +25,8 @@ public class TestOrdenJugadorComparator {
 		
 		ComparatorRankingJugador  comparatorRanking = new ComparatorRankingJugador();
 		Collections.sort(equipo ,comparatorRanking);
-		
+		System.out.println(equipo);
+
 		
 	}
 
