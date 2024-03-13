@@ -18,6 +18,7 @@ public class Animal {
 	private List<Revision> revisiones;
 	private boolean cuidado;
 	
+	
 	public Animal(LocalDate camada, int ide, String nombre, SEXO sexo,TIPO_ANIMAL tipoAnimal,LocalDate fechaVacunacion, List<Revision> revisiones, boolean cuidado) {
 		super();
 		this.camada = camada;
