@@ -1,10 +1,10 @@
 package unidad9.ejemplos.ExplotacionGanadera;
 
 import java.time.LocalDate;
+import java.time.temporal.ChronoUnit;
 import java.util.ArrayList;
 import java.util.List;
-
-import unidad9.ejemplos.colecciones.listas.Ejercicio1.Compañero;
+import java.util.Scanner;
 
 public class Animal {
 	
@@ -13,23 +13,47 @@ public class Animal {
 	private String nombre;
 	private SEXO sexo;
 	private TIPO_ANIMAL tipoAnimal;
-
 	// clase de revision.
+	private LocalDate fechaVacunacion;
 	private List<Revision> revisiones;
 	private boolean cuidado;
 	
-	
-	public Animal(LocalDate camada, int ide, String nombre, SEXO sexo,TIPO_ANIMAL tipoAnimal, List<Revision> revisiones, boolean cuidado) {
+	public Animal(LocalDate camada, int ide, String nombre, SEXO sexo,TIPO_ANIMAL tipoAnimal,LocalDate fechaVacunacion, List<Revision> revisiones, boolean cuidado) {
 		super();
 		this.camada = camada;
 		this.ide = ide;
 		this.nombre = nombre;
 		this.sexo = sexo;
 		this.tipoAnimal = tipoAnimal;
+		this.fechaVacunacion = fechaVacunacion;
 		// conforme me cree un animal me creo una lista para los animales 
 		this.revisiones = new ArrayList<Revision>();
 		this.cuidado = cuidado;
 		
+	}
+	
+	public LocalDate getFechaVacunacion() {
+		return fechaVacunacion;
+	}
+
+
+	public void setFechaVacunacion() {
+		Scanner entrada = new Scanner(System.in);
+		System.out.println("Introduce el año de la fecha de vacunacion");
+		int anyo = entrada.nextInt();
+		System.out.println("Introduce el mes ");
+		int mes = entrada.nextInt();
+		System.out.println("Introduce el dia");
+		int dia  = entrada.nextInt();
+		LocalDate fechaVacunacion = LocalDate.of(anyo, mes, dia);
+		LocalDate fechaActual = LocalDate.now();
+		
+        long diferenciaDias = ChronoUnit.DAYS.between(fechaVacunacion, fechaActual);
+
+        System.out.println("La diferencia de días entre fechaVacunacion" + fechaVacunacion + " y " + fechaActual + " es: " + diferenciaDias + " días.");
+
+		
+		this.fechaVacunacion = fechaVacunacion;
 	}
 
 
@@ -103,12 +127,4 @@ public class Animal {
 	}
 	
 	
-	
-	
-	
-	
-	
-	
-	
-
 }

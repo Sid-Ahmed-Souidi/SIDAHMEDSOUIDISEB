@@ -9,9 +9,9 @@ public class Leche  extends Animal{
 	private int numLitros;
 	private int edad;
 
-	public Leche(LocalDate camada, int ide, String nombre, SEXO sexo, TIPO_ANIMAL tipoAnimal, List<Revision> revisiones,
+	public Leche(LocalDate camada, int ide, String nombre, SEXO sexo, TIPO_ANIMAL tipoAnimal,LocalDate fechaVacunacion, List<Revision> revisiones,
 			boolean cuidado) {
-		super(camada, ide, nombre, sexo, tipoAnimal, revisiones, cuidado);
+		super(camada, ide, nombre, sexo, tipoAnimal,fechaVacunacion, revisiones, cuidado);
 		this.numLitros = numLitros;
 		this.edad = edad;
 		

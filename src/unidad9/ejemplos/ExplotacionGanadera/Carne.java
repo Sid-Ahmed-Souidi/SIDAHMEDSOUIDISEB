@@ -12,9 +12,9 @@ public class Carne extends Animal {
 	private Map<TIPO_ALIMENTO,Integer> tipoAlimentacion ;
 
 	
-	public Carne(LocalDate camada, int ide, String nombre, SEXO sexo, TIPO_ANIMAL tipoAnimal, List<Revision> revisiones,
-			boolean cuidado) {
-		super(camada, ide, nombre, sexo, tipoAnimal, revisiones, cuidado);
+	public Carne(LocalDate camada, int ide, String nombre, SEXO sexo, TIPO_ANIMAL tipoAnimal,LocalDate fechaVacunacion, List<Revision> revisiones,
+			boolean cuidado, int canComer) {
+		super(camada, ide, nombre, sexo, tipoAnimal, fechaVacunacion, revisiones, cuidado);
 		this.canComer = canComer;
 		this.tipoAlimentacion = new HashMap<TIPO_ALIMENTO,Integer>();
 		
