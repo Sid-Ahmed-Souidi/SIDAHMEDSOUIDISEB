@@ -75,4 +75,10 @@ public class Velero extends Vehiculo{
 		return 0;
 	}
 
+	@Override
+	public double precio() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
 }

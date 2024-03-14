@@ -8,7 +8,7 @@ public class Ejercicio1 {
 		int numeroPositivo ;
 		int contador = 0 ;
 		/**27) Crear una aplicación que nos permite insertar números hasta que insertemos un -1.
-		Calcular el numero de números introducidos. *//
+		Calcular el numero de números introducidos. */
 
 
 		Scanner entrada = new Scanner(System.in);

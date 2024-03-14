@@ -68,7 +68,7 @@ public class ServiciosDeBicicletas {
 		
 	}
 	private static void tipoEstacion() {
-		for()
+
 	}
 	private static void estacionRecogida() {
 		

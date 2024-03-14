@@ -5,11 +5,11 @@ import java.util.Arrays;
 public class Ejercicio71 {
 	static final int TAM = 6;
 	 static int [] matriz = {1,2,3,8,5,6,7} ;
-	 s//tatic int [] nuevaMatriz = new int[TAM];
+	 //tatic int [] nuevaMatriz = new int[TAM];
 	//Escriba un programa Java para revertir una matriz de valores enteros.
 
 	public static void main(String[] args) {
-        System.out.println(Arrays.toString(revertirMatriz(nuevaMatriz)));
+        System.out.println(Arrays.toString(revertirMatriz(matriz)));
 
        //System.out.println(Arrays.toString(revertirMatriz(matriz)));
 		//revertirMatriz(matriz);

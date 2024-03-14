@@ -11,7 +11,7 @@ public class GestorExplotacionGanadera {
 		
 
 	Revision revisionPorcino = new Revision("Veterinaria",LocalDate.of(2024, 1, 1), true);	
-	Carne porcino = new Carne("2024-3-1",231 ,"PORCINO1",SEXO.MASCULINO,TIPO_ANIMAL.PORCINO,LocalDate.of(2024, 2, 1),revisiones,);
+//	Carne porcino = new Carne("2024-3-1",231 ,"PORCINO1",SEXO.MASCULINO,TIPO_ANIMAL.PORCINO,LocalDate.of(2024, 2, 1),revisiones,);
 		
 		
 		

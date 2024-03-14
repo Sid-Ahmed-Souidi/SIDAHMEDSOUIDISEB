@@ -9,9 +9,9 @@ public class RadarTramo {
 	public static Scanner entrada = new Scanner(System.in);
 	
 	public static void main(String[] args) {
-		 double distancia;
-		 double vel_max_permitida ;
-		 double tiempo ;
+		 double distancia = 0;
+		 double vel_max_permitida = 0 ;
+		 double tiempo = 0 ;
 		 double vel_media = 0;
 		boolean haSuperadoVelocidadMax ;
 		double porcentajeSuperado;

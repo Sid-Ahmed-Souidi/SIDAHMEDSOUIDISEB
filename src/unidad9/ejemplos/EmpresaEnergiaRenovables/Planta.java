@@ -11,20 +11,14 @@ public class Planta {
 	private String nombre ;
 	private TIPO_PLANTA tipo;
 	private List<Recurso> recursos;
-	private double energiaPlantaEolica;
-	private double energiaPlantaSolar;
-	private double energiaComunidad;
-
 	
-
+	
 	
 	public Planta(String id, String nombre, TIPO_PLANTA tipo) {
 		super();
 		this.id = id;
 		this.nombre = nombre;
 		this.tipo = tipo;
-		// Inicializamos la lista 
-		this.recursos = new ArrayList<>();
 	
 	}
 
@@ -66,7 +60,6 @@ public class Planta {
 	}
 
 
-
 	public List<Recurso> getRecursos() {
 		return recursos;
 	}
@@ -79,18 +72,18 @@ public class Planta {
 	
 	
 	
-public void addRecurso(Recurso recurso) {
+	public void addRecurso(Recurso recurso) {
 		
 		boolean registro=false;
 		
 		if(tipo.equals(TIPO_PLANTA.PLACA) && recurso instanceof Placa) {
-		//	recurso.setId(recurso.getId()+"-"+nombre.substring(0, 3).toUpperCase()); //1000-NAV
+			recurso.setId(recurso.getId()+"-"+nombre.substring(0, 3).toUpperCase()); //1000-NAV
 			recursos.add(recurso);
 			registro = true;
 			
 		}
 		if(tipo.equals(TIPO_PLANTA.MOLINO) && recurso instanceof Molino) {
-		//	recurso.setId(recurso.getId()+"-"+nombre.substring(0, 3).toUpperCase()); //1000-NAV
+			recurso.setId(recurso.getId()+"-"+nombre.substring(0, 3).toUpperCase()); //1000-NAV
 			recursos.add(recurso);
 			registro = true;
 			
@@ -103,35 +96,42 @@ public void addRecurso(Recurso recurso) {
 		}
 		
 		
+		
+		
 	}
 
 
-		public double energiaGeneradaPlanta(double energiaGenerada) {
-			
-			if(tipo.equals(TIPO_PLANTA.PLACA)) {
-			energiaPlantaSolar+= energiaGenerada;
-			return energiaPlantaSolar ;
-			}
-			if(tipo.equals(TIPO_PLANTA.MOLINO)) {
-				energiaPlantaEolica+= energiaGenerada;
-				return energiaPlantaEolica ;
-			}
-			
-			return energiaGenerada;
-			
+
+	
+	public double energiaGeneradaPlanta(double energiaGenerada) {
+
+		if(tipo.equals(TIPO_PLANTA.PLACA)) {
+		double energiaPlantaSolar = energiaGenerada;
+		return energiaPlantaSolar ;
 		}
-		
-		public double energiaComunidad() {
-			
-			return energiaComunidad = energiaPlantaSolar+energiaPlantaEolica;
-			
-			
-			
-			
-			
+		if(tipo.equals(TIPO_PLANTA.MOLINO)) {
+			double energiaPlantaEolica = energiaGenerada;
+			return energiaPlantaEolica ;
 		}
 
+		return energiaGenerada;
 
+	}
+
+	public double energiaComunidad() {
+
+		int energiaPlantaSolar =0;
+		int energiaPlantaEolica;
+	//	return  energiaComunidad = energiaPlantaSolar+energiaPlantaEolica;
+		return energiaPlantaSolar;
+
+
+
+
+	}
+
+
+	
 	
 	
 	

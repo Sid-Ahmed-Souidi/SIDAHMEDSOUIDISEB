@@ -1,9 +1,10 @@
 package unidad6.ejemplos;
 
+/**
 public enum EntidadBancariaEnum {
 	
-	
-	DNI("76085597G") , FECHA("06/03/2001") , CLAVE(686123) , PASAPORTE("");
+	/**
+//	DNI("76085597G") , FECHA("06/03/2001") , CLAVE(686123) , PASAPORTE("");
 
 	private final String codigoDni;
 	private final String codigoFecha;
@@ -17,17 +18,18 @@ public enum EntidadBancariaEnum {
 	public String getCodigo() {
 		return codigoDni;
 		
-	}
 	
-	EntidadBancariaEnum1(String codigoFecha){
+	
+	//EntidadBancariaEnum1(String codigoFecha){
 		
 		this.codigoFecha = codigoFecha;
-	}
 	
-	public String getCodigoFecha() {
+	
+	//public String getCodigoFecha() {
 		return codigoFecha;
 		
 		
 	}
 
 }
+*/
