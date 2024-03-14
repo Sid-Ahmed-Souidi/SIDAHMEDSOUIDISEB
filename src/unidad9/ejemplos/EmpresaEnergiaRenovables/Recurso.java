@@ -6,18 +6,14 @@ public  class Recurso {
 	
 	private String id ;
 	private double capacidad ;
-	private LocalDate fechaRevision;
 	
 	
-	public Recurso(String id) {
+	public Recurso(String id ) {
 		super();
-		this.id = id;
+		setId(id);
 
 	}
 
-
-	
-	
 	public String getId() {
 		return id;
 	}
@@ -29,7 +25,9 @@ public  class Recurso {
 			this.id = id;
 
 		}else{
-			System.out.println("Formato incorrecto");
+			
+			System.out.println("Formato erroneo");
+			this.id = " ";
 		}
 		
 		
@@ -45,12 +43,6 @@ public  class Recurso {
 	public void setCapacidad(double capacidad) {
 		this.capacidad = capacidad;
 	} 
-	
-	
-	
-	
-	
-	
 	
 	
 	
