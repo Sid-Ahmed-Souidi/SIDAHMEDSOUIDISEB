@@ -11,6 +11,8 @@ public class Planta {
 	private String nombre ;
 	private TIPO_PLANTA tipo;
 	private List<Recurso> recursos;
+	private double energiaPlantaSolar;
+	private double energiaPlantaEolica;
 	
 	
 	
@@ -19,7 +21,32 @@ public class Planta {
 		this.id = id;
 		this.nombre = nombre;
 		this.tipo = tipo;
+		this.recursos = new ArrayList<Recurso>();
 	
+	}
+
+
+
+	public double getEnergiaPlantaSolar() {
+		return energiaPlantaSolar;
+	}
+
+
+
+	public void setEnergiaPlantaSolar(double energiaPlantaSolar) {
+		this.energiaPlantaSolar = energiaPlantaSolar;
+	}
+
+
+
+	public double getEnergiaPlantaEolica() {
+		return energiaPlantaEolica;
+	}
+
+
+
+	public void setEnergiaPlantaEolica(double energiaPlantaEolica) {
+		this.energiaPlantaEolica = energiaPlantaEolica;
 	}
 
 
@@ -101,36 +128,35 @@ public class Planta {
 	}
 
 
+	public double energiaGeneradaPlanta(double energiaGenerada ,Recurso recurso) {
 
-	
-	public double energiaGeneradaPlanta(double energiaGenerada) {
-
-		if(tipo.equals(TIPO_PLANTA.PLACA)) {
-		double energiaPlantaSolar = energiaGenerada;
+		
+		if(tipo.equals(TIPO_PLANTA.PLACA) &&  recurso instanceof Placa) {
+		 energiaPlantaSolar += energiaGenerada;
 		return energiaPlantaSolar ;
 		}
-		if(tipo.equals(TIPO_PLANTA.MOLINO)) {
-			double energiaPlantaEolica = energiaGenerada;
+		else if(tipo.equals(TIPO_PLANTA.MOLINO) && recurso instanceof Molino) {
+			 energiaPlantaEolica += energiaGenerada;
 			return energiaPlantaEolica ;
 		}
 
-		return energiaGenerada;
+		else {
+			System.out.println("Error la planta no es del mismo tipo que el recurso");
+			
+			return 0.0;
+		}
+	}
+
+	
+		public double energiaComunidad() {
+			double energiaComunidad = energiaPlantaSolar+energiaPlantaEolica;
+			return  energiaComunidad; 
+
+
+		}
 
 	}
 
-	public double energiaComunidad() {
-
-		int energiaPlantaSolar =0;
-		int energiaPlantaEolica;
-	//	return  energiaComunidad = energiaPlantaSolar+energiaPlantaEolica;
-		return energiaPlantaSolar;
-
-
-
-
-	}
-
-
 	
 	
 	
@@ -151,4 +177,4 @@ public class Planta {
 	
 	
 
-}
+

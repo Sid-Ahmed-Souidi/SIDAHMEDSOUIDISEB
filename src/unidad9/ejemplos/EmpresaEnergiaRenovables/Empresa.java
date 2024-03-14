@@ -15,6 +15,8 @@ public class Empresa {
 		Placa placa2 = new Placa("23345-RAW",ORIENTACIONES.SUR); //1000-NAV
 
 		Molino molino1 = new Molino("12121-WQE");
+		Molino molino2 = new Molino("12121-SwE");
+
 		
 		//placa1.setId("23451-REW");
 		
@@ -25,17 +27,27 @@ public class Empresa {
 		
 		
 		System.out.println("Energia generada por placa");
-		System.out.println(placa1.calculoEnergiaPlaca(100, 1212));
-		System.out.println("Energia generada por Molino");
+ 		System.out.println("Energia generada por Molino");
 		System.out.println(molino1.calculoEnergiaMolino(10, 12923));
 		
 		
-		System.out.println("Energia generada por la planta que contiene placas solares");
-		planta1.energiaGeneradaPlanta(placa1.calculoEnergiaPlaca(100, 1212));
+		System.out.println("Energia generada por la planta 1 que contiene placas solares");
+		System.out.println(planta1.energiaGeneradaPlanta((placa1.calculoEnergiaPlaca(100, 1000)) , placa1));
 	
-		planta1.energiaGeneradaPlanta(placa1.calculoEnergiaPlaca(100, 1212));
+		System.out.println(planta1.energiaGeneradaPlanta(placa1.calculoEnergiaPlaca(100, 1000) ,  placa1));
 		
+		System.out.println("Energia generada por la planta 2 que contiene molinos de viento");
+
+		System.out.println(planta2.energiaGeneradaPlanta(molino1.calculoEnergiaMolino(10, 1500) ,  molino1));
 		
+		System.out.println("Energia generada por la planta 3 que contiene molinos de viento");
+		
+		System.out.println(planta3.energiaGeneradaPlanta(molino2.calculoEnergiaMolino(10, 3000) ,  molino2));
+
+		
+		System.out.println("Total de energia generada en toda la comunidad");
+		 
+
 	}
 
 }
