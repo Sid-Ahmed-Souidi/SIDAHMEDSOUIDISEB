@@ -14,9 +14,9 @@ public class Profesor {
 	//Tenga un método calcularMedia que recibe un parámetro de tipo Alumno y devuelve un double.
 	
 	public void  ponerNotas(Alumno alumno) {
-		alumno.getAsignatura1().setCalificacion(random.nextDouble(10));
-		alumno.getAsignatura2().setCalificacion(random.nextDouble(10));
-		alumno.getAsignatura3().setCalificacion(random.nextDouble(10));		
+		//alumno.getAsignatura1().setCalificacion(random.nextDouble(10));
+	//error	//alumno.getAsignatura2().setCalificacion(random.nextDouble(10));
+		//alumno.getAsignatura3().setCalificacion(random.nextDouble(10));		
 		
 	}
 	

@@ -40,11 +40,11 @@ public class Abstraccion {
 	        // Animal animal = new Animal("Animal");
 
 	        // Creamos un objeto de la clase hija Perro
-	        Perro miPerro = new Perro("Bobby");
+	   //     Perro miPerro = new Perro("Bobby");
 
 	        // Llamamos a métodos de la clase Perro
-	        miPerro.hacerSonido();
-	        miPerro.moverse();
+	    //    miPerro.hacerSonido();
+	     //   miPerro.moverse();
 	    }
 	}
 }
