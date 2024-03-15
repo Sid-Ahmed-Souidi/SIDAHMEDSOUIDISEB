@@ -8,11 +8,12 @@ public class Acuaticos extends Vehiculos {
 	private boolean motor ; 
 	private int profundidad;
 
-	
+	//Uso diferentes constructores para cada tipo de vehiculo
 	public Acuaticos( String  modelo ,TIPO_VEHICULO vehiculo ,int  eslora , boolean motor ,String matricula) {
 		super(modelo , vehiculo);
 		this.eslora = eslora;
 		this.motor = motor;
+		//uso el set ya que es donde tengo la validacin 
 		setMatricula(matricula);
 	}
 
@@ -54,8 +55,8 @@ public class Acuaticos extends Vehiculos {
 	}
 
 	public void setMatricula(String matricula) {
-		
-		if(matricula.matches("[0-9]{3}[a-Z]{10}")) {
+		//Utilizamos la funcion matches para verificar
+		if(matricula.matches("[0-9]{3}[a-zA-Z]{10}")) {
 			this.matricula = matricula;
 
 		}else{
@@ -63,7 +64,21 @@ public class Acuaticos extends Vehiculos {
 			System.out.println("Formato erroneo");
 			this.matricula = " ";
 		}
+		
+		
+		
 	}
+
+	@Override
+	public String toString() {
+		
+		
+		return " [matricula=" + matricula + ", eslora=" + eslora + ", motor=" + motor + ", profundidad="
+				+ profundidad + "]";
+		
+	}
+	
+	
 
 
 	

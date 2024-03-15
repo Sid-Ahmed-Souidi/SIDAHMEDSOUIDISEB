@@ -6,6 +6,7 @@ public class Vehiculos {
 	private TIPO_VEHICULO vehiculo;
 	
 	
+	
 	public Vehiculos( String  modelo , TIPO_VEHICULO vehiculo) {
 		super();
 		this.modelo = modelo;
@@ -22,6 +23,8 @@ public class Vehiculos {
 	public void setModelo(String modelo) {
 		this.modelo = modelo;
 	}
+
+
 	
 	
 	

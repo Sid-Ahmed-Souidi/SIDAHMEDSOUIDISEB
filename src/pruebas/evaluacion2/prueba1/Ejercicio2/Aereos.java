@@ -12,13 +12,15 @@ public class Aereos extends Vehiculos{
 		super( modelo , vehiculo);
 		this.asientos = asientos;
 		this.tiempoVuelo = tiempoVuelo;
-		this.matricula = matricula;
+		setMatricula(matricula);
 		
 	}
 	public Aereos( String modelo ,int numHelice, TIPO_VEHICULO vehiculo, int  asientos ,String matricula ) {
 		super( modelo ,vehiculo);
 		this.asientos = asientos;
 		this.numHelice = numHelice ; 
+		setMatricula(matricula);
+
 		
 	}
 
@@ -55,7 +57,19 @@ public class Aereos extends Vehiculos{
 		return matricula;
 	}
 	public void setMatricula(String matricula) {
-		this.matricula = matricula;
+		if(matricula.matches("[a-zA-Z]{4}[0-9]{6}")) {
+			this.matricula = matricula;
+
+		}else{
+			
+			System.out.println("Formato erroneo");
+			this.matricula = " ";
+		}
+	}
+	@Override
+	public String toString() {
+		return "Aereos [matricula=" + matricula + ", asientos=" + asientos + ", tiempoVuelo=" + tiempoVuelo
+				+ ", numHelice=" + numHelice + "]";
 	}
 	
 	

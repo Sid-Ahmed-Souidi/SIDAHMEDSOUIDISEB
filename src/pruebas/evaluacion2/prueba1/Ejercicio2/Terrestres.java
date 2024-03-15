@@ -11,7 +11,7 @@ public class Terrestres extends Vehiculos {
 		super( modelo ,vehiculo);
 		this.ruedas= ruedas; 
 		this.aireAcondiccionado= aireAcondiccionado;
-		this.matricula=matricula;
+		setMatricula(matricula);
 	
 	}
 	public Terrestres( String modelo, TIPO_VEHICULO vehiculo,int  ruedas , COLOR color,String matricula) {
@@ -48,7 +48,19 @@ public class Terrestres extends Vehiculos {
 		return matricula;
 	}
 	public void setMatricula(String matricula) {
-		this.matricula = matricula;
+		if(matricula.matches("[0-9]{4}[a-zA-Z]{3}")) {
+			this.matricula = matricula;
+
+		}else{
+			
+			System.out.println("Formato erroneo");
+			this.matricula = " ";
+		}
+	}
+	@Override
+	public String toString() {
+		return "Terrestres [matricula=" + matricula + ", ruedas=" + ruedas + ", aireAcondiccionado="
+				+ aireAcondiccionado + ", color=" + color + "]";
 	}
 	
 	
