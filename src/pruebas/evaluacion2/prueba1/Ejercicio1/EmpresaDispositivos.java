@@ -1,6 +1,13 @@
 package pruebas.evaluacion2.prueba1.Ejercicio1;
 
+
+//subString
 public class EmpresaDispositivos {
+	
+	
+	static int dell = 0;
+	static int cisco = 0;
+	static int HP = 0;
 	static String mac [] = {"00-0C-29-DC-8E-F2",
             "00-14-22-D8-CF-DB-C5",
             "00-0B-0E-32-0E-81-72",
@@ -35,28 +42,63 @@ public class EmpresaDispositivos {
 
 	public static void main(String[] args) {
 		
+		System.out.println("PROCESO IVP6");
+		identificarMac(mac);
+		System.out.print("Numero de dispositivos del fabricante Dell : ");
+		System.out.println(dell);
+		System.out.print("Numero de dispositivos del fabricante Cisco : ");
+		System.out.println(cisco);
+		System.out.print("Numero de dispositivos del fabricante HP : ");
+		System.out.println(HP);
+  
 		
-		identificarFabricante(mac);
-
-
 
 	}
-	public static void identificarFabricante(String [] array) {
+	public static void identificarMac(String [] array) {
 		String ciclos[] = null;
 		for(int i =0 ; i< mac.length; i++) {
-			 ciclos = mac[i].split(",");
-			 for(int j =0 ; j< ciclos.length; j++) {
-			 System.out.println(ciclos[j]);
-			 ciclos = mac[j].split("-");
-			 System.out.println(ciclos[j]);
-			 
-	
+			ciclos = mac[i].split(",");
+			for(int j = 0 ; j < ciclos.length ; j++) {
+			//System.out.println(ciclos[j]);
+			identificarFabricante(ciclos[j]);
+			procesoEUI64(ciclos[j]);
+			
+			}
 		}
 		
 	}
 	
+	// nos queda realizar el proceso de ipv6 
+	private static void procesoEUI64(String string) {
+		
+	String cadena = string.substring(0 ,8);
+	String cadena2 = "-FF-FE-"+(string.substring(10 ,17));
+
+	String resultado = cadena.concat(cadena2);
+	
+	System.out.println(resultado);
+	
+	}
+	private static void identificarFabricante(String string) {
+		
+		
+		
+		String cadena = string.substring(0 ,8);
+		//System.out.println(cadena);
+		if(cadena.equals("00-0C-29")) {
+			dell ++;
+			
+		}if(cadena.equals("00-0B-0E")) {
+			cisco ++;
+			
+		}if(cadena.equals("00-14-22")) {
+			HP ++;
+			
+		}
+	}
+	
+	}
+
 	
 
-	}	
 
-}
