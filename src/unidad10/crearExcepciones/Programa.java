@@ -16,7 +16,6 @@ public class Programa {
 
 	}
 
-	
 	public void metodoQuePuedeLanzarExcepcion() throws AlgoHaSalidoMalExcepcion {
 		
 		boolean  condicion = true;
