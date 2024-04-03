@@ -27,7 +27,7 @@ public class EmisionesPorPais {
 			
 			while(cadena!=null) {
 				//System.out.println(cadena);
-				int  anyo = Integer.parseInt(datos)[0].trim();
+				int  anyo = Integer.parseInt(datos[0].trim());
 				System.out.println(anyo);
 				String pais = datos[1].trim();
 				System.out.println(pais);

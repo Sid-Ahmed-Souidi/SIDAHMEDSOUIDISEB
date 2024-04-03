@@ -1,0 +1,3 @@
+Este es un ejemplo de como escribir con printWriter
+Podemos escribir textos con formato
+Podemos escribir 6 con formato

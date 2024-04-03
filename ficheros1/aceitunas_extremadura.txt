@@ -1,0 +1,161 @@
+Comarca, Tipo de Aceituna, Año, Toneladas
+La Serena, Aceituna de mesa, 2014, 16991
+La Serena, Aceituna de mesa, 2015, 4446
+La Serena, Aceituna de mesa, 2016, 10833
+La Serena, Aceituna de mesa, 2017, 16216
+La Serena, Aceituna de mesa, 2018, 8153
+La Serena, Aceituna de mesa, 2019, 2821
+La Serena, Aceituna de mesa, 2020, 6113
+La Serena, Aceituna de mesa, 2021, 4027
+La Serena, Aceituna de mesa, 2022, 11867
+La Serena, Aceituna de mesa, 2023, 2207
+La Serena, Aceituna para aceite, 2014, 13174
+La Serena, Aceituna para aceite, 2015, 10767
+La Serena, Aceituna para aceite, 2016, 16820
+La Serena, Aceituna para aceite, 2017, 17360
+La Serena, Aceituna para aceite, 2018, 13485
+La Serena, Aceituna para aceite, 2019, 14172
+La Serena, Aceituna para aceite, 2020, 18002
+La Serena, Aceituna para aceite, 2021, 6337
+La Serena, Aceituna para aceite, 2022, 14932
+La Serena, Aceituna para aceite, 2023, 5314
+Las Vegas Altas, Aceituna de mesa, 2014, 4860
+Las Vegas Altas, Aceituna de mesa, 2015, 13070
+Las Vegas Altas, Aceituna de mesa, 2016, 16238
+Las Vegas Altas, Aceituna de mesa, 2017, 14656
+Las Vegas Altas, Aceituna de mesa, 2018, 1986
+Las Vegas Altas, Aceituna de mesa, 2019, 9274
+Las Vegas Altas, Aceituna de mesa, 2020, 3620
+Las Vegas Altas, Aceituna de mesa, 2021, 17926
+Las Vegas Altas, Aceituna de mesa, 2022, 15171
+Las Vegas Altas, Aceituna de mesa, 2023, 7329
+Las Vegas Altas, Aceituna para aceite, 2014, 2007
+Las Vegas Altas, Aceituna para aceite, 2015, 7323
+Las Vegas Altas, Aceituna para aceite, 2016, 13549
+Las Vegas Altas, Aceituna para aceite, 2017, 8435
+Las Vegas Altas, Aceituna para aceite, 2018, 8023
+Las Vegas Altas, Aceituna para aceite, 2019, 2628
+Las Vegas Altas, Aceituna para aceite, 2020, 18453
+Las Vegas Altas, Aceituna para aceite, 2021, 11832
+Las Vegas Altas, Aceituna para aceite, 2022, 13259
+Las Vegas Altas, Aceituna para aceite, 2023, 15486
+La Siberia, Aceituna de mesa, 2014, 17693
+La Siberia, Aceituna de mesa, 2015, 9580
+La Siberia, Aceituna de mesa, 2016, 14841
+La Siberia, Aceituna de mesa, 2017, 17121
+La Siberia, Aceituna de mesa, 2018, 9736
+La Siberia, Aceituna de mesa, 2019, 4922
+La Siberia, Aceituna de mesa, 2020, 16249
+La Siberia, Aceituna de mesa, 2021, 9946
+La Siberia, Aceituna de mesa, 2022, 16876
+La Siberia, Aceituna de mesa, 2023, 3769
+La Siberia, Aceituna para aceite, 2014, 19818
+La Siberia, Aceituna para aceite, 2015, 5591
+La Siberia, Aceituna para aceite, 2016, 9158
+La Siberia, Aceituna para aceite, 2017, 9301
+La Siberia, Aceituna para aceite, 2018, 19080
+La Siberia, Aceituna para aceite, 2019, 16894
+La Siberia, Aceituna para aceite, 2020, 10660
+La Siberia, Aceituna para aceite, 2021, 2044
+La Siberia, Aceituna para aceite, 2022, 17791
+La Siberia, Aceituna para aceite, 2023, 8758
+Sierra de Gata, Aceituna de mesa, 2014, 12491
+Sierra de Gata, Aceituna de mesa, 2015, 2923
+Sierra de Gata, Aceituna de mesa, 2016, 4644
+Sierra de Gata, Aceituna de mesa, 2017, 8191
+Sierra de Gata, Aceituna de mesa, 2018, 13491
+Sierra de Gata, Aceituna de mesa, 2019, 5781
+Sierra de Gata, Aceituna de mesa, 2020, 2006
+Sierra de Gata, Aceituna de mesa, 2021, 14794
+Sierra de Gata, Aceituna de mesa, 2022, 16612
+Sierra de Gata, Aceituna de mesa, 2023, 8556
+Sierra de Gata, Aceituna para aceite, 2014, 6367
+Sierra de Gata, Aceituna para aceite, 2015, 3064
+Sierra de Gata, Aceituna para aceite, 2016, 1099
+Sierra de Gata, Aceituna para aceite, 2017, 16573
+Sierra de Gata, Aceituna para aceite, 2018, 9635
+Sierra de Gata, Aceituna para aceite, 2019, 16243
+Sierra de Gata, Aceituna para aceite, 2020, 8119
+Sierra de Gata, Aceituna para aceite, 2021, 4232
+Sierra de Gata, Aceituna para aceite, 2022, 5494
+Sierra de Gata, Aceituna para aceite, 2023, 15880
+Tajo-Salor, Aceituna de mesa, 2014, 8823
+Tajo-Salor, Aceituna de mesa, 2015, 10643
+Tajo-Salor, Aceituna de mesa, 2016, 9214
+Tajo-Salor, Aceituna de mesa, 2017, 2476
+Tajo-Salor, Aceituna de mesa, 2018, 2648
+Tajo-Salor, Aceituna de mesa, 2019, 9901
+Tajo-Salor, Aceituna de mesa, 2020, 1715
+Tajo-Salor, Aceituna de mesa, 2021, 3283
+Tajo-Salor, Aceituna de mesa, 2022, 9343
+Tajo-Salor, Aceituna de mesa, 2023, 7232
+Tajo-Salor, Aceituna para aceite, 2014, 8223
+Tajo-Salor, Aceituna para aceite, 2015, 5227
+Tajo-Salor, Aceituna para aceite, 2016, 2223
+Tajo-Salor, Aceituna para aceite, 2017, 15797
+Tajo-Salor, Aceituna para aceite, 2018, 8187
+Tajo-Salor, Aceituna para aceite, 2019, 13737
+Tajo-Salor, Aceituna para aceite, 2020, 18790
+Tajo-Salor, Aceituna para aceite, 2021, 14291
+Tajo-Salor, Aceituna para aceite, 2022, 6888
+Tajo-Salor, Aceituna para aceite, 2023, 1908
+Campo Arañuelo, Aceituna de mesa, 2014, 5383
+Campo Arañuelo, Aceituna de mesa, 2015, 6915
+Campo Arañuelo, Aceituna de mesa, 2016, 2731
+Campo Arañuelo, Aceituna de mesa, 2017, 3430
+Campo Arañuelo, Aceituna de mesa, 2018, 3335
+Campo Arañuelo, Aceituna de mesa, 2019, 9256
+Campo Arañuelo, Aceituna de mesa, 2020, 15778
+Campo Arañuelo, Aceituna de mesa, 2021, 7717
+Campo Arañuelo, Aceituna de mesa, 2022, 13635
+Campo Arañuelo, Aceituna de mesa, 2023, 11466
+Campo Arañuelo, Aceituna para aceite, 2014, 1120
+Campo Arañuelo, Aceituna para aceite, 2015, 6318
+Campo Arañuelo, Aceituna para aceite, 2016, 11232
+Campo Arañuelo, Aceituna para aceite, 2017, 14590
+Campo Arañuelo, Aceituna para aceite, 2018, 18756
+Campo Arañuelo, Aceituna para aceite, 2019, 16487
+Campo Arañuelo, Aceituna para aceite, 2020, 10501
+Campo Arañuelo, Aceituna para aceite, 2021, 5093
+Campo Arañuelo, Aceituna para aceite, 2022, 10019
+Campo Arañuelo, Aceituna para aceite, 2023, 7665
+Tierra de Barros, Aceituna de mesa, 2014, 1596
+Tierra de Barros, Aceituna de mesa, 2015, 3840
+Tierra de Barros, Aceituna de mesa, 2016, 17608
+Tierra de Barros, Aceituna de mesa, 2017, 2238
+Tierra de Barros, Aceituna de mesa, 2018, 11896
+Tierra de Barros, Aceituna de mesa, 2019, 18219
+Tierra de Barros, Aceituna de mesa, 2020, 11993
+Tierra de Barros, Aceituna de mesa, 2021, 4413
+Tierra de Barros, Aceituna de mesa, 2022, 12005
+Tierra de Barros, Aceituna de mesa, 2023, 1190
+Tierra de Barros, Aceituna para aceite, 2014, 13735
+Tierra de Barros, Aceituna para aceite, 2015, 9683
+Tierra de Barros, Aceituna para aceite, 2016, 17123
+Tierra de Barros, Aceituna para aceite, 2017, 12266
+Tierra de Barros, Aceituna para aceite, 2018, 2165
+Tierra de Barros, Aceituna para aceite, 2019, 12584
+Tierra de Barros, Aceituna para aceite, 2020, 12187
+Tierra de Barros, Aceituna para aceite, 2021, 13473
+Tierra de Barros, Aceituna para aceite, 2022, 1164
+Tierra de Barros, Aceituna para aceite, 2023, 7019
+Sierra de San Pedro, Aceituna de mesa, 2014, 11836
+Sierra de San Pedro, Aceituna de mesa, 2015, 1967
+Sierra de San Pedro, Aceituna de mesa, 2016, 16890
+Sierra de San Pedro, Aceituna de mesa, 2017, 4260
+Sierra de San Pedro, Aceituna de mesa, 2018, 3921
+Sierra de San Pedro, Aceituna de mesa, 2019, 17107
+Sierra de San Pedro, Aceituna de mesa, 2020, 1552
+Sierra de San Pedro, Aceituna de mesa, 2021, 9278
+Sierra de San Pedro, Aceituna de mesa, 2022, 9938
+Sierra de San Pedro, Aceituna de mesa, 2023, 14322
+Sierra de San Pedro, Aceituna para aceite, 2014, 12050
+Sierra de San Pedro, Aceituna para aceite, 2015, 2364
+Sierra de San Pedro, Aceituna para aceite, 2016, 4247
+Sierra de San Pedro, Aceituna para aceite, 2017, 8759
+Sierra de San Pedro, Aceituna para aceite, 2018, 8751
+Sierra de San Pedro, Aceituna para aceite, 2019, 15385
+Sierra de San Pedro, Aceituna para aceite, 2020, 3461
+Sierra de San Pedro, Aceituna para aceite, 2021, 18001
+Sierra de San Pedro, Aceituna para aceite, 2022, 9925
+Sierra de San Pedro, Aceituna para aceite, 2023, 12504
