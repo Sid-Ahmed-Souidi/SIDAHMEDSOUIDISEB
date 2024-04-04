@@ -36,7 +36,7 @@ public class Donantes {
 			while(cadena!=null) {
 				String[] datos = cadena.split(",");
 				String tipo = datos[2];
-				System.out.println(tipo);
+				//System.out.println(tipo);
 				
 				int valorInicial =0;
 
