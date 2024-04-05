@@ -19,7 +19,8 @@ public class CreacionDirectoriosFicheros {
 		
 		}else {
 			System.out.println("El directorio no existe");
-			//mkdir crea toda la estructura necesaria
+			//mkdirs crea toda la estructura necesaria
+			//con mkdir crea solo el directorio
 			if(directorio.mkdir()) {
 				System.out.println("Directorio creado");
 			}else {
