@@ -1,14 +1,16 @@
 package unidad11.ejemplos.ListaAlumnos;
 
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.ArrayList;
-import java.util.HashMap;
+import java.util.Iterator;
 import java.util.List;
-import java.util.Map;
 import java.util.Properties;
 
 public class InsertarAlumnos {
@@ -59,6 +61,7 @@ public class InsertarAlumnos {
 		
 		
 	}
+	
 
 	private static void separarAlumno(String[] datos , int id ) {
 		
@@ -109,11 +112,40 @@ public class InsertarAlumnos {
 	}
 	
 	
-	
+	private static void escribirFichero(File fichero) {
+
+
+		try (PrintWriter escritor = new PrintWriter(new BufferedWriter(new FileWriter(fichero)))) {
+
+		Iterator<Alumno> it = alumnos.iterator();
+
+
+		while (it.hasNext()) {
+
+
+		Alumno alumno = (Alumno) it.next();
+
+		escritor.println("INSERT INTO (id, nombre, apellidos, ciclo_formativo) VALUES(" + alumno.getId() + ",'"
+
+		+ alumno.getNombre() + "','" + alumno.getApellidos() + "'," + alumno.getCicloFormativo() + ");");
+
+
+		}
+
+
+		} catch (Exception e) {
+
+
+		e.getMessage();
+
+
+		
 	
 	//al escribir en el fichero tengo que ponerlo en una fila  el insert into (....) values(y aqui los gets de los campos get.nombre);
 	
 
 	
 
+		}
+		}
 }
