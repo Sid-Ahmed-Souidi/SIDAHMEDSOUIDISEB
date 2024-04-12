@@ -103,10 +103,7 @@ public class LeerDatosFicheroTarjetas {
 			}
 			
 		}
-		
-		
-
-		
+		 
 	}
 	private static void mostrarTiposTarjetas() {
 
