@@ -16,11 +16,10 @@ import java.util.Properties;
 public class InsertarAlumnos {
 	
 
-	  public static  List<Alumno> alumnos = new ArrayList<>();
+	 public static  List<Alumno> alumnos = new ArrayList<Alumno>();
 	public static void main(String[] args) {
 		
 		
-
 		try {
 			Properties propiedades = new Properties();
 			FileInputStream fis = new FileInputStream("ficheros1/alumnos.properties");
@@ -52,6 +51,9 @@ public class InsertarAlumnos {
 			}
 			br.close();
 			fr.close();
+			File escribirFichero = new File("ficheros1/ESCRIBIR_ALUMNOS.txt");
+			escribirFichero(escribirFichero);
+			
 			
 		}catch(IOException e) {
 			
@@ -114,38 +116,22 @@ public class InsertarAlumnos {
 	
 	private static void escribirFichero(File fichero) {
 
-
 		try (PrintWriter escritor = new PrintWriter(new BufferedWriter(new FileWriter(fichero)))) {
 
 		Iterator<Alumno> it = alumnos.iterator();
-
-
 		while (it.hasNext()) {
 
-
 		Alumno alumno = (Alumno) it.next();
-
-		escritor.println("INSERT INTO (id, nombre, apellidos, ciclo_formativo) VALUES(" + alumno.getId() + ",'"
-
-		+ alumno.getNombre() + "','" + alumno.getApellidos() + "'," + alumno.getCicloFormativo() + ");");
-
-
+		escritor.println("INSERT INTO(id,nombre,apellidos,ciclo_formativo) VALUES(" + alumno.getId() + ",'"+ alumno.getNombre() + "','" + alumno.getApellidos() + "'," + alumno.getCicloFormativo() + ");");
 		}
-
-
 		} catch (Exception e) {
-
-
-		e.getMessage();
-
-
-		
-	
+			e.getMessage();
+		}
 	//al escribir en el fichero tengo que ponerlo en una fila  el insert into (....) values(y aqui los gets de los campos get.nombre);
 	
 
 	
 
-		}
+		
 		}
 }

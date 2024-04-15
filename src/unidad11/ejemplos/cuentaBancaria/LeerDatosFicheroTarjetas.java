@@ -23,7 +23,6 @@ public class LeerDatosFicheroTarjetas {
 	private static final String directorio = "C:\\Users\\Sid Ahmed Souidi\\Desktop";
 
 	public static void main(String[] args) {
-
 		
 		tarjetasPorTipo = new HashMap<String , List<String>>();
 		
@@ -115,9 +114,7 @@ public class LeerDatosFicheroTarjetas {
 				System.out.println("-" +elemento);
 			}
 			
-			
 		}
-		
 		
 	}
 	private static void leerInfoTarjetaCSV(String fichero) {
@@ -147,10 +144,8 @@ public class LeerDatosFicheroTarjetas {
 		}catch(IOException e) {
 			e.printStackTrace();
 		
-			
 		}
 
-		
 	}
 	
 	/**
@@ -161,19 +156,14 @@ public class LeerDatosFicheroTarjetas {
 		String tipo = tarjeta.getTipo();
 		String numeroTarjeta = tarjeta.getNumero();
 		
-		
-		
 		// la lista donde se almacena los numeros de cuenta 
 		List<String> tarjetas = tarjetasPorTipo.get(tipo);
-		
-		
 		
 		// la primera vez que se crea va a ser null
 		if(tarjetas == null) {
 			tarjetas = new ArrayList<String>();
 			tarjetasPorTipo.put(tipo, tarjetas);
 		}
-		
 		// aqui se añade cuando ya esta creada la lista 
 		tarjetas.add(numeroTarjeta);
 		
