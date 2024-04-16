@@ -79,10 +79,6 @@ public class InsertarAlumnos {
 		alumnos.add(alumno);
 		recorrerListaAlumnos(alumnos);
 		
-	
-
-		
-		
 	}
 
 	private static void recorrerListaAlumnos(List<Alumno> alumnos2) {

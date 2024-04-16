@@ -11,15 +11,6 @@ public class Reparacion {
 	
 	
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	public Reparacion(TIPOVEHICULO tipo, String matricula, String anioCompra, List<String> anioReparacion) {
 		super();
 		this.tipo = tipo;
