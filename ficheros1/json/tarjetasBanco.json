@@ -1,0 +1,25 @@
+{
+  "tarjetas": [
+    {
+      "tipo_de_tarjeta": "Visa",
+      "numero_de_tarjeta": "74592546",
+      "numero_de_cuenta_asociada": "2222222",
+      "titular": "Juan Perez",
+      "fecha_caducidad": "12/26"
+    },
+    {
+      "tipo_de_tarjeta": "Mastercard",
+      "numero_de_tarjeta": "74592546",
+      "numero_de_cuenta_asociada": "2222222",
+      "titular": "Juan pablo",
+      "fecha_caducidad": "12/26"
+    },
+    {
+      "tipo_de_tarjeta": "Visa",
+      "numero_de_tarjeta": "74592546",
+      "numero_de_cuenta_asociada": "2222222",
+      "titular": "Juan alberto",
+      "fecha_caducidad": "12/26"
+    }
+  ]
+}

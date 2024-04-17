@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Paco",
+    "email": "paco@gmail.com",
+    "edad": 34,
+    "phone": 2342423,
+    "city": "Plasencia",
+    "hasCreditCard": true
+  },
+  {
+    "name": "Elena",
+    "email": "Elena@gmail.com",
+    "edad": 44,
+    "phone": 234223,
+    "city": "Plasencia",
+    "hasCreditCard": false
+  },
+  {
+    "name": "Lucia",
+    "email": "lucia@gmail.com",
+    "edad": 54,
+    "phone": 2342423,
+    "city": "Plasencia",
+    "hasCreditCard": true
+  }
+]
