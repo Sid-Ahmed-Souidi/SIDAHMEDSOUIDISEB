@@ -33,7 +33,8 @@ public class RazaComarcas {
 			
 			lector.close();	
 		} catch (Exception e) {
-			// TODO: handle exception
+
+			
 		}
 
 		

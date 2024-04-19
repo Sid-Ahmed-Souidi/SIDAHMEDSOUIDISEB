@@ -30,9 +30,6 @@ public class CreacionDirectoriosFicheros {
 		}
 		
 		
-		
-		
-		
 		System.out.println("Ingrese el nombre del fichero a crear");
 		String nombreFichero = entrada.nextLine();
 		// de esta forma ponemos el directamente la ruta y a la hora de pasar por teclado solo pasamos el nombre del fichero
