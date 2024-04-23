@@ -1,0 +1,7 @@
+package ejercicio3;
+
+public enum ZONAS {
+	
+	CACERES , CORIA ,NAVALMORAL , PLASENCIA , MERIDA , BADAJOZ , DON_BENITO , ZAFRA
+
+}

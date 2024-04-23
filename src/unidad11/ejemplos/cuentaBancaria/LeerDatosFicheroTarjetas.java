@@ -41,20 +41,21 @@ public class LeerDatosFicheroTarjetas {
 	}
 	private static void crearFicheros(String rutaFichero) {
 	
-		
+		boolean insertado = false ; 
 		try(BufferedWriter escritor = new BufferedWriter(new FileWriter(rutaFichero))){
 			
 			for(Map.Entry<String, List<String>> tarjetas: tarjetasPorTipo.entrySet()) {
 				String clave = tarjetas.getKey();
-				if(clave.equals("Visa")) {
 				List<String> valores = tarjetas.getValue();
+
+				if(clave.equals("Visa")) {
 				//System.out.println("Clave: " + clave);
 				for(String elemento : valores) {
+					System.out.println(elemento);
 					escritor.write(elemento);	
 					escritor.newLine();
 					}
 				}else if(clave.equals("americanexpress")) {
-					List<String> valores = tarjetas.getValue();
 					//System.out.println("Clave: " + clave);
 					for(String elemento : valores) {
 						escritor.write(elemento);	
@@ -63,7 +64,6 @@ public class LeerDatosFicheroTarjetas {
 					
 				}
 				else if(clave.equals("mastercard")) {
-					List<String> valores = tarjetas.getValue();
 					//System.out.println("Clave: " + clave);
 					for(String elemento : valores) {
 						escritor.write(elemento);	
@@ -110,10 +110,12 @@ public class LeerDatosFicheroTarjetas {
 			String clave = tarjetas.getKey();
 			List<String> valores = tarjetas.getValue();
 			System.out.println("Clave: " + clave);
+			if(clave.equals("Visa")) {
 			for(String elemento : valores) {
-				System.out.println("-" +elemento);
+				//System.out.println("-" +elemento);
 			}
 			
+		}
 		}
 		
 	}
