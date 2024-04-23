@@ -1,5 +1,6 @@
 package Ejercicio2;
 
+// si la clase tiene metodos abstractos debe ser clase abstracta
 public abstract class Vehiculo {
 	
 	private String matricula;

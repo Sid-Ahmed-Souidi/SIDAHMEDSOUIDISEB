@@ -9,6 +9,8 @@ import java.util.ArrayList;
 public class GestionPaquete {
 	
 	public static Contenedores almacen = new Contenedores();
+	
+	//lo cambio a mapa
 	static ArrayList<Paquete> listaPaquete = new ArrayList<Paquete>();
 	static ArrayList<Paquete> plasencia = new ArrayList<Paquete>();
 	static ArrayList<Paquete> coria = new ArrayList<Paquete>();
@@ -141,7 +143,7 @@ public class GestionPaquete {
 			LocalDate fechaPaquete = LocalDate.parse(paquete.getFecha() , formato);
 			LocalDate fechaReferencia = LocalDate.of(2024, 03, 15);
 			long diasDeDiferencia = ChronoUnit.DAYS.between(fechaReferencia,fechaPaquete);
-	        if(diasDeDiferencia>=5) {
+	        if(diasDeDiferencia> 5) {
 	        	cantUrgentes ++;
 	        }else {
 	        	noUrgentes ++;
