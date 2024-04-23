@@ -1,0 +1,8 @@
+package tema6;
+
+public enum DIASEMANA {
+	
+    LUNES, MARTES, MIERCOLES, JUEVES, VIERNES, SABADO, DOMINGO
+
+
+}

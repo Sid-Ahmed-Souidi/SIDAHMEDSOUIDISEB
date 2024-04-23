@@ -3,8 +3,8 @@ package VALIDACIONES;
 public class Nombre {
 
 	public static void main(String[] args) {
-		String nombreCompleto = "John Doe";
-		String patronNombreCompleto = "[A-Z][a-zA-Z]*\\s[A-Z][a-zA-Z]*";
+		String nombreCompleto = "John Doefasdf";
+		String patronNombreCompleto = "[A-Z][a-zA-Z]{3}\\s[A-Z][a-zA-Z]*";
 
 		if (nombreCompleto.matches(patronNombreCompleto)) {
 		    System.out.println("El nombre completo es válido.");
