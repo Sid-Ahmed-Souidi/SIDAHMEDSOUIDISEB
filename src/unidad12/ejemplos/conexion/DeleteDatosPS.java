@@ -3,30 +3,27 @@ package unidad12.ejemplos.conexion;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
-import java.sql.ResultSet;
 import java.sql.SQLException;
 
-public class LeerDatosPS {
+public class DeleteDatosPS {
 
 	public static void main(String[] args) {
 		String url = "jdbc:mysql://192.168.0.101:3306/SouidiElBaroudi";
 		String usuario = "SouidiElBaroudi";
 		String password ="Soui";
 		
-		String ciudad ="Madrid";
-		
-		
 		try (Connection con = DriverManager.getConnection(url,usuario,password)){
 			
 		
-			String sql = ("SELECT nombre FROM personas WHERE ciudad=?");
+			String sql = ("DELETE FROM personas WHERE id=?");
 			PreparedStatement sentencia = con.prepareStatement(sql);
-	
-			sentencia.setString(1,"Madrid");
-			ResultSet  resultado = sentencia.executeQuery();
-			while(resultado.next()) {
-				System.out.println(resultado.getString("nombre"));
-			}
+			
+		
+			sentencia.setInt(1,3);
+			
+			
+			int filasBorradas = sentencia.executeUpdate();
+			System.out.println("Filas afectadas : "+filasBorradas);
 			
 			
 		} catch (SQLException e) {
@@ -34,5 +31,7 @@ public class LeerDatosPS {
 			e.getMessage();
 		}
 	}
+	}
 
-}
+
+
