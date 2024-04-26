@@ -42,7 +42,12 @@ public class leerRazasComarcas {
 				fecha =quitarCaracteres(fecha);
 				System.out.println(fecha);
 				zona =quitarCaracteres(zona);
-				System.out.println(zona);				
+				zona = zona.substring(0,zona.length() - 1);	
+				if(zona.equals("castuera\"")) {
+					zona = zona.substring(0,zona.length() - 1);
+				}
+				System.out.println(zona);		
+
 				System.out.println();
 
 				
