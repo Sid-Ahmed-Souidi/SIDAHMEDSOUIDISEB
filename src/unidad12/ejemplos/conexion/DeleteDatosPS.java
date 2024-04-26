@@ -12,6 +12,8 @@ public class DeleteDatosPS {
 		String usuario = "SouidiElBaroudi";
 		String password ="Soui";
 		
+		String dato="3 OR 1";
+				
 		try (Connection con = DriverManager.getConnection(url,usuario,password)){
 			
 		
