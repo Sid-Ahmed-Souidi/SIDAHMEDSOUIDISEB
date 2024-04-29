@@ -6,9 +6,9 @@ class Animal {
 
 class Perro extends Animal {
     // Esta es la subclase Perro, que extiende la clase Animal
-}
 
-public class Main {
+
+//public class Main {
     public static void main(String[] args) {
         Animal miAnimal = new Perro(); // Creamos una instancia de Perro pero la guardamos como tipo Animal
 

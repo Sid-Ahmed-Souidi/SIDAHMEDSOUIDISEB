@@ -25,12 +25,12 @@ public class Abstraccion {
 	public class Main {
 	    public static void main(String[] args) {
 	        // Creamos objetos de tipo Coche y Motocicleta
-	        Vehiculo miCoche = new Coche();
-	        Vehiculo miMotocicleta = new Motocicleta();
+	      //  Vehiculo miCoche = new Coche();
+	      //  Vehiculo miMotocicleta = new Motocicleta();
 	        
 	        // Llamamos al método acelerar() en ambos objetos
-	        miCoche.acelerar();
-	        miMotocicleta.acelerar();
+	     ///   miCoche.acelerar();
+	//        miMotocicleta.acelerar();
 	    }
 	}
 }
