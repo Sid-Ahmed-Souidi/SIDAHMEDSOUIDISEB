@@ -154,10 +154,8 @@ public class leerRazasComarcas {
 	}
 
 	private static LocalDate transformarFecha(String fecha) {
-		System.out.println(fecha);
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("M/d/yyyy");
         LocalDate fechaLocalDate = LocalDate.parse(fecha, formatter);
-        System.out.println(fechaLocalDate);
         return fechaLocalDate;
 
 		

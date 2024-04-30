@@ -4,7 +4,7 @@ public class Alumno {
 	
 	private int id;
 	private String nombre ;
-	private String apellidos;
+	private String apellido;
 	private int cicloFormativo;
 	
 	
@@ -12,11 +12,11 @@ public class Alumno {
 	
 	
 	
-	public Alumno(int id, String nombre, String apellidos, int cicloFormativo) {
+	public Alumno(int id, String nombre, String apellido, int cicloFormativo) {
 		super();
 		this.id = id;
 		this.nombre = nombre;
-		this.apellidos = apellidos;
+		this.apellido = apellido;
 		this.cicloFormativo = cicloFormativo;
 	}
 
@@ -46,12 +46,12 @@ public class Alumno {
 
 
 	public String getApellidos() {
-		return apellidos;
+		return apellido;
 	}
 	
 
 	public void setApellidos(String apellidos) {
-		this.apellidos = apellidos;
+		this.apellido = apellidos;
 	}
 
 
@@ -71,7 +71,7 @@ public class Alumno {
 
 	@Override
 	public String toString() {
-		return "Alumno [id=" + id + ", nombre=" + nombre + ", apellidos=" + apellidos + ", cicloFormativo="
+		return "Alumno [id=" + id + ", nombre=" + nombre + ", apellidos=" + apellido + ", cicloFormativo="
 				+ cicloFormativo + "]";
 	}
 	
