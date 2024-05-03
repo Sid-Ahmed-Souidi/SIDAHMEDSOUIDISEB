@@ -55,7 +55,7 @@ public class Interfaz extends JFrame{
         
         bAceptar.addActionListener(new ActionListener() {//esto es una clase anonima
 			public void actionPerformed(ActionEvent ae) {
-				leerDatosFormulario(); //accion una vez que se pulsa el boton 
+				leerDatosFormulario(nombre , apellido , ciudad); //accion una vez que se pulsa el boton 
 			}
 		});
         														
@@ -69,7 +69,7 @@ public class Interfaz extends JFrame{
          * 
          * PARA AÑADIR UN JList
          */
-        
+        /**
         // Establece la lista gráfica de personas
         listaNombres = new JList();
         //Establece que se pueda seleccionar solamente un elemento de la lista 
@@ -84,9 +84,7 @@ public class Interfaz extends JFrame{
         scrollLista.setViewportView(listaNombres);
         
         add(scrollLista);
-         
-        
-        
+         */
         setLocationRelativeTo(null);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setSize(600,400);
@@ -100,15 +98,17 @@ public class Interfaz extends JFrame{
     }
     
     
-    private void leerDatosFormulario() {
+    private void leerDatosFormulario(JTextField nombre2 , JTextField apellido2 , JTextField ciudad2) {
     	
     	System.out.println("Se están leyendo los datos del formulario");
     	
-    	String name = nombre.getText();
-        String surname = apellido.getText();
-        String city = ciudad.getText();
-        
-        
+    	String name = nombre2.getText();
+    	System.out.println(name);
+        String surname = apellido2.getText();
+        System.out.println(surname);
+        String city = ciudad2.getText();
+        System.out.println(city);
+        System.out.println(name + surname + city);
         Persona persona = new Persona(name , surname , city);
         
         insertarTabla(persona);
@@ -130,9 +130,9 @@ public class Interfaz extends JFrame{
     
     private void insertarTabla(Persona persona) {
 
-    	String url = "jdbc:mysql://192.168.0.101:3306/SouidiElBaroudi";
-		String usuario = "SouidiElBaroudi";
-		String password ="Soui";
+    	String url = "jdbc:mysql://localhost/bd";
+		String usuario = "root";
+		String password ="12345";
 		
 		try (Connection con = DriverManager.getConnection(url,usuario,password)){
 			
@@ -142,8 +142,11 @@ public class Interfaz extends JFrame{
 			PreparedStatement sentencia = con.prepareStatement(sql);
 			
 			sentencia.setString(1,persona.getNombre());
+			System.out.println(persona.getNombre());
 			sentencia.setString(2,persona.getApellido());
+			System.out.println(persona.getApellido());
 			sentencia.setString(3,persona.getCiudad());
+			System.out.println(persona.getCiudad());
 			
 			
 			int filasAfectadas = sentencia.executeUpdate();

@@ -9,9 +9,10 @@ import java.sql.SQLException;
 public class InsertarDatosPS {
  
 	public static void main(String[] args) {
-		String url = "jdbc:mysql://192.168.0.101:3306/SouidiElBaroudi";
-		String usuario = "SouidiElBaroudi";
-		String password ="Soui";
+		//String url = "jdbc:mysql://192.168.0.101:3306/SouidiElBaroudi";
+		String url = "jdbc:mysql://localhost/bd";
+		String usuario = "root";
+		String password ="12345";
 		
 		try (Connection con = DriverManager.getConnection(url,usuario,password)){
 			
@@ -20,8 +21,8 @@ public class InsertarDatosPS {
 					+ "VALUES (?,?,?)");
 			PreparedStatement sentencia = con.prepareStatement(sql);
 			
-			sentencia.setString(1,"Sid Ahmed");
-			sentencia.setString(2,"Souidi");
+			sentencia.setString(1,"Paula");
+			sentencia.setString(2,"Rodrigez");
 			sentencia.setString(3,"Caceres");
 			
 			

@@ -5,6 +5,8 @@ public class Persona {
 	private String nombre;
 	private String apellido;
 	private String ciudad;
+	
+	
 	public Persona(String nombre, String apellido, String ciudad) {
 		super();
 		this.nombre = nombre;
@@ -32,6 +34,14 @@ public class Persona {
 	}
 	public void setCiudad(String ciudad) {
 		this.ciudad = ciudad;
+	}
+
+
+
+
+	@Override
+	public String toString() {
+		return "Persona [nombre=" + nombre + ", apellido=" + apellido + ", ciudad=" + ciudad + "]";
 	}
 	
 	
