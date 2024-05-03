@@ -1,10 +1,14 @@
-package unidad13.distribuciones;
+package unidad13.ejemplos.interfazAbd;
 
 import java.awt.Button;
 import java.awt.FlowLayout;
 import java.awt.Label;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
 
 import javax.swing.DefaultListModel;
 import javax.swing.JFrame;
@@ -16,8 +20,9 @@ import javax.swing.JScrollPane;
 import javax.swing.JTextField;
 import javax.swing.ListSelectionModel;
 
-public class FlowLayoutDemo extends JFrame {
-	
+import unidad13.distribuciones.FlowLayoutDemo;
+
+public class Interfaz extends JFrame{
 	 private JTextField nombre;
 	 private JTextField apellido;
 	 private JTextField ciudad;
@@ -29,7 +34,7 @@ public class FlowLayoutDemo extends JFrame {
 	 private JPanel panel ;
 	 
 	
-    public FlowLayoutDemo() {
+    public Interfaz() {
         super("Ventana con FlowLayout");
         setLayout(new FlowLayout());
         
@@ -103,6 +108,12 @@ public class FlowLayoutDemo extends JFrame {
         String surname = apellido.getText();
         String city = ciudad.getText();
         
+        
+        Persona persona = new Persona(name , surname , city);
+        
+        insertarTabla(persona);
+        
+        
        
         
         //showDataInConsole(name,surname,city);
@@ -117,7 +128,39 @@ public class FlowLayoutDemo extends JFrame {
     }
     
     
-    private void showDataInJPanel(String name, String surname, String city) {
+    private void insertarTabla(Persona persona) {
+
+    	String url = "jdbc:mysql://192.168.0.101:3306/SouidiElBaroudi";
+		String usuario = "SouidiElBaroudi";
+		String password ="Soui";
+		
+		try (Connection con = DriverManager.getConnection(url,usuario,password)){
+			
+		
+			String sql = ("INSERT INTO personas (nombre,apellido,ciudad) "
+					+ "VALUES (?,?,?)");
+			PreparedStatement sentencia = con.prepareStatement(sql);
+			
+			sentencia.setString(1,persona.getNombre());
+			sentencia.setString(2,persona.getApellido());
+			sentencia.setString(3,persona.getCiudad());
+			
+			
+			int filasAfectadas = sentencia.executeUpdate();
+			System.out.println("Filas afectadas : "+filasAfectadas);
+			
+			
+		} catch (SQLException e) {
+			e.printStackTrace();
+			e.getMessage();
+		}
+	}    	
+    	
+    	
+    	
+	
+
+	private void showDataInJPanel(String name, String surname, String city) {
 
     	panel.setLayout(new FlowLayout());
     	panel.removeAll();
