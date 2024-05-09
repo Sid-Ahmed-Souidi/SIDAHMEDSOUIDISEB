@@ -5,15 +5,23 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 import com.google.gson.Gson;
 
 public class LeerSociedadesCoperativas {
 
-	
+      public static  Map<String, Integer> mapa = new HashMap<>();
+      public static List<SociedadCoperativa> listaSociedades = new ArrayList<SociedadCoperativa>();
+
+      
 		public static void main(String[] args) {
 			String rutaFichero = "ficheros" + File.separator + "json" + File.separator + "Sociedades_Cooperativas.txt";
-			
 			File fichero = new File(rutaFichero);
 			Gson gson = new Gson();
 			
@@ -25,8 +33,6 @@ public class LeerSociedadesCoperativas {
 				int contador = 0;
 
 				while(cadena!=null) {
-
-				
 					String [] ciclos =cadena.split("\",");
 					String numInscripcion = ciclos[0];
 					numInscripcion = quitarCaracteres(numInscripcion);
@@ -36,12 +42,16 @@ public class LeerSociedadesCoperativas {
 					provincia = quitarCaracteres(provincia);
 					String localidad = ciclos[3];
 					localidad = quitarCaracteres(localidad);
-					String codigoPostal = ciclos[4];
-					codigoPostal = quitarCaracteres(codigoPostal);
+					String codigo = ciclos[4];
+					codigo = quitarCaracteres(codigo);
+					int codigoPostal = cambiarNumero(codigo);
 					String clase = ciclos[5];
 					clase = quitarCaracteres(clase);
-					String fechaInscripcion = ciclos[6];
-					
+					String fecha = ciclos[6];
+					 fecha = fecha.trim();
+					System.out.println(fecha);
+					LocalDate fechaInscripcion = transformarFecha(fecha);
+					/**
 					System.out.println("num inscripcion"+numInscripcion);
 					System.out.println("deno"+denoSocial);
 					System.out.println("provincia"+provincia);
@@ -50,12 +60,20 @@ public class LeerSociedadesCoperativas {
 					System.out.println("clase"+clase);
 					System.out.println("fechaInscripcion "+fechaInscripcion);
 					System.out.println("----------------------------------");	
+					System.out.println(contador);
+					*/
 					
-					contador++;
 					cadena = lector.readLine();
+					//Determinar cuántas sociedades cooperativas hay en cada provincia
+					sociedadesProvincia(provincia);
+					crearSociedad(numInscripcion,denoSocial,provincia,localidad,codigoPostal,clase,fechaInscripcion);
+					
 
 					}
+				
 				System.out.println(contador);
+				mostrarsociedadesXprovincia(mapa);			
+				//sociedadReciente(listaSociedades);
 		
 				
 			
@@ -70,12 +88,59 @@ public class LeerSociedadesCoperativas {
 			
 			
 		
-	
+		}
 		
 	
-		
+
+		// en esta funcion creamos las diferentes sociedades y la introducimos en la listaSociedades
+	 private static void crearSociedad(String numInscripcion, String denoSocial, String provincia, String localidad,
+				int codigoPostal, String clase, LocalDate fechaInscripcion) {
+		 SociedadCoperativa sociedad = new SociedadCoperativa(numInscripcion,denoSocial,provincia,localidad,codigoPostal,clase,fechaInscripcion);
+		 listaSociedades.add(sociedad);
+		 
 		}
 
+	 
+	 
+	// funcion para cambiar a numero entero 
+		private static int  cambiarNumero(String numero) {
+	        int numeroEntero = Integer.parseInt(numero);
+	        return numeroEntero;
+			
+		}
+		
+		
+		// transformamos la fecha tipo String a localdate
+		private static LocalDate transformarFecha(String fecha) {
+	        DateTimeFormatter formato = DateTimeFormatter.ofPattern("dd/MM/yy");
+	        LocalDate fechaLocalDate = LocalDate.parse(fecha, formato);
+	        return fechaLocalDate;
+
+			
+		}
+
+		private static void mostrarsociedadesXprovincia(Map<String, Integer> mapa2) {
+			  for (Map.Entry<String, Integer> entry : mapa.entrySet()) {
+		            System.out.println("Provincia: " + entry.getKey() + ", Total Sociedades: " + entry.getValue());
+		        }
+			
+			
+		}
+
+		
+		
+		private static void sociedadesProvincia(String provincia) {
+            // Si el objeto ya está en el mapa, incrementar su conteo			
+			if(mapa.containsKey(provincia)) {
+			mapa.put(provincia , mapa.get((provincia))+1);
+			}else {
+                // Si el objeto no está en el mapa, agregarlo con un conteo inicial de 1
+				mapa.put(provincia, 1);
+			}
+		}
+
+		
+		
 		private static String quitarCaracteres(String campo) {
 			campo = campo.substring(1);		
 			return campo;
