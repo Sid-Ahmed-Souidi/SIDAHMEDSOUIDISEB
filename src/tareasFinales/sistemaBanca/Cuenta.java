@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Cuenta {
 	
 	protected int idCuenta;
-	protected double balance;
+	static protected double balance;
 	
 	public static Scanner entrada = new Scanner(System.in);
 
@@ -36,11 +36,15 @@ public class Cuenta {
 	public static void depositar() {
 		System.out.println("Introduce la cantidad que deseas depositar");
 		double deposito = entrada.nextDouble();
-		
-		
-		
-		
-		
-	}
+		balance +=deposito;
 
+    } 
+	public static void retirar() {
+		System.out.println("Introduce la cantidad que deseas retirar");
+		double deposito = entrada.nextDouble();
+		balance -=deposito;
+
+    }
+	
+	
 }

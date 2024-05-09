@@ -16,8 +16,6 @@ public class Banco {
 	protected String localizacion;
 	
 	
-	
-	
 	public Banco(String nombre, String localizacion) {
 		super();
 		this.nombre = nombre;
@@ -47,9 +45,9 @@ public class Banco {
 	}
 	
 	
-	public static Cliente  registrar() {
-		
-		int idCliente = (int) (Math.random()*10 + 1); 
+	public static Cliente  registrarCliente() {
+		System.out.println("*****CREAR CLIENTE******");
+		int idCliente = (int) (Math.random()*1000000000 + 1); 
 		System.out.println("Introduce el nombre ");
 		String nombre = entrada.next();
 		System.out.println("Introduce el email ");
@@ -58,13 +56,13 @@ public class Banco {
 		listaClientes.add(cliente);
 		
 		return cliente;
-		
-		
 	} 
 	
 	
-	public static boolean  login() {
 	
+	
+	public static boolean  login() {
+		System.out.println("******LOGIN******");
 		System.out.println("Introduce el nombre ");
 		   String nombre = entrada.next();
 		   System.out.println("Introduce el email ");
@@ -74,16 +72,11 @@ public class Banco {
 		for (Cliente cliente : listaClientes) {
 			if(cliente.getNombre().equals(nombre) && cliente.getEmail().equals(email)) {
 				registrado = true;
-				return registrado;
-				
+				return  registrado;
 				
 			}
-			
-			
 		}
 		return registrado ;
-		
-		
 
 	}
 

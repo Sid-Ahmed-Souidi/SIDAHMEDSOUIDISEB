@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Cliente {
-    public static List<Cliente> listaClientes = new ArrayList<Cliente>();
+    public static List<Cuenta> listaCuentas = new ArrayList<Cuenta>();
 
 	public static Scanner entrada = new Scanner(System.in);
 
@@ -52,6 +52,21 @@ public class Cliente {
 	public void setEmail(String email) {
 		this.email = email;
 	}
+	
+	
+	public static void abrirCuenta() {
+		
+		
+		int idCuenta = (int) (Math.random()*100000000 + 1); 
+		System.out.println("Introduzca cuanto tendrá de balance en esta cuenta");
+		double balance = entrada.nextDouble();
+		Cuenta cuenta = new Cuenta(idCuenta , balance);
+		listaCuentas.add(cuenta);
+		
+		
+		
+	} 
+	
 	
 	
 }
