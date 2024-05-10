@@ -166,7 +166,6 @@ public class Formulario extends JFrame implements ActionListener{
                 "\nPrecio: " + precio);
         Pedido pedido = new Pedido(nombre, apellido, direccion,tipoPedido , seleccionPizza,seleccionTamaño ,precio);
 
-        
         insertarFicheros();
         BaseDatos bd = new BaseDatos();
         bd.crearTabla();
