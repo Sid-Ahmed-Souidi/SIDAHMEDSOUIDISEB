@@ -1,6 +1,7 @@
 package unidad11.ejemplos.escribirJsonFichero;
 
 import java.io.FileWriter;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -30,6 +31,24 @@ public class EscribirFicheroJson {
 		
 		try {
 			FileWriter escritor = new FileWriter("ficheros1/json/clientesNuevos.json");
+			
+			/**
+			 * 
+			 *te lo crea si no existe el fichero 
+			if(!fichero.exists()) {
+				try {
+					
+					fichero.createNewFile();
+					
+				} catch (IOException e) {
+					e.printStackTrace();
+					e.getMessage();
+
+				}
+				
+			}
+			*/
+			
 			escritor.write(json);
 			
 			
