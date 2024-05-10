@@ -166,6 +166,8 @@ public class Formulario extends JFrame implements ActionListener{
                 "\nPrecio: " + precio);
         Pedido pedido = new Pedido(nombre, apellido, direccion,tipoPedido , seleccionPizza,seleccionTamaño ,precio);
 
+        
+        insertarFicheros();
         BaseDatos bd = new BaseDatos();
         bd.crearTabla();
         bd.insertarEnTabla(pedido);
@@ -177,6 +179,25 @@ public class Formulario extends JFrame implements ActionListener{
 	
 
 		
+
+	private void insertarFicheros() {
+		/**
+		 * 
+		 *te lo crea si no existe el fichero 
+		if(!fichero.exists()) {
+			try {
+				
+				fichero.createNewFile();
+				
+			} catch (IOException e) {
+				e.printStackTrace();
+				e.getMessage();
+
+			}
+			
+		}
+		*/		
+	}
 
 	public static void main(String[] args) {
         new Formulario();
