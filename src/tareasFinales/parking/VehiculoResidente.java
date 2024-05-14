@@ -5,7 +5,7 @@ import java.time.LocalTime;
 public class VehiculoResidente extends Vehiculo{
 
 	
-	protected double precio = 0.002;
+	protected static double precio = 0.002;
 	
 	
 	public VehiculoResidente(String matricula) {
@@ -13,22 +13,14 @@ public class VehiculoResidente extends Vehiculo{
 		
 	}
 
-
-
-
-
-
 	@Override
-	public double precioCobro(double cobroMinuto, LocalTime tiempo ) {
-		
-		int horas = tiempo.getHour();
-		int minutos = tiempo.getMinute();
-		
-	     int totalMinutos = horas * 60 + minutos;
-	     cobroMinuto = totalMinutos * precio;
-		
-	
-		return cobroMinuto;
+	/**
+	 *  funcion donde multiplicamos el tiempo que son el total de minutos que ha pasado el coche en el parking
+	 *  por el precio del vehiculo en este caso de vehiculos residentes
+	 */
+	public double precioCobro( ) {
+		double cobro = precio * tiempo;
+		return cobro;
 		
 	}
 

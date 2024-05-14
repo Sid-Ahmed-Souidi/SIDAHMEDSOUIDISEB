@@ -8,14 +8,10 @@ public abstract class Vehiculo {
 	
 	
 	protected String matricula;
-	protected double cobroMinuto ;
-	protected LocalTime tiempo; 	
+	protected static long  tiempo; 	
 	
 	
 
-	
-	
-	
 	
 	
 	public Vehiculo(String matricula) {
@@ -37,17 +33,21 @@ public abstract class Vehiculo {
 
 
 
-	public double getCobroMinuto() {
-		return cobroMinuto;
-	}
-
- void setCobroMinuto(double cobroMinuto) {
-		this.cobroMinuto = cobroMinuto;
-	}
 
 
-	
-	public  abstract  double precioCobro(double cobroMinuto , LocalTime tiempo);
+	public long getTiempo() {
+	return tiempo;
+}
+
+
+
+public void setTiempo(long tiempo) {
+	this.tiempo = tiempo;
+}
+
+
+
+	public  abstract  double precioCobro();
 
 
 

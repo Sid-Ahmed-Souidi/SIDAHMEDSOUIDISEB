@@ -10,15 +10,12 @@ public class GestionParking {
     public static List<Vehiculo> parking  = new ArrayList<Vehiculo>();
   
     public static Scanner entrada = new Scanner(System.in);
-
+    
+    
+    static int opcion ; 
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) {		
 		
-		
-			VehiculoResidente vehiculo = new VehiculoResidente("645362 LWH");
-		
-			
-			
 			
 			menu();
 			
@@ -37,7 +34,7 @@ public class GestionParking {
 		System.out.println("5.Dar de alta vehiculo no residente");
 		System.out.println("6.Inicia el mes");
 		System.out.println("7.Pagos de residentes");
-		int opcion = entrada.nextInt();
+		 opcion = entrada.nextInt();
 	
 		
 		do {
@@ -46,12 +43,13 @@ public class GestionParking {
 			
 			case 1:
 			System.out.println("hora entrada");
-			buscarVehiculo(parking);
-			
+			introducirHoraEntrada(parking);
 			
 			break;
 			case 2:
 				System.out.println("hora salida");
+				introducirHoraSalida(parking);
+
 				
 				break;
 				
@@ -70,7 +68,6 @@ public class GestionParking {
 			case 5:
 				System.out.println("introduce la matricula del vehiculo");
 				matricula = entrada.next();
-				
 				VehiculoNoResidente matricula3 = new VehiculoNoResidente(matricula);
 				parking.add(matricula3);
 				break;
@@ -90,33 +87,40 @@ public class GestionParking {
 			
 			}
 			
-			
-			
-	
 		}while(opcion!=8);
 
 		
 	}
 
 
-	private static void buscarVehiculo(List<Vehiculo> parking2) {
-
-				for (Vehiculo vehiculo : parking2) {
-					System.out.println(vehiculo);
-					
+	private static void introducirHoraSalida(List<Vehiculo> parking2) {
+		
+		System.out.println("Introduce la matricula");
+		String matricula = entrada.next();
+		for (Vehiculo vehiculo : parking2) {
+			if(vehiculo.getMatricula().equals(matricula)) {
+				Estancias.registrarSalida(vehiculo);
+				
+			} else { 
+				System.out.println("El vehiculo no se encuentra en el parking");
 					}
-					
+		
+		}
+	}
+
+
+	private static void introducirHoraEntrada(List<Vehiculo> parking2) {
+		
 				System.out.println("Introduce la matricula");
 				String matricula = entrada.next();
 				for (Vehiculo vehiculo : parking2) {
 					if(vehiculo.getMatricula().equals(matricula)) {
-						vehiculo.getCobroMinuto();
-						
+						Estancias.registrarEntrada();
+						vehiculo.precioCobro();
+					}else {
+						System.out.println("El vehiculo no se encuentra en el parking");
 					}
 				
-					
-					
-					
 				}
 
 					

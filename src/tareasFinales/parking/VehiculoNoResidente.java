@@ -17,19 +17,10 @@ public class VehiculoNoResidente extends Vehiculo{
 
 
 	@Override
-	public double precioCobro(double cobroMinuto, LocalTime tiempo) {
+	public double precioCobro() {
 		
-		
-		int horas = tiempo.getHour();
-		int minutos = tiempo.getMinute();
-		
-	     int totalMinutos = horas * 60 + minutos;
-	     cobroMinuto = totalMinutos * precio;
-		
-	     
-	     
-
-		return cobroMinuto;
+		double cobro = precio * tiempo;
+		return cobro;
 	}
 
 	
