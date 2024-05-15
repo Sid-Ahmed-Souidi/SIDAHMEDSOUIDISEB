@@ -27,18 +27,19 @@ public class GestionParking {
 
 	private static void menu() {
 		
-		System.out.println("1.hora de entrada");	
-		System.out.println("2.hora de salida");
-		System.out.println("3.Dar de alta vehiculo oficial");
-		System.out.println("4.Dar de alta vehiculo residente");
-		System.out.println("5.Dar de alta vehiculo no residente");
-		System.out.println("6.Inicia el mes");
-		System.out.println("7.Pagos de residentes");
-		 opcion = entrada.nextInt();
+		
 	
 		
 		do {
-			
+			System.out.println("1.hora de entrada");	
+			System.out.println("2.hora de salida");
+			System.out.println("3.Dar de alta vehiculo oficial");
+			System.out.println("4.Dar de alta vehiculo residente");
+			System.out.println("5.Dar de alta vehiculo no residente");
+			System.out.println("6.Inicia el mes");
+			System.out.println("7.Pagos de residentes");
+			 opcion = entrada.nextInt();
+		
 			switch(opcion){
 			
 			case 1:
@@ -49,6 +50,7 @@ public class GestionParking {
 			case 2:
 				System.out.println("hora salida");
 				introducirHoraSalida(parking);
+				mostrarVehiculo(parking);
 
 				
 				break;
@@ -83,6 +85,9 @@ public class GestionParking {
 			case 8 :
 				System.out.println("Saliendo...");
 				break;
+			default:
+		        System.out.println("Opción no válida");
+		        break;
 			
 			
 			}
@@ -90,6 +95,23 @@ public class GestionParking {
 		}while(opcion!=8);
 
 		
+	}
+
+
+	private static void mostrarVehiculo(List<Vehiculo> parking2) {
+		
+	
+		for (Vehiculo vehiculo : parking2) {
+			//aqui comparamos si el vehiculo es de el tipo objeto vehiculo
+			if(vehiculo instanceof VehiculoNoResidente) {
+					System.out.println(vehiculo);
+				
+				
+				
+			}
+		}
+	
+	
 	}
 
 
@@ -117,6 +139,7 @@ public class GestionParking {
 					if(vehiculo.getMatricula().equals(matricula)) {
 						Estancias.registrarEntrada();
 						vehiculo.precioCobro();
+						
 					}else {
 						System.out.println("El vehiculo no se encuentra en el parking");
 					}

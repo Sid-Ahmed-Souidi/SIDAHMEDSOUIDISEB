@@ -38,7 +38,6 @@ public class Estancias {
 	
 	public static  void  registrarEntrada() {
 		
-        System.out.println("El formato de la hora no es válido. Debe ser HH:mm.");
 		System.out.println("Introduce la hora de entrada");
 		String horaString = entrada.next();
          horaEntrada = LocalTime.parse(horaString);
@@ -49,7 +48,6 @@ public class Estancias {
 	
 	public static  void  registrarSalida(Vehiculo vehiculo) {
 		
-        System.out.println("El formato de la hora no es válido. Debe ser HH:mm.");
 		System.out.println("Introduce la hora de salida");
 		String horaString = entrada.next();
          horaSalida = LocalTime.parse(horaString);
