@@ -26,6 +26,7 @@ public class LeerFicheroJsonUsuario {
 			while((linea=lector.readLine())!=null){
 				
 				contenido.append(linea);
+				System.out.println(linea);
 				
 				}
 			lector.close();

@@ -126,7 +126,7 @@ public class LeerSociedadesCoperativas {
 		
 		// transformamos la fecha tipo String a localdate
 		private static LocalDate transformarFecha(String fecha) {
-	        DateTimeFormatter formato = DateTimeFormatter.ofPattern("dd/MM/yy");
+	        DateTimeFormatter formato = DateTimeFormatter.ofPattern("dd/MM/uu");
 	        LocalDate fechaLocalDate = null;
 	        try {
 	            fechaLocalDate = LocalDate.parse(fecha, formato);
