@@ -7,6 +7,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
+import java.time.format.DateTimeParseException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -44,12 +45,11 @@ public class LeerSociedadesCoperativas {
 					localidad = quitarCaracteres(localidad);
 					String codigo = ciclos[4];
 					codigo = quitarCaracteres(codigo);
-					int codigoPostal = cambiarNumero(codigo);
+					String codigoPostal = codigo;
 					String clase = ciclos[5];
 					clase = quitarCaracteres(clase);
 					String fecha = ciclos[6];
 					 fecha = fecha.trim();
-					System.out.println(fecha);
 					LocalDate fechaInscripcion = transformarFecha(fecha);
 					/**
 					System.out.println("num inscripcion"+numInscripcion);
@@ -72,8 +72,9 @@ public class LeerSociedadesCoperativas {
 					}
 				
 				System.out.println(contador);
+				
 				mostrarsociedadesXprovincia(mapa);			
-				//sociedadReciente(listaSociedades);
+				sociedadReciente(listaSociedades);
 		
 				
 			
@@ -92,9 +93,20 @@ public class LeerSociedadesCoperativas {
 		
 	
 
+		private static void sociedadReciente(List<SociedadCoperativa> listaSociedades2) {
+				
+			for (SociedadCoperativa sociedadCoperativa : listaSociedades2) {
+				 System.out.println(sociedadCoperativa.getFechaInscripcion());
+					
+			
+			
+		}
+
+		}
+
 		// en esta funcion creamos las diferentes sociedades y la introducimos en la listaSociedades
 	 private static void crearSociedad(String numInscripcion, String denoSocial, String provincia, String localidad,
-				int codigoPostal, String clase, LocalDate fechaInscripcion) {
+				String codigoPostal, String clase, LocalDate fechaInscripcion) {
 		 SociedadCoperativa sociedad = new SociedadCoperativa(numInscripcion,denoSocial,provincia,localidad,codigoPostal,clase,fechaInscripcion);
 		 listaSociedades.add(sociedad);
 		 
@@ -104,6 +116,8 @@ public class LeerSociedadesCoperativas {
 	 
 	// funcion para cambiar a numero entero 
 		private static int  cambiarNumero(String numero) {
+			//eliminar comillas si estan presentes
+		    numero = numero.replace("\"", "");
 	        int numeroEntero = Integer.parseInt(numero);
 	        return numeroEntero;
 			
@@ -113,7 +127,13 @@ public class LeerSociedadesCoperativas {
 		// transformamos la fecha tipo String a localdate
 		private static LocalDate transformarFecha(String fecha) {
 	        DateTimeFormatter formato = DateTimeFormatter.ofPattern("dd/MM/yy");
-	        LocalDate fechaLocalDate = LocalDate.parse(fecha, formato);
+	        LocalDate fechaLocalDate = null;
+	        try {
+	            fechaLocalDate = LocalDate.parse(fecha, formato);
+	        } catch (DateTimeParseException e) {
+	            // Manejar el error, por ejemplo, imprimir un mensaje de error
+	            System.err.println("Error al parsear la fecha: " + e.getMessage());
+	        }
 	        return fechaLocalDate;
 
 			
@@ -142,7 +162,7 @@ public class LeerSociedadesCoperativas {
 		
 		
 		private static String quitarCaracteres(String campo) {
-			campo = campo.substring(1);		
+			campo = campo.substring(1);	
 			return campo;
 
 		}

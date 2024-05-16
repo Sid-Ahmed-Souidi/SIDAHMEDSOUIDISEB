@@ -1,5 +1,9 @@
 package tareasFinales.parking;
 
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.time.LocalTime;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -15,20 +19,14 @@ public class GestionParking {
     static int opcion ; 
 	
 	public static void main(String[] args) {		
-		
-			
+
 			menu();
 			
-
-
-		
 	}
 
 
 	private static void menu() {
-		
-		
-	
+
 		
 		do {
 			System.out.println("1.hora de entrada");	
@@ -44,42 +42,42 @@ public class GestionParking {
 			
 			case 1:
 			System.out.println("hora entrada");
-			introducirHoraEntrada(parking);
+			introducirHoraEntrada();
 			
 			break;
 			case 2:
 				System.out.println("hora salida");
-				introducirHoraSalida(parking);
-				mostrarVehiculo(parking);
-
+				introducirHoraSalida();
 				
 				break;
 				
 			case 3:
 				System.out.println("introduce la matricula del vehiculo");
-				String matricula = entrada.next();
-				Vehiculo matricula1 = new VehiculoOficial(matricula);
-				parking.add(matricula1);
+				parking.add(new VehiculoOficial(entrada.next()));
 				break;
 			case 4:
 				System.out.println("introduce la matricula del vehiculo");
-				matricula = entrada.next();
-				VehiculoResidente matricula2 = new VehiculoResidente(matricula);
-				parking.add(matricula2);
+				parking.add(new  VehiculoResidente(entrada.next()));
+
 				break;
 			case 5:
 				System.out.println("introduce la matricula del vehiculo");
-				matricula = entrada.next();
-				VehiculoNoResidente matricula3 = new VehiculoNoResidente(matricula);
-				parking.add(matricula3);
+				parking.add(new VehiculoNoResidente(entrada.next()));
+
 				break;
 				
 			case 6:
 				System.out.println("inicioMes");
+				reiniciarMes();
 				break;
 				
 			case 7 :
 				System.out.println("Pagos de residentes");
+				mostrarPagos();
+				escribirPagos();
+				
+				
+				
 				break;
 				
 			case 8 :
@@ -98,58 +96,93 @@ public class GestionParking {
 	}
 
 
-	private static void mostrarVehiculo(List<Vehiculo> parking2) {
-		
-	
-		for (Vehiculo vehiculo : parking2) {
-			//aqui comparamos si el vehiculo es de el tipo objeto vehiculo
-			if(vehiculo instanceof VehiculoNoResidente) {
-					System.out.println(vehiculo);
+	private static void escribirPagos() {
+				String nombreFichero = "ficheros1//parkingPagos.txt";
+				try(BufferedWriter escritor = new BufferedWriter(new FileWriter(nombreFichero))){
+					escritor.write("Matricula"+"    ");
+					escritor.write("Tiempo estacionado"+" ");
+					escritor.write("Cantidad a pagar");
+					escritor.newLine();
+					  for (Vehiculo vehiculo : parking) {
+			                escritor.write(vehiculo.getMatricula() + "     " + vehiculo.getTiempo() + "      " + Estancias.cobro(vehiculo) + "\n");
+			            }
+					
+				}catch(Exception e) {
+					System.out.println(e.getMessage());
+				}
 				
+			
 				
 				
 			}
-		}
+
+		
 	
-	
+
+
+	private static void mostrarPagos() {
+	    for (Vehiculo vehiculo : parking) {
+            System.out.println(vehiculo.getMatricula() + "     " + vehiculo.getTiempo() + "      " + Estancias.cobro(vehiculo));
+        }
+		
+		
 	}
 
 
-	private static void introducirHoraSalida(List<Vehiculo> parking2) {
-		
+	private static void reiniciarMes() {
+
+		 for (Vehiculo vehiculo : parking) {
+	            if (vehiculo instanceof VehiculoResidente || vehiculo instanceof VehiculoOficial) {
+	                vehiculo.setTiempo(0);
+	            }
+	        }
+	}
+
+
+
+
+
+	private static void introducirHoraSalida() {
+			// buscamos el vehiculo atraves de la matricula
 		System.out.println("Introduce la matricula");
+		boolean encontrado = false ;
 		String matricula = entrada.next();
-		for (Vehiculo vehiculo : parking2) {
+		for (Vehiculo vehiculo : parking) {
 			if(vehiculo.getMatricula().equals(matricula)) {
 				Estancias.registrarSalida(vehiculo);
-				
-			} else { 
-				System.out.println("El vehiculo no se encuentra en el parking");
-					}
+				Estancias.cobro(vehiculo);
+				encontrado = true;
+
+			} 
 		
+		}
+		if(encontrado==false) {
+			System.out.println("Vehiculo no encontrado");
 		}
 	}
 
 
-	private static void introducirHoraEntrada(List<Vehiculo> parking2) {
+	private static void introducirHoraEntrada() {
 		
 				System.out.println("Introduce la matricula");
 				String matricula = entrada.next();
-				for (Vehiculo vehiculo : parking2) {
+				boolean encontrado = false ;
+				for (Vehiculo vehiculo : parking) {
 					if(vehiculo.getMatricula().equals(matricula)) {
-						Estancias.registrarEntrada();
-						vehiculo.precioCobro();
-						
-					}else {
-						System.out.println("El vehiculo no se encuentra en el parking");
-					}
+						Vehiculo.setHoraEntrada(LocalTime.now());
+						encontrado = true;
+				
 				
 				}
 
-					
+				if(encontrado==false) {
+					System.out.println("Vehiculo no encontrado");
+				}	
 		
 	}
 	
 	
+	
+	}
 	
 }

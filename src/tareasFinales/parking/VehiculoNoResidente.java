@@ -19,12 +19,8 @@ public class VehiculoNoResidente extends Vehiculo{
 	@Override
 	public double precioCobro() {
 		
-		double cobro = precio * tiempo;
+		double cobro = precio * getTiempo();
 		return cobro;
 	}
 
-	
-	
-	
-	
 }

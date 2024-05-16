@@ -6,23 +6,13 @@ public class VehiculoOficial extends Vehiculo{
 
 	public VehiculoOficial(String matricula) {
 		super(matricula);
-		// TODO Auto-generated constructor stub
+		this.matricula = matricula;
 	}
 
-	
-	
-	
 	@Override
 	public double precioCobro() {
 		
 		return 0;
 	}
-
-	
-	
-
-	
-	
-	
 	
 }

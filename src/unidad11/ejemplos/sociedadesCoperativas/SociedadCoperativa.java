@@ -8,13 +8,13 @@ public class SociedadCoperativa {
 	private String denoSocial;
 	private String provincia ;
 	private String localidad;
-	private int codigoPostal;
+	private String codigoPostal;
 	private String clase;
 	private LocalDate fechaInscripcion;
 	
 	
 	public SociedadCoperativa(String numInscripcion, String denoSocial, String provincia, String localidad,
-			int codigoPostal, String clase, LocalDate fechaInscripcion) {
+			String codigoPostal, String clase, LocalDate fechaInscripcion) {
 		super();
 		this.numInscripcion = numInscripcion;
 		this.denoSocial = denoSocial;
@@ -69,12 +69,12 @@ public class SociedadCoperativa {
 	}
 
 
-	public int getCodigoPostal() {
+	public String getCodigoPostal() {
 		return codigoPostal;
 	}
 
 
-	public void setCodigoPostal(int codigoPostal) {
+	public void setCodigoPostal(String codigoPostal) {
 		this.codigoPostal = codigoPostal;
 	}
 

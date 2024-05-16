@@ -7,9 +7,9 @@ public class VehiculoResidente extends Vehiculo{
 	
 	protected static double precio = 0.002;
 	
-	
 	public VehiculoResidente(String matricula) {
 		super(matricula);
+		this.matricula = matricula;
 		
 	}
 
@@ -19,7 +19,7 @@ public class VehiculoResidente extends Vehiculo{
 	 *  por el precio del vehiculo en este caso de vehiculos residentes
 	 */
 	public double precioCobro( ) {
-		double cobro = precio * tiempo;
+		double cobro = precio * getTiempo();
 		return cobro;
 		
 	}
