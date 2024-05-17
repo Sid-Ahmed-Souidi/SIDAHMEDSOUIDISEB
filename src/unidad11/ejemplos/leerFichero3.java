@@ -24,8 +24,16 @@ public class leerFichero3 {
 			String cadena;
 			cadena = lector.readLine();
 			while(cadena!=null) {
-				//aqui es donde se realiza el split
-				System.out.println(cadena);
+				String [] ciclos =cadena.split(",");
+				String idCliente = ciclos[0];
+				String iban = ciclos[1];
+				String balance = ciclos[2];
+
+				
+
+				System.out.println(idCliente);
+				System.out.println(iban);
+				System.out.println(balance);
 				cadena = lector.readLine();
 			}
 			
