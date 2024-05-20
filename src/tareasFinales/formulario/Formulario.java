@@ -25,10 +25,7 @@ public class Formulario extends JFrame implements ActionListener{
     private JCheckBox domicilioCheck;
     private JCheckBox recogerCheck;
     private JCheckBox localCheck;
-    private JRadioButton masculinoRadio;
-    private JRadioButton femeninoRadio;
-    private JRadioButton noBinarioRadio;
-    private JComboBox<String> pizzaSelect;
+    private JComboBox<String> pizzaSelect; 
     private JComboBox<String> tamañoSelect;
 
     private JButton botonAceptar;
@@ -164,9 +161,10 @@ public class Formulario extends JFrame implements ActionListener{
                 "\nSeleccion Pizza: " + seleccionPizza +
                 "\nSeleccion Tamaño: " + seleccionTamaño+
                 "\nPrecio: " + precio);
+        //creamos el objeto pedido con los datos que hemos introducido atraves de la interfaz 
         Pedido pedido = new Pedido(nombre, apellido, direccion,tipoPedido , seleccionPizza,seleccionTamaño ,precio);
-
-        insertarFicheros();
+        
+        //insertarFicheros();
         BaseDatos bd = new BaseDatos();
         bd.crearTabla();
         bd.insertarEnTabla(pedido);

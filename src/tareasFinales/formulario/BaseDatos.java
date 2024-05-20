@@ -19,13 +19,13 @@ public class BaseDatos {
 
 			cargarConfiguracion();
 
-			String url = propiedades.getProperty("url");
+			String url = propiedades.getProperty("urlcasa");
 
-			String bd = propiedades.getProperty("basedatos");
+			String bd = propiedades.getProperty("basedatoscasa");
 
-			String usuario = propiedades.getProperty("usuario"); // root
+			String usuario = propiedades.getProperty("usuariocasa"); // root
 
-			String password = propiedades.getProperty("password");
+			String password = propiedades.getProperty("passwordcasa");
 
 			;// contraseña
 
@@ -59,17 +59,13 @@ public class BaseDatos {
 
 			cargarConfiguracion();
 
-			String url = propiedades.getProperty("url");
+			String url = propiedades.getProperty("urlcasa");
 
-			String bd = propiedades.getProperty("basedatos");
+			String bd = propiedades.getProperty("basedatoscasa");
 
-			String usuario = propiedades.getProperty("usuario"); // root
+			String usuario = propiedades.getProperty("usuariocasa"); // root
 
-			String password = propiedades.getProperty("password");
-
-
-			
-
+			String password = propiedades.getProperty("passwordcasa");
 
 			// permite recuperar filas de manera más potente
 
@@ -77,8 +73,6 @@ public class BaseDatos {
 
 				String sql = "INSERT INTO pedido (nombre,apellido,direccion,tipoPedido,seleccionPizza,seleccionTamaño,precio) VALUES(?,?,?,?,?,?,?);";
 				
-				
-
 				PreparedStatement sentencia = con.prepareStatement(sql);
 				sentencia.setString(1, pedido.getNombre());
 				sentencia.setString(2, pedido.getApellido());
@@ -92,42 +86,27 @@ public class BaseDatos {
 
 				System.out.println("Filas insertadas: "+ filaAfectadas);
 
-				
-
-
 			} catch (SQLException e) {
 
 				e.printStackTrace();
-
 			}
-
-			
 
 		}
 
 		public static void cargarConfiguracion() {
-
 			// carga los datos del ficherpo de propiedades
-
 			FileInputStream fis;
-
 			try {
 
 				fis = new FileInputStream("ficheros" + File.separator + "configuracion" + File.separator + "bd"
 
 						+ File.separator + "conexion.properties");
-
-
 				propiedades.load(fis);
 
 			} catch (IOException e) {
 
 				e.printStackTrace();
-
 			}
-
-
 		}
-
 	}
 

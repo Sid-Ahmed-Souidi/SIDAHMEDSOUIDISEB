@@ -2,10 +2,10 @@ package tareasFinales.parking;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;
-import java.io.IOException;
 import java.time.LocalTime;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Properties;
 import java.util.Scanner;
 
 public class GestionParking {
@@ -73,9 +73,12 @@ public class GestionParking {
 				
 			case 7 :
 				System.out.println("Pagos de residentes");
-				mostrarPagos();
-				escribirPagos();
-				
+				//mostrarPagos();
+				//escribirPagos();
+				for (Vehiculo vehiculo : parking) {
+					escribirPagoBd(vehiculo,Estancias.cobro(vehiculo));
+
+				}
 				
 				
 				break;
@@ -91,6 +94,19 @@ public class GestionParking {
 			}
 			
 		}while(opcion!=8);
+
+		
+	}
+
+
+
+
+	private static void escribirPagoBd(Vehiculo vehiculo, double cobro) {
+		
+	 InsertarBaseDatos bd = new InsertarBaseDatos();
+	 bd.crearTabla();
+	 bd.insertarEnTabla(vehiculo, cobro);
+		
 
 		
 	}
@@ -115,9 +131,6 @@ public class GestionParking {
 				
 				
 			}
-
-		
-	
 
 
 	private static void mostrarPagos() {

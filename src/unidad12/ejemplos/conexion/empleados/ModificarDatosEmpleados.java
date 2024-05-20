@@ -1,11 +1,11 @@
-package unidad12.ejemplos.conexion;
+package unidad12.ejemplos.conexion.empleados;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
-public class ModificarDatosPS {
+public class ModificarDatosEmpleados {
 
 	public static void main(String[] args) {
 		String url = "jdbc:mysql://192.168.0.101:3306/SouidiElBaroudi";
@@ -15,13 +15,13 @@ public class ModificarDatosPS {
 		try (Connection con = DriverManager.getConnection(url,usuario,password)){
 			
 		
-			String sql = ("UPDATE personas SET ciudad=? WHERE id=?");
+			String sql = ("UPDATE personas SET nombre=? WHERE id=?");
 			PreparedStatement sentencia = con.prepareStatement(sql);
 			
 			
 			
 			
-			sentencia.setString(1,"Navalmoral de la Mata");
+			sentencia.setString(1,"Sara");
 			sentencia.setInt(2,11);
 			
 			

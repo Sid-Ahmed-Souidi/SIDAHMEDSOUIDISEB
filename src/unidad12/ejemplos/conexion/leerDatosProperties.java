@@ -21,10 +21,10 @@ public class leerDatosProperties {
 		cargarConfiguracion();
 		
 		String ciudad ="Madrid";
-		String url = propiedades.getProperty("url");
-		String bd = propiedades.getProperty("basedatos");
-		String usuario = propiedades.getProperty("usuario");
-		String password = propiedades.getProperty("password");
+		String url = propiedades.getProperty("urlcasa");
+		String bd = propiedades.getProperty("basedatoscasa");
+		String usuario = propiedades.getProperty("usuariocasa");
+		String password = propiedades.getProperty("passwordcasa");
 
 		
 		
