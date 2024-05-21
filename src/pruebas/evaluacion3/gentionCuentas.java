@@ -20,7 +20,6 @@ public class gentionCuentas {
 	private static final String directorio = "datosBancarios";
 	private static final double LIMITEINFERIOR = 0.0 ; 
 
-
 	public static void main(String[] args) {
 
 		System.out.println("Leer fichero");
@@ -77,8 +76,6 @@ public class gentionCuentas {
 		
 		
 	}
-
-	
 
 	
 	private static void limiteInferior() {
@@ -169,8 +166,7 @@ public class gentionCuentas {
 	private static double convertirDouble(String balanceString) {
 		double numero = Double.parseDouble(balanceString);
         return numero;
-		
-		
+	
 	}
 
 	private static void sacarPais(CuentaBancaria cuenta) {
