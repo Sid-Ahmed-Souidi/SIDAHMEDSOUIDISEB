@@ -1,4 +1,4 @@
-package pruebas.evaluacion3;
+package pruebas.evaluacion3.pruebas1;
 
 public class CuentaBancaria {
 	
