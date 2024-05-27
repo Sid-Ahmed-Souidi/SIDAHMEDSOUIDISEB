@@ -1,0 +1,8 @@
+27-05-24 12:39:11 INFO  CertificadoDAO:120 - Elimina los certificados de la tabla erróneos
+27-05-24 12:39:11 DEBUG CertificadoDAO:121 - Elimina los certificados de la tabla erróneos
+27-05-24 12:39:12 INFO  CertificadoDAO:124 - Inserta los certificados del fichero
+27-05-24 12:39:12 DEBUG CertificadoDAO:125 - Inserta los certificados del fichero
+27-05-24 12:39:12 INFO  CertificadoDAO:127 - Mostrar los certificados de la tabla de la base de datos relacional ordenada por codigo tecnico
+27-05-24 12:39:12 DEBUG CertificadoDAO:128 - Mostrar los certificados de la tabla de la base de datos relacional ordenada por codigo tecnico
+27-05-24 12:39:12 INFO  CertificadoDAO:130 - Inserta los certificados de tipo residencial en una base de datos orientada a objetos
+27-05-24 12:39:12 DEBUG CertificadoDAO:131 - Inserta los certificados de tipo residencial en una base de datos orientada a objetos

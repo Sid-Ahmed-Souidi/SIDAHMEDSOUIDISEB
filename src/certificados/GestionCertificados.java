@@ -1,8 +1,9 @@
-package pruebas.evaluacion3.pruebas2;
+package certificados;
 
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.lang.System.Logger;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -17,6 +18,8 @@ import unidad12.ejemplos.conexion.ferreteria.Producto;
 import unidad12.ejemplos.conexion.ferreteria.ProductoDAO;
 
 public class GestionCertificados {
+
+	
 	static Properties propiedades = new Properties();
 	
 	static String url = "";
@@ -29,9 +32,9 @@ public class GestionCertificados {
 	public static void main(String[] args) {
 		
 		cargarConfiguracion();
-		  url = propiedades.getProperty("url");
-		  usuario = propiedades.getProperty("usuario"); 
-		  password = propiedades.getProperty("password");
+		  url = propiedades.getProperty("urlcasa");
+		  usuario = propiedades.getProperty("usuariocasa"); 
+		  password = propiedades.getProperty("passwordcasa");
 		 
 		  
 		List<String> listaDatos = new ArrayList<String>();
@@ -53,7 +56,6 @@ public class GestionCertificados {
 		// recorremos listaProductos para trocear los datos y crear los objetos de tipo producto
 		for(String lineaCertificado : listaDatos) {
 			if(contadorLinea>0) {
-				System.out.println("Linea producto"+lineaCertificado);
 				String[] datos = lineaCertificado.split(";");
 				//validar
 				
@@ -100,19 +102,5 @@ public class GestionCertificados {
 	}
 	
 	
-	private static LocalDate transformarFecha(String fecha) {
-        DateTimeFormatter formato = DateTimeFormatter.ofPattern("yyyy/MM/dd");
-        LocalDate fechaLocalDate = null;
-        try {
-            fechaLocalDate = LocalDate.parse(fecha, formato);
-        } catch (DateTimeParseException e) {
-            // Manejar el error, por ejemplo, imprimir un mensaje de error
-            System.err.println("Error al parsear la fecha: " + e.getMessage());
-        }
-        return fechaLocalDate;
-
-		
-	}
-
 
 }
