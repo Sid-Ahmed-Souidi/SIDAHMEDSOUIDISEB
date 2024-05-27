@@ -32,7 +32,8 @@ public class gentionCuentas {
 		
 		// esto me hace el close en vez de usar el finally
 		try(BufferedReader lector = new BufferedReader(new FileReader(fichero));
-) {			lector.readLine();
+				) {			
+			lector.readLine();
 
 			// con el bufferedReader lee por linea y no por caracter como el fileReader
 			String cadena;

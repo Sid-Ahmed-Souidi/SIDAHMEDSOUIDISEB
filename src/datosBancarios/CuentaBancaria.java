@@ -1,6 +1,8 @@
 package datosBancarios;
 
-public class CuentaBancaria {
+import java.io.Serializable;
+
+public class CuentaBancaria implements Serializable{
 	
 	protected String idCliente;
 	protected String IBAN ;
@@ -9,10 +11,10 @@ public class CuentaBancaria {
 	
 	
 	
-	public CuentaBancaria(String idCliente, String iBAN, double balance) {
+	public CuentaBancaria(String idCliente, String IBAN , double balance) {
 		super();
 		this.idCliente = idCliente;
-		IBAN = iBAN;
+		this.IBAN = IBAN;
 		this.balance = balance;
 	}
 	
@@ -26,8 +28,8 @@ public class CuentaBancaria {
 	public String getIBAN() {
 		return IBAN;
 	}
-	public void setIBAN(String iBAN) {
-		IBAN = iBAN;
+	public void setIBAN(String IBAN) {
+		this.IBAN = IBAN;
 	}
 	public double getBalance() {
 		return balance;
@@ -35,6 +37,15 @@ public class CuentaBancaria {
 	public void setBalance(double balance) {
 		this.balance = balance;
 	}
+
+	
+
+	@Override
+	public String toString() {
+		return "CuentaBancaria [idCliente=" + idCliente + ", IBAN=" + IBAN + ", balance=" + balance + "]";
+	}
+	
+	
 	
 	
 
