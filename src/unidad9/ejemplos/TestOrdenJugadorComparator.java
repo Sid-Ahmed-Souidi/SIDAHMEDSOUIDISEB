@@ -12,14 +12,14 @@ public class TestOrdenJugadorComparator {
 		List<Jugador> equipo = new ArrayList<Jugador>();
 		
 		
-		Jugador jugador1 = new Jugador(59 ,28 , "Juan");
-		Jugador jugador2 = new Jugador(67 ,22 , "Rebeca");
+		Jugador messi = new Jugador(36 ,1 , "messi");
+		Jugador cristiano = new Jugador(38 ,2 , "cristiano");
 		Jugador jugador3 = new Jugador(45 ,24 , "Sandra");
 
 		
-		equipo.add(jugador1);
-		equipo.add(jugador2);
+		equipo.add(messi);
 		equipo.add(jugador3);
+		equipo.add(cristiano);
 		
 		System.out.println(equipo);
 		

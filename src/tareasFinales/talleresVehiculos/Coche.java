@@ -47,8 +47,6 @@ public class Coche {
 		
 	}
 
-	
-	
 
 
 	public String getMatricula() {

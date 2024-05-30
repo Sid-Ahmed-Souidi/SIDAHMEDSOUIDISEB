@@ -15,13 +15,6 @@ public class Reparacion {
 	}
 
 	
-	
-	
-
-
-	
-	
-	
 
 
 	public String getAveria() {
