@@ -108,9 +108,6 @@ public class gentionCuentas {
 
 	}
 	
-
-
-
 	private static void crearDirectorios() {
 		Iterator<String> it = mapaCuentas.keySet().iterator();
 		String clave;

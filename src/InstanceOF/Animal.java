@@ -1,4 +1,4 @@
-package InstanceO;
+package InstanceOF;
 
 class Animal {
     // Esta es la clase base (superclase) Animal
