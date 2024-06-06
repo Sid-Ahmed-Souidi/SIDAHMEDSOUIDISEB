@@ -19,7 +19,6 @@ public class Garaje {
 
 
 	
-	public static introducirGaraje(arrayList)
 
 	public static  Coche   compararCoches(Coche coche ) {
 		

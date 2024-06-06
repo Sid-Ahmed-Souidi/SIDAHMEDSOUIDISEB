@@ -23,8 +23,8 @@ public class Alumnos {
 			sentencia.setString(3,"Caceres");
 			*/
 			
-			int filasAfectadas = sentencia.executeUpdate();
-			System.out.println("Filas afectadas : "+filasAfectadas);
+		//	int filasAfectadas = sentencia.executeUpdate();
+		//	System.out.println("Filas afectadas : "+filasAfectadas);
 			
 			
 		} catch (SQLException e) {
@@ -36,7 +36,7 @@ public class Alumnos {
 	private static void crearTabla(Connection con) {
 		String sql = ("INSERT INTO personas (nombre,apellido,ciudad) "
 				+ "VALUES (?,?,?)");		
-		PreparedStatement sentencia = con.prepareStatement(sql);
+	//	PreparedStatement sentencia = con.prepareStatement(sql);
 
 	}
 	
